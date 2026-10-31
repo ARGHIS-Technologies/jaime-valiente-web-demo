@@ -1,0 +1,137 @@
+[
+  {
+    "width": 320,
+    "route": "particulares/",
+    "desktopIndexVisible": false,
+    "h1": "Servicios jurídicos para particulares.",
+    "items": 15,
+    "mobileIndexVisible": true,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "route": "empresas/",
+    "desktopIndexVisible": false,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "items": 18,
+    "mobileIndexVisible": true,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "route": "reclamaciones/",
+    "desktopIndexVisible": false,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "items": 0,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "route": "particulares/",
+    "desktopIndexVisible": false,
+    "h1": "Servicios jurídicos para particulares.",
+    "items": 15,
+    "mobileIndexVisible": true,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "route": "empresas/",
+    "desktopIndexVisible": false,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "items": 18,
+    "mobileIndexVisible": true,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "route": "reclamaciones/",
+    "desktopIndexVisible": false,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "items": 0,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "route": "particulares/",
+    "desktopIndexVisible": true,
+    "h1": "Servicios jurídicos para particulares.",
+    "items": 15,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "route": "empresas/",
+    "desktopIndexVisible": true,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "items": 18,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "route": "reclamaciones/",
+    "desktopIndexVisible": false,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "items": 0,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 1024,
+    "route": "particulares/",
+    "desktopIndexVisible": true,
+    "h1": "Servicios jurídicos para particulares.",
+    "items": 15,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 1024,
+    "route": "empresas/",
+    "desktopIndexVisible": true,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "items": 18,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 1024,
+    "route": "reclamaciones/",
+    "desktopIndexVisible": false,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "items": 0,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "route": "particulares/",
+    "desktopIndexVisible": true,
+    "h1": "Servicios jurídicos para particulares.",
+    "items": 15,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "route": "empresas/",
+    "desktopIndexVisible": true,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "items": 18,
+    "mobileIndexVisible": false,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "route": "reclamaciones/",
+    "desktopIndexVisible": false,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "items": 0,
+    "mobileIndexVisible": false,
+    "overflow": false
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-10-31T19:23:03.320Z",
+  "environment": "Isolated local static build; simulated mobile Lighthouse; no field data",
+  "lighthouse": [
+    {
+      "route": "/jaime-valiente-web-demo/",
+      "runs": 1,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 755.3053,
+        "largest-contentful-paint": 755.3053,
+        "total-blocking-time": 14.173675000000003,
+        "cumulative-layout-shift": 0.0003578511494719576,
+        "speed-index": 755.3053
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.93,
+          "displayValue": "120 ms"
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 130 ms"
+        }
+      ]
+    }
+  ],
+  "axe": {
+    "engine": "axe-core 4.14.0",
+    "states": 28,
+    "violations": [],
+    "incompleteCount": 1,
+    "reviewedMenuOverlap": 1,
+    "unexpectedIncomplete": []
+  }
+}

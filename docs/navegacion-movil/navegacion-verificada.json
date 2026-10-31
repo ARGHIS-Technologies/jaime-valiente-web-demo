@@ -1,0 +1,56 @@
+[
+  {
+    "route": "particulares/",
+    "id": "civil",
+    "focus": "civil",
+    "indexBottom": 132.4000015258789,
+    "open": false,
+    "sectionTop": 153.8000030517578
+  },
+  {
+    "route": "particulares/",
+    "id": "familia",
+    "focus": "familia",
+    "indexBottom": 132.4000015258789,
+    "open": false,
+    "sectionTop": 154.1125030517578
+  },
+  {
+    "route": "particulares/",
+    "id": "penal",
+    "focus": "penal",
+    "indexBottom": 132.4000015258789,
+    "open": false,
+    "sectionTop": 158.85635375976562
+  },
+  {
+    "route": "empresas/",
+    "id": "mercantil",
+    "focus": "mercantil",
+    "indexBottom": 132.4000015258789,
+    "open": false,
+    "sectionTop": 153.6999969482422
+  },
+  {
+    "route": "empresas/",
+    "id": "laboral",
+    "focus": "laboral",
+    "indexBottom": 132.4000015258789,
+    "open": false,
+    "sectionTop": 154.0124969482422
+  },
+  {
+    "route": "empresas/",
+    "id": "contable-fiscal",
+    "focus": "contable-fiscal",
+    "indexBottom": 132.4000015258789,
+    "open": false,
+    "sectionTop": 154.2375030517578
+  },
+  {
+    "case": "cross-page-fragment",
+    "focus": "familia",
+    "indexBottom": 132.4000015258789,
+    "sectionTop": 151.4362335205078
+  }
+]

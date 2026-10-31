@@ -1,6 +1,8 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [Lighthouse CI, axe-core y Open Props](docs/auditoria-herramientas/INFORME.md), con hallazgos corregidos, mediciones y publicación verificada.
+**Revisión vigente:** [lectura y navegación móvil por áreas](docs/navegacion-movil/INFORME.md), con conservación de servicios, revisión visual y controles de calidad.
+
+Herramientas de calidad: [Lighthouse CI, axe-core y Open Props](docs/auditoria-herramientas/INFORME.md).
 
 Dirección visual: [composición editorial y presencia personal](docs/composicion-editorial/INFORME.md).
 
@@ -73,7 +75,7 @@ npm run build
 npm run audit:quality
 ```
 
-El comando comprueba 24 estados con axe-core (once rutas en móvil/escritorio, menú abierto y datos profesionales desplegados) y recoge tres mediciones móviles simuladas de Lighthouse en Inicio, Particulares, Empresas, Contacto y Clientes. Los resultados completos están en `.quality/` y `.lighthouseci/`, ignorados por Git. `npm run audit:a11y` conserva todos los estados axe y reduce la medición Lighthouse a Inicio para revisar accesibilidad durante desarrollo.
+El comando comprueba 28 estados con axe-core (once rutas en móvil/escritorio, menú abierto, datos profesionales desplegados y los dos índices de áreas abiertos y tras seleccionar un destino) y recoge tres mediciones móviles simuladas de Lighthouse en Inicio, Particulares, Empresas, Contacto y Clientes. Los resultados completos están en `.quality/` y `.lighthouseci/`, ignorados por Git. `npm run audit:a11y` conserva todos los estados axe y reduce la medición Lighthouse a Inicio para revisar accesibilidad durante desarrollo.
 
 La publicación exige cero infracciones automáticas de axe y medianas de rendimiento ≥90, accesibilidad automática 100, buenas prácticas ≥95, LCP ≤2.500 ms, CLS ≤0,1 y TBT ≤200 ms. Un resultado incompleto nuevo también bloquea para revisión manual. Se conserva una excepción documentada de contraste del texto de Inicio tapado por el menú opaco; el estado normal y el menú se revisaron por separado. SEO se informa completo y conserva el `noindex` deliberado de la demo. Estas mediciones de laboratorio no representan datos de usuarios reales ni una certificación WCAG.
 

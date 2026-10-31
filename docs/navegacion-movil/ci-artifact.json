@@ -1,0 +1,11 @@
+{
+  "runId": 41234155673,
+  "headSha": "2685c51e8ff395940eac4bf8141232c7974eb89e",
+  "conclusion": "success",
+  "url": "https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41234155673",
+  "artifactId": 13054673804,
+  "copied": [
+    "summary.json",
+    "axe.json"
+  ]
+}

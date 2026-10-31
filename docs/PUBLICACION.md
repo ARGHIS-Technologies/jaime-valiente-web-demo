@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: Lighthouse CI, axe-core y Open Props
+## Revisión vigente: lectura y navegación móvil por áreas
+
+Aplicación `2685c51e8ff395940eac4bf8141232c7974eb89e`, publicada correctamente por [Actions 41234155673](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41234155673). Conserva 33 servicios y añade un índice móvil plegable en Particulares y Empresas. Lighthouse, cinco páginas por tres ejecuciones: medianas 100 en rendimiento, accesibilidad automática y buenas prácticas. Axe: 28 estados, cero infracciones, un incompleto conocido revisado. Los 39 archivos públicos coinciden por SHA256 con el build y se verificaron los dos recorridos móviles en la URL pública. [Informe vigente y evidencias](navegacion-movil/INFORME.md).
+
+## Registro histórico: Lighthouse CI, axe-core y Open Props
 
 Aplicación `66c9497adf1825e5cd28fb727942de994a89d476`, publicada correctamente por [Actions 41232166276](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41232166276) tras superar las nuevas puertas de calidad. Cinco páginas por tres ejecuciones: medianas 100 en rendimiento, accesibilidad automática y buenas prácticas. Axe: 24 estados, cero infracciones, un incompleto conocido revisado. Los 39 archivos públicos coinciden por SHA256 con el build. [Informe vigente, mediciones y límites](auditoria-herramientas/INFORME.md).
 
