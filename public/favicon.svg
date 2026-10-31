@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="8" fill="#243d3a"/><text x="32" y="46" text-anchor="middle" font-family="Georgia,serif" font-size="43" fill="#f6f3ec">J</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+<title id="title">Jaime Valiente · Icono de navegador</title>
+<desc id="desc">J de Source Serif 4 Regular convertida en trazado, en marfil sobre verde petróleo. Recurso digital auxiliar de la firma.</desc>
+<rect width="64" height="64" rx="8" fill="#243D3A"/>
+<path d="M0.066 0.132Q0.031 0.132 0.006999999999999999 0.121Q-0.017 0.11 -0.023 0.084Q-0.019 0.057 -0.002999999999999999 0.045Q0.013000000000000001 0.033 0.039 0.033Q0.061 0.033 0.0775 0.04Q0.094 0.047 0.113 0.064L0.14200000000000002 0.089H0.129H0.136L0.129 0.091Q0.136 0.077 0.14150000000000001 0.062Q0.147 0.047 0.1495 0.0245Q0.152 0.002 0.1535 -0.0325Q0.155 -0.067 0.155 -0.11900000000000001Q0.155 -0.147 0.155 -0.174Q0.155 -0.201 0.155 -0.2325Q0.155 -0.264 0.1545 -0.3035Q0.154 -0.343 0.154 -0.395Q0.154 -0.447 0.1535 -0.5145Q0.153 -0.582 0.152 -0.67H0.255Q0.254 -0.593 0.2535 -0.516Q0.253 -0.439 0.253 -0.36V-0.186Q0.253 -0.13 0.2505 -0.09Q0.248 -0.05 0.241 -0.0205Q0.234 0.009000000000000001 0.2225 0.031Q0.211 0.053 0.195 0.073Q0.171 0.10200000000000001 0.1395 0.117Q0.108 0.132 0.066 0.132ZM0.04 -0.618V-0.67H0.352V-0.618L0.219 -0.61H0.186Z" transform="translate(23.79551 45.41646) scale(49.87531)" fill="#F6F3EC"/>
+</svg>

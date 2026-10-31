@@ -51,6 +51,11 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  }
 }
 const sizes={html:0,css:0,js:0,fonts:0};
+const favicon=await readFile(path.join(root,'favicon.svg'),'utf8');
+assert.match(favicon, /Source Serif 4/,'Favicon follows the brand typeface');
+assert.match(favicon, /<path\b/,'Favicon letter is outlined');
+assert.doesNotMatch(favicon, /<text\b|font-family|<script\b|<image\b|(?:xlink:)?href=/i,'Favicon has no font or external dependency');
+for (const file of ['favicon.ico','favicon-32.png','apple-touch-icon.png']) assert.ok((await stat(path.join(root,file))).size>0,`Missing favicon fallback: ${file}`);
 const iconLicense=await readFile(path.join(root,'licenses/phosphor-icons.txt'),'utf8');
 assert.match(iconLicense,/MIT License/);
 assert.match(iconLicense,/Copyright.*Phosphor Icons/);

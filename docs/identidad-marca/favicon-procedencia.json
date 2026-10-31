@@ -1,0 +1,25 @@
+{
+  "role": "Auxiliary J browser icon; not a new corporate monogram",
+  "typeface": "Source Serif 4",
+  "weight": 400,
+  "fontsourcePackage": "5.3.1",
+  "fontLicense": "SIL OFL 1.1",
+  "fontSha256": "02194deb92d3975dd30e11a3824a1f1db32b48c93654e60560cb81ce8e7b5f95",
+  "svgSha256": "f407af3bb7c94bf4cb0a70f4765051b787809dcb6409a09bbcc0394e66b0bb85",
+  "viewBox": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "background": "#243D3A",
+  "foreground": "#F6F3EC",
+  "geometry": "Outlined glyph; 40 unit ink height; centered visible bounds; rounded field radius 8",
+  "delivery": [
+    "favicon.svg",
+    "favicon.ico (16,32,48,64)",
+    "favicon-32.png",
+    "apple-touch-icon.png (180)"
+  ],
+  "runtimeDependenciesAdded": false
+}
