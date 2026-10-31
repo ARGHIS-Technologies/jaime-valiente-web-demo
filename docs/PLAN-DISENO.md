@@ -45,3 +45,7 @@ Se da peso al petróleo desde la entrada, se sustituyen los resúmenes repetidos
 ## Auditoría integral — revisión 4
 
 La salida del menú por Tab se cierra inmediatamente y conserva el nuevo foco. Los destinos de enlaces reciben foco nativo y una única separación para la cabecera; los saltos son inmediatos tras reproducir un problema con el desplazamiento suave en Contacto. Se mantienen las entradas discretas y los estados CSS. Se compacta móvil, se incorpora un desplegable HTML nativo para datos pendientes, se limpian estilos y se precargan dos fuentes existentes. Informe actual: [auditoría integral](auditoria-integral/INFORME.md).
+
+## Composición editorial y presencia personal — revisión 5
+
+Inicio y El despacho se revisan primero en escritorio y móvil; tras corregir longitud del titular, alineación de servicios y medida de lectura, se extienden los ajustes a ubicaciones, cabeceras interiores y cierre de contacto. Índice compacto, guía en filas, nombre protagonista y cursiva selectiva. Se conservan oferta, arquitectura, recursos nativos y dependencias. [Informe vigente y comparativas](composicion-editorial/INFORME.md).

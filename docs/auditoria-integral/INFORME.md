@@ -1,5 +1,7 @@
 # Auditoría integral y correcciones — revisión 4
 
+Revisión posterior de composición y presencia personal: [informe vigente](../composicion-editorial/INFORME.md). Este documento conserva la evidencia de la revisión 4.
+
 31 de octubre de 2026. Jaime Valiente Alemán · Abogado.
 
 [Demo](https://mmlab-dev.github.io/jaime-valiente-web-demo/) · [Repositorio personal](https://github.com/mmlab-dev/jaime-valiente-web-demo)

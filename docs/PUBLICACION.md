@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: auditoría integral y correcciones
+## Revisión vigente: composición editorial y presencia personal
+
+Aplicación `a32703d5d9a6ebd61a20867c78d5648e07c7f636`, publicada correctamente por [Actions 41220651388](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41220651388). Los 22 archivos públicos coinciden por SHA256 con el build y la ruta inexistente conserva su 404. Revisados públicamente Inicio, El despacho y la navegación móvil. [Informe vigente y comparativas](composicion-editorial/INFORME.md).
+
+## Registro histórico: auditoría integral y correcciones
 
 Aplicación `ee1d4ebc7e794ec14a0095393667056b99dffb65`, publicada correctamente por [Actions 41214508787](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41214508787). Los 22 archivos públicos coinciden por SHA256 con el build. Comprobados en la demo pública el menú por Tab/Escape, el foco en Contacto y el desplegable profesional. [Informe vigente](auditoria-integral/INFORME.md).
 

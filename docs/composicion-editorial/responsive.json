@@ -1,0 +1,387 @@
+[
+  {
+    "route": "",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "particulares/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "empresas/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "reclamaciones/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "el-despacho/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "contacto/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "area-clientes/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "aviso-legal/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "privacidad/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "cookies/",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "404.html",
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "width": 320
+  },
+  {
+    "route": "",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "particulares/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "empresas/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "reclamaciones/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "el-despacho/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "contacto/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "area-clientes/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "aviso-legal/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "privacidad/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "cookies/",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "404.html",
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "width": 390
+  },
+  {
+    "route": "",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "particulares/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "empresas/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "reclamaciones/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "el-despacho/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "contacto/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "area-clientes/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "aviso-legal/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "privacidad/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "cookies/",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "404.html",
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "width": 768
+  },
+  {
+    "route": "",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "particulares/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "empresas/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "reclamaciones/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "el-despacho/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "contacto/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "area-clientes/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "aviso-legal/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "privacidad/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "cookies/",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "404.html",
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "width": 1024
+  },
+  {
+    "route": "",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "particulares/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "empresas/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "reclamaciones/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "el-despacho/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "contacto/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "area-clientes/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "aviso-legal/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "privacidad/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "cookies/",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  },
+  {
+    "route": "404.html",
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "width": 1440
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "route": "",
+    "failures": [],
+    "min": 5.304350271663614,
+    "nodes": 80
+  },
+  {
+    "route": "particulares/",
+    "failures": [],
+    "min": 5.304350271663614,
+    "nodes": 73
+  },
+  {
+    "route": "empresas/",
+    "failures": [],
+    "min": 5.304350271663614,
+    "nodes": 75
+  },
+  {
+    "route": "reclamaciones/",
+    "failures": [],
+    "min": 5.203390855032621,
+    "nodes": 66
+  },
+  {
+    "route": "el-despacho/",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 60
+  },
+  {
+    "route": "contacto/",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 56
+  },
+  {
+    "route": "area-clientes/",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 45
+  },
+  {
+    "route": "aviso-legal/",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 42
+  },
+  {
+    "route": "privacidad/",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 42
+  },
+  {
+    "route": "cookies/",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 42
+  },
+  {
+    "route": "404.html",
+    "failures": [],
+    "min": 5.862854175738713,
+    "nodes": 32
+  }
+]
