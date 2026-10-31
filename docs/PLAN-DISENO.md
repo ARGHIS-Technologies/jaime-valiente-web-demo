@@ -18,9 +18,9 @@ Tipografía Source Serif 4 y Source Sans 3; marca nominal; marfil, petróleo y a
 ## Sistema de movimiento
 
 - Botones y enlaces: 160–200 ms, variación contenida de color y flecha de 4 px; respuesta de presión de 1 px.
-- Tarjetas: elevación máxima de 3 px en dispositivos con puntero fino; foco visible independiente del movimiento.
-- Menú: apertura de 180 ms y cierre de 140 ms con APIs nativas; estado ARIA, foco, Escape y enlaces conservados. Panel bajo la cabecera sin desplazar el contenido.
-- Secciones: desplazamiento de 8 px y opacidad mínima de 0,94 durante 360 ms, una vez al entrar. IntersectionObserver solo dispara una clase CSS; sin observador o JavaScript, el contenido permanece visible.
+- Tarjetas: filas editoriales con respuesta de borde y flecha, sin elevar su posición; foco visible independiente del movimiento.
+- Menú: apertura de 180 ms y cierre de 150 ms con APIs nativas; estado ARIA, foco, Escape y enlaces conservados. Panel bajo la cabecera sin desplazar el contenido.
+- Secciones: desplazamiento de 8 px y opacidad mínima de 0,94 durante 320 ms, una vez al entrar. IntersectionObserver solo dispara una clase CSS; sin observador o JavaScript, el contenido permanece visible.
 - Navegación entre páginas: transición nativa de 160 ms si el navegador la admite. Sin interceptar enlaces ni depender de un router cliente.
 - Movimiento reducido: sin desplazamientos, animaciones o desplazamiento suave; no se inicia el observador y el menú cambia de estado inmediatamente.
 
@@ -33,3 +33,7 @@ Tipografía Source Serif 4 y Source Sans 3; marca nominal; marfil, petróleo y a
 5. Confirmar build, rutas y recursos del subdirectorio real. Después de desplegar, abrir la URL pública y verificar el resultado.
 
 Las capturas y resultados del informe registran comprobaciones ejecutadas. No se atribuye una aprobación del cliente ni una certificación WCAG completa a la revisión interna.
+
+## Refinamiento posterior
+
+La segunda revisión conserva estas referencias y dependencias. El menú permanece opaco durante la apertura y el cierre. Auditoría, iteraciones, capturas y evidencia actualizada en [refinamiento/INFORME.md](refinamiento/INFORME.md).

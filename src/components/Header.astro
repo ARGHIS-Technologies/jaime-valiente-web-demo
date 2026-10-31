@@ -5,7 +5,7 @@ const { current = '' } = Astro.props;
 <div class="demo-strip"><div class="shell flex items-center justify-between gap-4"><span><span class="demo-dot" aria-hidden="true"></span> Demo de diseño <span class="demo-detail">· Propuesta para revisión del despacho</span></span><span class="demo-location">Cádiz & Arcos de la Frontera</span></div></div>
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="wordmark" href={href()} aria-label="Jaime Valiente Abogado Inicio"><span>Jaime Valiente<span class="wordmark-dot">.</span></span><span class="wordmark-sub">ABOGADO</span></a>
+    <a class="wordmark" href={href()} aria-label="Jaime Valiente Alemán, abogado. Inicio"><span>Jaime Valiente</span><span class="wordmark-sub">ALEMÁN · ABOGADO</span></a>
     <nav class="desktop-nav" aria-label="Navegación principal">{navigation.map(item => <a class:list={['nav-link', { 'is-current': item.path === current }]} aria-current={item.path === current ? 'page' : undefined} href={href(item.path)}>{item.label}</a>)}</nav>
     <div class="header-actions"><a class="client-link" aria-label="Área de clientes" href={href('area-clientes/')} aria-current={current === 'area-clientes/' ? 'page' : undefined}><span class="client-full">Área de clientes</span><span class="client-short">Clientes</span> <span aria-hidden="true">↗</span></a><a class="header-cta" href={href('contacto/')}>Solicitar cita</a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-label">Menú</span><span class="menu-lines" aria-hidden="true"><i></i><i></i></span></button></div>
   </div>
@@ -24,7 +24,7 @@ const { current = '' } = Astro.props;
     if (returnFocus) toggle.focus();
     menu.inert = true;
     if (reducedMotion.matches || menu.hidden) { menu.hidden = true; return; }
-    menuAnimation = menu.animate([{ opacity: 1, transform: 'translateY(0)' }, { opacity: 0, transform: 'translateY(-4px)' }], { duration: 140, easing: 'ease-out' });
+    menuAnimation = menu.animate([{ transform: 'translateY(0)' }, { transform: 'translateY(-4px)' }], { duration: 150, easing: 'ease-out' });
     menuAnimation.onfinish = () => { if (toggle.getAttribute('aria-expanded') === 'false') menu.hidden = true; };
   }
   toggle?.addEventListener('click', () => {
@@ -35,7 +35,7 @@ const { current = '' } = Astro.props;
     toggle.setAttribute('aria-expanded', 'true');
     menu.hidden = false;
     menu.inert = false;
-    if (!reducedMotion.matches) menuAnimation = menu.animate([{ opacity: 0, transform: 'translateY(-6px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 180, easing: 'ease-out' });
+    if (!reducedMotion.matches) menuAnimation = menu.animate([{ transform: 'translateY(-6px)' }, { transform: 'translateY(0)' }], { duration: 180, easing: 'ease-out' });
   });
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') closeMenu(true);

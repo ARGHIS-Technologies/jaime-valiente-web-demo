@@ -1,4 +1,6 @@
-# Informe de entrega y pruebas de la demo
+# Informe inicial de entrega y pruebas de la demo
+
+**Revisión vigente:** [refinamiento editorial y pruebas de la segunda versión](refinamiento/INFORME.md). Este documento conserva la evidencia de la primera entrega.
 
 Fecha de revisión: 31 de octubre de 2026, Europe/Madrid.
 

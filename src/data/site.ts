@@ -1,4 +1,4 @@
-export const brand = 'Jaime Valiente Abogado';
+export const brand = 'Jaime Valiente Alemán · Abogado';
 export const contact = {
   phone: '+34 692 203 087',
   tel: 'tel:+34692203087',

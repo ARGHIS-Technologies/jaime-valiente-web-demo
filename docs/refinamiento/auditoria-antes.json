@@ -1,0 +1,200 @@
+[
+  {
+    "width": 1440,
+    "route": "",
+    "client": 1425,
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "h1Size": "91.44px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "particulares/",
+    "client": 1425,
+    "h1": "Servicios jurídicos para particulares.",
+    "h1Size": "76px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "empresas/",
+    "client": 1425,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "h1Size": "76px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "reclamaciones/",
+    "client": 1425,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "h1Size": "76px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "el-despacho/",
+    "client": 1425,
+    "h1": "Jaime Valiente Abogado.",
+    "h1Size": "76px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "contacto/",
+    "client": 1425,
+    "h1": "Contacta\ncon el despacho.",
+    "h1Size": "74px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "area-clientes/",
+    "client": 1425,
+    "h1": "Área de clientes.",
+    "h1Size": "76px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "aviso-legal/",
+    "client": 1425,
+    "h1": "Aviso legal.",
+    "h1Size": "64px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "privacidad/",
+    "client": 1425,
+    "h1": "Privacidad.",
+    "h1Size": "64px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "cookies/",
+    "client": 1425,
+    "h1": "Cookies.",
+    "h1Size": "64px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 1440,
+    "route": "404.html",
+    "client": 1425,
+    "h1": "No encontramos\nesta página.",
+    "h1Size": "80px",
+    "headerHeight": 104.8000030517578,
+    "scroll": 1425
+  },
+  {
+    "width": 390,
+    "route": "",
+    "client": 375,
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "h1Size": "43px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "particulares/",
+    "client": 375,
+    "h1": "Servicios jurídicos para particulares.",
+    "h1Size": "47px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "empresas/",
+    "client": 375,
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "h1Size": "47px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "reclamaciones/",
+    "client": 375,
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "h1Size": "47px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "el-despacho/",
+    "client": 375,
+    "h1": "Jaime Valiente Abogado.",
+    "h1Size": "47px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "contacto/",
+    "client": 375,
+    "h1": "Contacta\ncon el despacho.",
+    "h1Size": "54px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "area-clientes/",
+    "client": 375,
+    "h1": "Área de clientes.",
+    "h1Size": "54px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "aviso-legal/",
+    "client": 375,
+    "h1": "Aviso legal.",
+    "h1Size": "48px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "privacidad/",
+    "client": 375,
+    "h1": "Privacidad.",
+    "h1Size": "48px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "cookies/",
+    "client": 375,
+    "h1": "Cookies.",
+    "h1Size": "48px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  },
+  {
+    "width": 390,
+    "route": "404.html",
+    "client": 375,
+    "h1": "No encontramos\nesta página.",
+    "h1Size": "58px",
+    "headerHeight": 82.80000305175781,
+    "scroll": 375
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "pages": 11,
+  "localReferencesChecked": 434,
+  "bytesUncompressed": {
+    "html": 128196,
+    "css": 44830,
+    "js": 0,
+    "fonts": 71544
+  }
+}

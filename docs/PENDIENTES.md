@@ -4,7 +4,7 @@ La existencia de un servicio o dato en la web pública confirma su publicación,
 
 | Dato o decisión | Qué debe confirmar el despacho |
 | --- | --- |
-| Identidad profesional | Nombre completo a publicar, titular legal, NIF, domicilio y demás información aplicable. El nombre completo del proyecto no se convierte en una biografía acreditada. |
+| Identidad profesional | Jaime Valiente Alemán y la composición «Jaime Valiente / ALEMÁN · ABOGADO» están confirmados por instrucción del usuario para esta propuesta. Siguen pendientes titular legal, NIF, domicilio y demás información aplicable; no se acredita una biografía. |
 | Colegiación | Colegio, número y titulación; normas profesionales aplicables. |
 | Oferta | Vigencia y alcance de todos los servicios; quién presta cada actividad empresarial y si existe colaboración. |
 | Contactos | Vigencia de teléfono, correo y WhatsApp; responsables y condiciones de atención. |

@@ -1,0 +1,36 @@
+{
+  "normalNavigation": [
+    {
+      "h1": "Servicios jurídicos para particulares.",
+      "title": "Servicios jurídicos para particulares | Jaime Valiente · Demo"
+    },
+    {
+      "h1": "Asesoramiento para empresas y autónomos.",
+      "title": "Asesoramiento para empresas y autónomos | Jaime Valiente · Demo"
+    },
+    {
+      "h1": "Reclamación de deudas y ejecución de resoluciones.",
+      "title": "Reclamación de deudas | Jaime Valiente Abogado · Demo"
+    },
+    {
+      "h1": "Jaime Valiente Alemán.",
+      "title": "El despacho | Jaime Valiente Abogado · Demo"
+    },
+    {
+      "h1": "Hablemos\nde tu consulta.",
+      "title": "Contacto en Cádiz y Arcos | Jaime Valiente Abogado · Demo"
+    },
+    {
+      "h1": "Claridad jurídica\npara decisiones\nimportantes.",
+      "title": "Jaime Valiente Abogado en Cádiz y Arcos · Demo"
+    }
+  ],
+  "logs": [
+    {
+      "level": "error",
+      "message": "InvalidStateError: Transition was aborted because of invalid state. Page already revealed",
+      "timestamp": "2026-10-31T10:36:22.210Z",
+      "url": "http://127.0.0.1:4321/jaime-valiente-web-demo/empresas/"
+    }
+  ]
+}

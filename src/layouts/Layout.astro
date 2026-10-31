@@ -5,6 +5,7 @@ import Reveal from '../components/Reveal.astro';
 import { href } from '../data/site';
 import '../styles/global.css';
 import '../styles/motion.css';
+import '../styles/refinement.css';
 interface Props { title: string; description: string; current?: string; }
 const { title, description, current = '' } = Astro.props;
 const canonical = new URL(href(current), Astro.site);

@@ -1,5 +1,7 @@
 # Jaime Valiente Abogado — Demo de diseño
 
+**Revisión vigente:** [informe del refinamiento editorial](docs/refinamiento/INFORME.md), con comparativas, pruebas y límites.
+
 Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalienteabogado.es`.
 
 - Propietario personal: **mmlab-dev**.
@@ -23,6 +25,7 @@ Abrir la URL que imprime Astro, incluyendo `/jaime-valiente-web-demo/`. No abrir
 npm run check
 npm run build
 npm run verify
+npm run verify:motion
 npm run preview
 ```
 
