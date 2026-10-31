@@ -1,0 +1,18 @@
+{
+  "actions": [
+    {
+      "height": 55.20000076293945,
+      "text": "Solicitar consulta",
+      "top": 517.7000122070312,
+      "width": 300
+    },
+    {
+      "height": 48,
+      "text": "Explorar los servicios ↓",
+      "top": 586.9000244140625,
+      "width": 300
+    }
+  ],
+  "actionsHeight": 117.20000457763672,
+  "width": 768
+}

@@ -1,0 +1,27 @@
+{
+  "actionsHeight": 48,
+  "animations": [
+    {
+      "delay": "0.02s",
+      "duration": "0.24s",
+      "element": "H1",
+      "name": "hero-copy-enter",
+      "opacity": "0.993632"
+    },
+    {
+      "delay": "0.055s",
+      "duration": "0.24s",
+      "element": "home-intro",
+      "name": "hero-copy-enter",
+      "opacity": "0.986301"
+    },
+    {
+      "delay": "0.09s",
+      "duration": "0.24s",
+      "element": "hero-buttons",
+      "name": "hero-copy-enter",
+      "opacity": "0.972353"
+    }
+  ],
+  "width": 768
+}

@@ -49,3 +49,7 @@ La salida del menú por Tab se cierra inmediatamente y conserva el nuevo foco. L
 ## Composición editorial y presencia personal — revisión 5
 
 Inicio y El despacho se revisan primero en escritorio y móvil; tras corregir longitud del titular, alineación de servicios y medida de lectura, se extienden los ajustes a ubicaciones, cabeceras interiores y cierre de contacto. Índice compacto, guía en filas, nombre protagonista y cursiva selectiva. Se conservan oferta, arquitectura, recursos nativos y dependencias. [Informe vigente y comparativas](composicion-editorial/INFORME.md).
+
+## Detalles de interacción — revisión 6
+
+Flechas junto a los títulos de especialidad, acciones compactas en tableta y entrada de Inicio en una secuencia de 330 ms, con CSS y el observador existente. Se conserva movimiento reducido y contenido visible por defecto. [Revisión, capturas y verificaciones](detalles-interaccion/INFORME.md).

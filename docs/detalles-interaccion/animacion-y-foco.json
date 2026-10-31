@@ -1,0 +1,21 @@
+{
+  "focusName": "Particulares",
+  "focusVisible": true,
+  "heroAnimation": [
+    {
+      "delay": "0.02s",
+      "duration": "0.24s",
+      "name": "hero-copy-enter"
+    },
+    {
+      "delay": "0.055s",
+      "duration": "0.24s",
+      "name": "hero-copy-enter"
+    },
+    {
+      "delay": "0.09s",
+      "duration": "0.24s",
+      "name": "hero-copy-enter"
+    }
+  ]
+}

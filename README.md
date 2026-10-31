@@ -1,6 +1,8 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [composición editorial y presencia personal](docs/composicion-editorial/INFORME.md), con decisiones visuales, comparativas, pruebas y límites.
+**Revisión vigente:** [flechas, proporciones de tableta y entrada secuenciada](docs/detalles-interaccion/INFORME.md), con capturas, pruebas y publicación verificada.
+
+Dirección visual: [composición editorial y presencia personal](docs/composicion-editorial/INFORME.md).
 
 Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalienteabogado.es`.
 

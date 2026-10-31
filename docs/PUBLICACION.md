@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: composición editorial y presencia personal
+## Revisión vigente: detalles de interacción
+
+Aplicación `1341beb2cb755385f196d2dbc40f697e8456ed2a`, publicada correctamente por [Actions 41222893257](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41222893257). Los 22 archivos públicos coinciden por SHA256 con el build. Comprobados las acciones compactas en tableta, las seis flechas y los tiempos efectivos de entrada; recorrido a Familia con foco y destino visibles. [Informe vigente](detalles-interaccion/INFORME.md).
+
+## Registro histórico: composición editorial y presencia personal
 
 Aplicación `a32703d5d9a6ebd61a20867c78d5648e07c7f636`, publicada correctamente por [Actions 41220651388](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41220651388). Los 22 archivos públicos coinciden por SHA256 con el build y la ruta inexistente conserva su 404. Revisados públicamente Inicio, El despacho y la navegación móvil. [Informe vigente y comparativas](composicion-editorial/INFORME.md).
 

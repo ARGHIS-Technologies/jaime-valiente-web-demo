@@ -1,0 +1,30 @@
+{
+  "actionsHeight": 48,
+  "animations": [
+    {
+      "delay": "0.02s",
+      "duration": "0.24s",
+      "name": "hero-copy-enter"
+    },
+    {
+      "delay": "0.055s",
+      "duration": "0.24s",
+      "name": "hero-copy-enter"
+    },
+    {
+      "delay": "0.09s",
+      "duration": "0.24s",
+      "name": "hero-copy-enter"
+    }
+  ],
+  "headingArrows": 6,
+  "width": 768,
+  "destination": {
+    "focus": "familia",
+    "headerBottom": 86.80000305175781,
+    "targetTop": 112.3807144165039,
+    "title": "Servicios jurídicos para particulares | Jaime Valiente · Demo"
+  },
+  "logs": [],
+  "browserReloadedAfterDeployment": true
+}
