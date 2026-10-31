@@ -14,9 +14,35 @@
     transform: none;
   }
 }
+@keyframes hero-copy-enter {
+  from {
+    opacity: .92;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .section-entering {
     animation: section-enter 320ms cubic-bezier(.2,.65,.3,1) both;
+  }
+  .home-hero.section-entering {
+    animation: none;
+  }
+  .home-hero.section-entering .hero-copy > :is(h1, .home-intro, .hero-buttons) {
+    animation: hero-copy-enter 240ms cubic-bezier(.2,.65,.3,1) both;
+    animation-delay: var(--hero-enter-delay);
+  }
+  .home-hero.section-entering h1 {
+    --hero-enter-delay: 20ms;
+  }
+  .home-hero.section-entering .home-intro {
+    --hero-enter-delay: 55ms;
+  }
+  .home-hero.section-entering .hero-buttons {
+    --hero-enter-delay: 90ms;
   }
   .button {
     transition: background 180ms ease, color 180ms ease, transform 160ms ease;
