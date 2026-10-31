@@ -1,0 +1,263 @@
+{
+  "site": "https://mmlab-dev.github.io/jaime-valiente-web-demo/",
+  "files": 42,
+  "results": [
+    {
+      "route": "404.html",
+      "status": 200,
+      "bytes": 14589,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "apple-touch-icon.png",
+      "status": 200,
+      "bytes": 3065,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "area-clientes/",
+      "status": 200,
+      "bytes": 16861,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "aviso-legal/",
+      "status": 200,
+      "bytes": 14897,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "contacto/",
+      "status": 200,
+      "bytes": 21067,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "cookies/",
+      "status": 200,
+      "bytes": 14968,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "el-despacho/",
+      "status": 200,
+      "bytes": 20396,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "empresas/",
+      "status": 200,
+      "bytes": 22403,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "favicon-32.png",
+      "status": 200,
+      "bytes": 471,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "favicon.ico",
+      "status": 200,
+      "bytes": 5405,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "favicon.svg",
+      "status": 200,
+      "bytes": 1292,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "",
+      "status": 200,
+      "bytes": 25552,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "licenses/open-props.txt",
+      "status": 200,
+      "bytes": 1068,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "licenses/phosphor-icons.txt",
+      "status": 200,
+      "bytes": 1071,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "particulares/",
+      "status": 200,
+      "bytes": 21838,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "privacidad/",
+      "status": 200,
+      "bytes": 15055,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "reclamaciones/",
+      "status": 200,
+      "bytes": 20045,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "robots.txt",
+      "status": 200,
+      "bytes": 88,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/arrow-down.D314FtXj.svg",
+      "status": 200,
+      "bytes": 239,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/arrow-right.BO7beIEd.svg",
+      "status": 200,
+      "bytes": 245,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/arrow-square-out.mAzLYAl4.svg",
+      "status": 200,
+      "bytes": 347,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/arrow-up.DLWa3vLV.svg",
+      "status": 200,
+      "bytes": 257,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/caret-right.B9H0s0Th.svg",
+      "status": 200,
+      "bytes": 219,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/chat-circle-dots.DVEfiD-8.svg",
+      "status": 200,
+      "bytes": 473,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/envelope-simple.2U087DvU.svg",
+      "status": 200,
+      "bytes": 282,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/file-text.DMJu4Ks6.svg",
+      "status": 200,
+      "bytes": 416,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/folder-simple.C0xgPXyj.svg",
+      "status": 200,
+      "bytes": 304,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/info.C9QkPWf7.svg",
+      "status": 200,
+      "bytes": 348,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/Layout.B9toLLZZ.css",
+      "status": 200,
+      "bytes": 44352,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/list.CIXwnp_k.svg",
+      "status": 200,
+      "bytes": 253,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/map-pin.Dv6_sAT8.svg",
+      "status": 200,
+      "bytes": 459,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/phone.BjBanggk.svg",
+      "status": 200,
+      "bytes": 709,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/plus.Bd69O6hL.svg",
+      "status": 200,
+      "bytes": 212,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-sans-3-latin-400-normal.DQi5PRDE.woff2",
+      "status": 200,
+      "bytes": 15696,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-sans-3-latin-400-normal.RR2C27NP.woff",
+      "status": 200,
+      "bytes": 19992,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-sans-3-latin-600-normal.Ck0n4g8U.woff",
+      "status": 200,
+      "bytes": 19992,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-sans-3-latin-600-normal.DeckBYAU.woff2",
+      "status": 200,
+      "bytes": 15668,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-serif-4-latin-400-italic.0j97Jm6B.woff2",
+      "status": 200,
+      "bytes": 20092,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-serif-4-latin-400-italic.DZulBB6l.woff",
+      "status": 200,
+      "bytes": 24700,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-serif-4-latin-400-normal.C1O10bxN.woff",
+      "status": 200,
+      "bytes": 24112,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/source-serif-4-latin-400-normal.DJ5YJwmz.woff2",
+      "status": 200,
+      "bytes": 20088,
+      "matchesLocalBuild": true
+    },
+    {
+      "route": "_astro/x.BQERMe2h.svg",
+      "status": 200,
+      "bytes": 284,
+      "matchesLocalBuild": true
+    }
+  ],
+  "notFound": {
+    "status": 404,
+    "customPage": true
+  },
+  "passed": true
+}

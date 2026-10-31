@@ -5,7 +5,7 @@
   "fontsourcePackage": "5.3.1",
   "fontLicense": "SIL OFL 1.1",
   "fontSha256": "02194deb92d3975dd30e11a3824a1f1db32b48c93654e60560cb81ce8e7b5f95",
-  "svgSha256": "f407af3bb7c94bf4cb0a70f4765051b787809dcb6409a09bbcc0394e66b0bb85",
+  "svgSha256": "74465ad00c3d7d47ddf0854d36d52d0a57f72d15c895fecce739b11779040aee",
   "viewBox": [
     0,
     0,
@@ -21,5 +21,6 @@
     "favicon-32.png",
     "apple-touch-icon.png (180)"
   ],
-  "runtimeDependenciesAdded": false
+  "runtimeDependenciesAdded": false,
+  "encoding": "UTF-8 with LF line endings"
 }

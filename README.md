@@ -1,6 +1,8 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [lectura y navegación móvil por áreas](docs/navegacion-movil/INFORME.md), con conservación de servicios, revisión visual y controles de calidad.
+**Revisión vigente:** [paquete de marca y favicon trazado](docs/identidad-marca/INFORME.md), coherente con Source Serif 4 y con formatos alternativos de navegador.
+
+Navegación por áreas: [lectura y navegación móvil](docs/navegacion-movil/INFORME.md).
 
 Herramientas de calidad: [Lighthouse CI, axe-core y Open Props](docs/auditoria-herramientas/INFORME.md).
 

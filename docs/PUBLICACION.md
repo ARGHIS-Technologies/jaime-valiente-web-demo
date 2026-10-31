@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: lectura y navegación móvil por áreas
+## Revisión vigente: favicon coherente con la firma tipográfica
+
+Aplicación `1f8d0303c9439095cc2a138c5c90f236f1c08b77`, publicada correctamente por [Actions 41238733084](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41238733084). Favicon J trazado desde Source Serif 4, con alternativas ICO, PNG y táctil. Lighthouse conserva medianas 100 en rendimiento, accesibilidad automática y buenas prácticas en cinco páginas por tres ejecuciones. Axe: 28 estados, cero infracciones y cero incompletos nuevos. Los 42 archivos públicos coinciden por SHA256 con el build final. [Informe y capturas](identidad-marca/INFORME.md).
+
+## Registro histórico: lectura y navegación móvil por áreas
 
 Aplicación `2685c51e8ff395940eac4bf8141232c7974eb89e`, publicada correctamente por [Actions 41234155673](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41234155673). Conserva 33 servicios y añade un índice móvil plegable en Particulares y Empresas. Lighthouse, cinco páginas por tres ejecuciones: medianas 100 en rendimiento, accesibilidad automática y buenas prácticas. Axe: 28 estados, cero infracciones, un incompleto conocido revisado. Los 39 archivos públicos coinciden por SHA256 con el build y se verificaron los dos recorridos móviles en la URL pública. [Informe vigente y evidencias](navegacion-movil/INFORME.md).
 

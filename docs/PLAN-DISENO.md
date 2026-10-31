@@ -65,3 +65,7 @@ Se aplican dos curvas seleccionadas de Open Props, con licencia local, a estilos
 ## Lectura y navegación por áreas — revisión 9
 
 Se eliminan introducciones que duplicaban las listas de servicios y se acortan cabeceras y Reclamaciones, conservando 33 servicios y cuatro ámbitos de reclamación. Particulares y Empresas incorporan un índice móvil nativo, plegable y fijo bajo la cabecera durante la lectura de servicios. Sin dependencias nuevas, con foco nativo, Escape y movimiento reducido. Ver [evidencia y revisión](navegacion-movil/INFORME.md). Las pruebas con usuarios reales quedan pendientes.
+
+## Paquete de marca y favicon — revisión 10
+
+Se exportan cuatro variantes de firma en SVG trazado y PNG transparente, con su paquete de uso y manual. El favicon J se unifica con Source Serif 4 y se publican alternativas ICO, PNG y táctil de 180 px. La cabecera mantiene texto accesible. Sin cambios de arquitectura o contenido. [Informe y evidencia](identidad-marca/INFORME.md).
