@@ -1,0 +1,30 @@
+---
+// Phosphor Icons, regular weight, MIT. Provenance and license are kept with the assets.
+import ArrowRight from '../assets/icons/phosphor/arrow-right.svg';
+import CaretRight from '../assets/icons/phosphor/caret-right.svg';
+import ArrowDown from '../assets/icons/phosphor/arrow-down.svg';
+import ArrowUp from '../assets/icons/phosphor/arrow-up.svg';
+import ArrowSquareOut from '../assets/icons/phosphor/arrow-square-out.svg';
+import Phone from '../assets/icons/phosphor/phone.svg';
+import EnvelopeSimple from '../assets/icons/phosphor/envelope-simple.svg';
+import ChatCircleDots from '../assets/icons/phosphor/chat-circle-dots.svg';
+import MapPin from '../assets/icons/phosphor/map-pin.svg';
+import FolderSimple from '../assets/icons/phosphor/folder-simple.svg';
+import FileText from '../assets/icons/phosphor/file-text.svg';
+import Info from '../assets/icons/phosphor/info.svg';
+import Plus from '../assets/icons/phosphor/plus.svg';
+import List from '../assets/icons/phosphor/list.svg';
+import X from '../assets/icons/phosphor/x.svg';
+
+const icons = {
+  'arrow-right': ArrowRight, 'caret-right': CaretRight,
+  'arrow-down': ArrowDown, 'arrow-up': ArrowUp, 'arrow-square-out': ArrowSquareOut,
+  phone: Phone, 'envelope-simple': EnvelopeSimple, 'chat-circle-dots': ChatCircleDots,
+  'map-pin': MapPin, 'folder-simple': FolderSimple, 'file-text': FileText,
+  info: Info, plus: Plus, list: List, x: X,
+};
+interface Props { name: keyof typeof icons; size?: number; class?: string; }
+const { name, size = 20, class: className = '' } = Astro.props;
+const Glyph = icons[name];
+---
+<Glyph class:list={['icon', className]} width={size} height={size} aria-hidden="true" focusable="false" data-icon={name} />

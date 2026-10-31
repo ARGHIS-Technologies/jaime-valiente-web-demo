@@ -53,6 +53,7 @@ p {
 .client-link {
   border-left: 1px solid var(--line);
   padding-left: 22px;
+  gap: 8px;
 }
 .eyebrow {
   margin-bottom: 19px;
@@ -149,7 +150,9 @@ p {
   line-height: 1.6;
 }
 .hero-index-note a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 7px 0;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -233,6 +236,20 @@ p {
 .office h3 {
   font-size: 34px;
   margin-bottom: 20px;
+}
+.office-heading {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.office .office-heading h3 {
+  margin: 0;
+  min-width: 0;
+}
+.office-heading .icon {
+  margin-top: 6px;
+  color: var(--bronze-text);
 }
 .office address {
   flex: 1;
@@ -381,6 +398,18 @@ p {
 .footer-intro {
   margin-top: 24px;
 }
+.footer-col .footer-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
+.footer-action .icon {
+  color: #d0c4ac;
+}
+.footer-bottom .back-top {
+  gap: 8px;
+}
 .mobile-navigation {
   box-shadow: none;
   border-bottom: 1px solid #aeb6aa;
@@ -418,8 +447,6 @@ p {
   content: '';
 }
 .disclosure-icon {
-  font-size: 24px;
-  font-weight: 400;
   transition: transform 180ms ease;
 }
 .verification-disclosure[open] .disclosure-icon {
@@ -450,6 +477,15 @@ p {
 }
 .contact-channel {
   padding-block: 21px;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) auto;
+  gap: 14px;
+}
+.contact-symbol {
+  color: #d7c6ab;
+}
+.external-symbol {
+  transition: transform 180ms ease;
 }
 .contact-channel strong {
   font-size: 26px;
@@ -493,6 +529,7 @@ p {
 }
 .client-panel {
   grid-area: panel;
+  min-width: 0;
 }
 .client-support .client-future {
   margin-top: 0;
@@ -516,12 +553,25 @@ p {
 .client-panel h2 {
   font-size: 35px;
 }
+.client-document-title {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+.client-document-title .icon {
+  margin-top: 5px;
+  color: #d7c6ab;
+}
+.client-panel .client-document-title h2 {
+  margin-bottom: 0;
+}
 .client-panel .button {
   width: 100%;
   padding-inline: 16px;
   gap: 12px;
   text-align: left;
-  justify-content: space-between;
+  justify-content: start;
 }
 .client-panel .status-label {
   margin-bottom: 25px;
@@ -576,10 +626,10 @@ p {
 .hero-secondary:hover {
   border-color: var(--green);
 }
-.hero-secondary span {
+.hero-secondary .hero-direction {
   transition: transform 180ms ease;
 }
-.hero-secondary:hover span {
+.hero-secondary:hover .hero-direction {
   transform: translateY(3px);
 }
 .services-section {
@@ -1180,6 +1230,9 @@ p {
     font-size: 30px;
     margin-bottom: 16px;
   }
+  .office-heading {
+    margin-bottom: 16px;
+  }
   .office + .office {
     border-top: 1px solid var(--bronze);
   }
@@ -1428,12 +1481,19 @@ p {
   .contact-channel strong {
     font-size: 20px;
   }
-  .contact-channel .arrow {
-    width: 20px;
-    height: 20px;
-  }
   .client-panel {
     padding-inline: 20px;
+  }
+  .client-document-title {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .client-panel h2 {
+    font-size: 29px;
+  }
+  .client-link .icon {
+    width: 16px;
+    height: 16px;
   }
   .client-panel .button {
     font-size: 14px;
@@ -1443,7 +1503,7 @@ p {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-secondary span, .hero-index .arrow, .practice-group .arrow {
+  .hero-secondary .hero-direction, .hero-index .arrow, .practice-group .arrow {
     transform: none !important;
   }
 }

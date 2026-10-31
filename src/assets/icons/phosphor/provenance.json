@@ -1,0 +1,84 @@
+{
+  "repository": "https://github.com/phosphor-icons/core",
+  "commit": "2b75f3ad12b420c9504ef05df8d2564a28f8500e",
+  "weight": "regular",
+  "license": "MIT",
+  "licenseFile": "public/licenses/phosphor-icons.txt",
+  "assets": [
+    {
+      "name": "arrow-right",
+      "bytes": 245,
+      "sha256": "e45bc4a12592b8723110db42c6deffdf177e4fe7704cf50324963fa0a59b2d74"
+    },
+    {
+      "name": "caret-right",
+      "bytes": 219,
+      "sha256": "e6dec01e074807965b7f3146b976a9b5e82c31d9c2c88aeb52e77cc2ab16c1d7"
+    },
+    {
+      "name": "arrow-down",
+      "bytes": 239,
+      "sha256": "cc6416ae83e20660f14b11f5525c6d05ee679c3f26cee41b696cb37aa905d4f5"
+    },
+    {
+      "name": "arrow-up",
+      "bytes": 257,
+      "sha256": "361aa9f9c52a759bf598faf6ed38ccd426f949f541d662c65b5b5d868fa76980"
+    },
+    {
+      "name": "arrow-square-out",
+      "bytes": 347,
+      "sha256": "8610e8f5c7d4952ae1ada34ef56fa7cbab1780bc85f25a5c9482b74144790fc8"
+    },
+    {
+      "name": "phone",
+      "bytes": 709,
+      "sha256": "a6eaa18b76ebeff885aad0eff89dc286a659f263bea801359a6fe2d15cde24f8"
+    },
+    {
+      "name": "envelope-simple",
+      "bytes": 282,
+      "sha256": "f114441afbd3c3da8aee24ba4cddea1576cf55aa304eb507410fca494c8ee169"
+    },
+    {
+      "name": "chat-circle-dots",
+      "bytes": 473,
+      "sha256": "2af44e36757c90c999e070065ae61c495c66c8e88f43c5f07964dc3367cad60d"
+    },
+    {
+      "name": "map-pin",
+      "bytes": 459,
+      "sha256": "523f024fa467fc285d95c1db4ed6c32b640513c79780d14310bebf342b6f94fb"
+    },
+    {
+      "name": "folder-simple",
+      "bytes": 304,
+      "sha256": "64d0a5a5a35582fc369e5723b6f4095cfa581402d070108ff328befdd29b06d7"
+    },
+    {
+      "name": "file-text",
+      "bytes": 416,
+      "sha256": "9a580a038cce9f6dd223597864abe1b5c5c03bf8176d2f7171574598468b16f7"
+    },
+    {
+      "name": "info",
+      "bytes": 348,
+      "sha256": "438a1f319d53d86e840af73fb7b1d224c9224a437b9fa449a4e2cb45a82a3552"
+    },
+    {
+      "name": "plus",
+      "bytes": 212,
+      "sha256": "d688feb9dd2e41c1721d6906a05a2a42e18cd774762fe706d72b2bdfd91cddc4"
+    },
+    {
+      "name": "list",
+      "bytes": 253,
+      "sha256": "fb1851842c74b40a3f42ce3d6ae0e67ede556b624218e79c0f4ead7d9ceec51f"
+    },
+    {
+      "name": "x",
+      "bytes": 284,
+      "sha256": "7397b15e1fa66eaf6ff9b59fe91d483cb5c3bcf75b2fe052097ab6f0593b513a"
+    }
+  ]
+}

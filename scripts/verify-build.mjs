@@ -10,7 +10,7 @@ async function walk(dir) { for (const item of await readdir(dir, {withFileTypes:
 await walk(root);
 for (const route of expected) assert.ok(files.includes(path.join(root,route,'index.html')),`Missing route ${route}`);
 assert.ok(files.includes(path.join(root,'404.html')),'Missing 404.html');
-let references=0;
+let references=0, icons=0;
 for (const file of files.filter(f=>f.endsWith('.html'))) {
  const html=await readFile(file,'utf8');
  assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`Exactly one H1 in ${file}`);
@@ -19,6 +19,13 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
  assert.doesNotMatch(html,/script\.google\.com|AKfycb|GTM-|G-[A-Z0-9]{7,}/,`No Apps Script or analytics ${file}`);
  assert.match(html,/Demo de diseño/,`Demo label ${file}`);
+ for(const match of html.matchAll(/<svg\b[^>]*>/g)) {
+  icons++;
+  assert.match(match[0], /aria-hidden="true"/, `Decorative icon excluded from accessibility tree in ${file}`);
+  assert.match(match[0], /focusable="false"/, `Decorative SVG must not receive focus in ${file}`);
+  assert.match(match[0], /viewBox="0 0 256 256"/, `Consistent Phosphor geometry in ${file}`);
+  assert.match(match[0], /data-icon="[a-z-]+"/, `Named local icon in ${file}`);
+ }
  const fontPreloads=[...html.matchAll(/<link\b[^>]*rel="preload"[^>]*>/g)].map(match=>match[0]).filter(tag=>tag.includes('as="font"'));
  assert.equal(fontPreloads.length,2,`Two critical font preloads in ${file}`);
  for(const tag of fontPreloads) assert.match(tag,/type="font\/woff2"[^>]*crossorigin="anonymous"/,`Font format and credentials mode in ${file}`);
@@ -44,5 +51,8 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  }
 }
 const sizes={html:0,css:0,js:0,fonts:0};
+const iconLicense=await readFile(path.join(root,'licenses/phosphor-icons.txt'),'utf8');
+assert.match(iconLicense,/MIT License/);
+assert.match(iconLicense,/Copyright.*Phosphor Icons/);
 for(const file of files){ const size=(await stat(file)).size; if(file.endsWith('.html'))sizes.html+=size; if(file.endsWith('.css'))sizes.css+=size; if(file.endsWith('.js'))sizes.js+=size; if(file.endsWith('.woff2'))sizes.fonts+=size; }
-console.log(JSON.stringify({status:'passed',pages:expected.length+1,localReferencesChecked:references,bytesUncompressed:sizes},null,2));
+console.log(JSON.stringify({status:'passed',pages:expected.length+1,localReferencesChecked:references,decorativeIconsChecked:icons,iconLicenseIncluded:true,bytesUncompressed:sizes},null,2));

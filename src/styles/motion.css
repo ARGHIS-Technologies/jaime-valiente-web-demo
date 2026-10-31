@@ -50,8 +50,8 @@
   .button:active {
     transform: translateY(1px);
   }
-  .contact-channel:hover .arrow {
-    transform: translateX(4px);
+  .contact-channel:hover .external-symbol {
+    transform: translate(2px, -2px);
   }
 }
 .client-link:hover {
