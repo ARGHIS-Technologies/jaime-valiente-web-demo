@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: refinamiento editorial
+## Revisión vigente: dirección de arte y contraste
+
+Aplicación `8bd60e529624d42e1a715cc5478bfe427c8b6d7c`, publicada correctamente por [Actions 41204893433](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41204893433). Los 22 archivos públicos coinciden por SHA256 con la salida revisada. Recorridos de particulares, empresas y clientes comprobados sin nuevas incidencias. Ver [informe vigente y capturas](direccion-arte/INFORME.md).
+
+## Registro histórico: refinamiento editorial
 
 Aplicación `b6c14475c776e8ff69b2ea9544f3bb29df8d7851`, publicada correctamente por [Actions 41193991168](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41193991168). Se comprobaron los 22 archivos públicos por HTTP y SHA256, la página 404 y los recorridos públicos. Ver [informe y evidencias actuales](refinamiento/INFORME.md).
 

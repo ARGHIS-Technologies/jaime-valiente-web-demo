@@ -1,0 +1,49 @@
+{
+  "since": "2026-10-31T13:20:18.616Z",
+  "checks": [
+    {
+      "fonts": "loading",
+      "greenAccess": "rgb(36, 61, 58)",
+      "h1": "Tu abogado,\nen Cádiz y Arcos.",
+      "page": "Inicio escritorio"
+    },
+    {
+      "h1": "Servicios jurídicos para particulares.",
+      "page": "Particular: familia y sucesiones",
+      "target": "Familia\ny sucesiones"
+    },
+    {
+      "h1": "Asesoramiento para empresas y autónomos.",
+      "page": "Empresa: contable y fiscal",
+      "target": "Contable y fiscal"
+    },
+    {
+      "expanded": "true",
+      "focus": "01Inicio↗",
+      "page": "Menú móvil después de acceder a una especialidad"
+    },
+    {
+      "forms": 0,
+      "h1": "Área de clientes.",
+      "page": "Clientes móvil",
+      "state": "DEMO · ACCESO NO HABILITADO"
+    },
+    {
+      "channels": [
+        "tel:+34692203087",
+        "mailto:jvalientea@gmail.com",
+        "https://wa.me/34692203087"
+      ],
+      "fonts": "loaded",
+      "page": "Contacto móvil"
+    },
+    {
+      "client": 375,
+      "fonts": "loaded",
+      "h1": "Tu abogado,\nen Cádiz y Arcos.",
+      "page": "Inicio móvil al completar la carga",
+      "scroll": 375
+    }
+  ],
+  "logs": []
+}

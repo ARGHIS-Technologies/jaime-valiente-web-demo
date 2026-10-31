@@ -76,7 +76,7 @@ Las capturas permanecen en documentación y quedan fuera del artefacto publicado
 
 ## Comparativas y pendientes
 
-[Inicio en escritorio](comparativa-inicio-1440.jpg) · [Inicio en móvil](comparativa-inicio-390.jpg)
+[Inicio en escritorio](comparativa-inicio-1440.jpg) · [Inicio en móvil](comparativa-inicio-390.jpg) · [Composición completa anterior y actual](comparativa-inicio-completa.jpg)
 
 La nueva dirección tiene más contraste, identifica antes al abogado y permite entrar en especialidades desde Inicio. La guía móvil contiene más información útil; la decisión de diseño se apoya en esa orientación y no en una reducción global de longitud.
 
@@ -84,4 +84,12 @@ Siguen pendientes los datos profesionales y legales, la vigencia de contactos y 
 
 ## Publicación
 
-La ejecución y comprobación públicas se documentarán al completarse el despliegue de esta revisión. Se publicará exclusivamente en el repositorio personal de mmlab-dev.
+Aplicación publicada: `8bd60e529624d42e1a715cc5478bfe427c8b6d7c`.
+
+[Actions 41204893433](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41204893433) completó build y deploy con éxito; incluye comprobación de tipos, construcción, enlaces y movimiento reducido. [Estado registrado](despliegue.json).
+
+Los 22 archivos públicos —once páginas y todos los recursos estáticos— devuelven HTTP 200 y coinciden por SHA256 con el build local. La ruta de prueba inexistente devuelve 404 y la página personalizada. [Verificación pública](publicacion.json).
+
+Se comprobaron en la demo pública Inicio, las rutas directas a familia/sucesiones y contable/fiscal, el menú móvil después de navegar a una especialidad, Clientes y Contacto. Fuentes cargadas al completar la revisión y ausencia de nuevos errores o advertencias en ese recorrido. No se iniciaron llamadas ni se enviaron mensajes o documentos. [Recorridos públicos](navegacion-publica.json), con capturas `publico-*.jpg`.
+
+El repositorio y el despliegue pertenecen a la cuenta personal mmlab-dev. Los commits posteriores que solo registran documentación y capturas no cambian la aplicación identificada arriba. La web real y su dominio permanecen sin modificaciones.
