@@ -54,5 +54,8 @@ const sizes={html:0,css:0,js:0,fonts:0};
 const iconLicense=await readFile(path.join(root,'licenses/phosphor-icons.txt'),'utf8');
 assert.match(iconLicense,/MIT License/);
 assert.match(iconLicense,/Copyright.*Phosphor Icons/);
+const motionLicense=await readFile(path.join(root,'licenses/open-props.txt'),'utf8');
+assert.match(motionLicense,/MIT License/);
+assert.match(motionLicense,/Adam Argyle/);
 for(const file of files){ const size=(await stat(file)).size; if(file.endsWith('.html'))sizes.html+=size; if(file.endsWith('.css'))sizes.css+=size; if(file.endsWith('.js'))sizes.js+=size; if(file.endsWith('.woff2'))sizes.fonts+=size; }
 console.log(JSON.stringify({status:'passed',pages:expected.length+1,localReferencesChecked:references,decorativeIconsChecked:icons,iconLicenseIncluded:true,bytesUncompressed:sizes},null,2));

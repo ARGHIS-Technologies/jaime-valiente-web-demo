@@ -25,10 +25,29 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: npm audit --audit-level=high
       - run: npm run check
       - run: npm run build
       - run: npm run verify
       - run: npm run verify:motion
+      - name: Locate Chrome for isolated quality audits
+        run: |
+          quality_chrome="$(command -v google-chrome || command -v chromium)"
+          test -n "$quality_chrome"
+          echo "CHROME_PATH=$quality_chrome" >> "$GITHUB_ENV"
+      - name: Lighthouse and axe quality gates
+        run: npm run audit:quality
+      - name: Preserve quality reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: quality-reports
+          path: |
+            .quality/summary.json
+            .quality/axe.json
+            .lighthouseci/
+          include-hidden-files: true
+          retention-days: 14
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: dist

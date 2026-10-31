@@ -1,0 +1,51 @@
+// Lighthouse CI audit hook. This dedicated headless fixture never uses the user's browser.
+const { writeFile } = require('node:fs/promises');
+const axePackage = require('axe-core/package.json');
+let audited = false;
+const routes = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/', '404.html'];
+
+module.exports = async (browser, { url }) => {
+  if (audited) return;
+  const origin = new URL(url).origin;
+  const results = [];
+  const page = await browser.newPage();
+  async function check(route, width, state) {
+    const result = await page.evaluate(async () => {
+      const result = await window.axe.run(document, {
+        runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'] },
+        resultTypes: ['violations', 'incomplete'],
+      });
+      const compact = rows => rows.map(r => ({ id: r.id, impact: r.impact, help: r.help, helpUrl: r.helpUrl, nodes: r.nodes.map(n => ({ target: n.target, html: n.html, failureSummary: n.failureSummary })) }));
+      return { violations: compact(result.violations), incomplete: compact(result.incomplete) };
+    });
+    results.push({ route, width, state, ...result });
+  }
+  try {
+    for (const width of [390, 1440]) {
+      await page.setViewport({ width, height: width === 390 ? 844 : 1000, deviceScaleFactor: 1 });
+      for (const route of routes) {
+        await page.goto(`${origin}/jaime-valiente-web-demo/${route}`, { waitUntil: 'networkidle0' });
+        await page.evaluate(async () => {
+          await document.fonts.ready;
+          await Promise.all(document.getAnimations().map(a => a.finished.catch(() => {})));
+        });
+        await page.addScriptTag({ path: require.resolve('axe-core/axe.min.js') });
+        await check(route, width, 'default');
+        if (width === 390 && route === '') {
+          await page.click('#menu-toggle');
+          await page.waitForFunction(() => document.querySelector('#menu-toggle').getAttribute('aria-expanded') === 'true');
+          await check(route, width, 'menu-open');
+        }
+        if (width === 390 && route === 'el-despacho/') {
+          await page.click('summary');
+          await check(route, width, 'professional-details-open');
+        }
+      }
+    }
+    await writeFile('.quality/axe.json', JSON.stringify({ engine: `axe-core ${axePackage.version}`, results }, null, 2));
+    audited = true;
+    console.log(`axe-core: ${results.length} page states checked`);
+  } finally {
+    await page.close();
+  }
+};

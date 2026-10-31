@@ -12,6 +12,9 @@ const script = async file => {
 };
 const header = await script('src/components/Header.astro');
 const reveal = await script('src/components/Reveal.astro');
+const tokenSource = await readFile('src/styles/tokens.css', 'utf8');
+const motionTokens = Object.fromEntries([...tokenSource.matchAll(/(--motion-[\w-]+):\s*([^;]+);/g)].map(m => [m[1], m[2]]));
+let lastEasing;
 let animations = 0, observers = 0, focus = false;
 class TestNode { constructor(insideHeader = false) { this.insideHeader = insideHeader; } }
 const events = {}, attributes = { 'aria-expanded': 'false' };
@@ -25,12 +28,13 @@ const menu = {
   hidden: true, inert: true,
   style: {},
   getBoundingClientRect: () => ({ top: 110 }),
-  animate: () => { animations++; return { cancel() {} }; },
+  animate: (_frames, options) => { animations++; lastEasing = options.easing; return { cancel() {} }; },
   querySelectorAll: () => [],
 };
 const reduced = { matches: true, addEventListener() {} };
 const context = {
   Node: TestNode,
+  getComputedStyle: () => ({ getPropertyValue: key => motionTokens[key] || '' }),
   window: { innerHeight: 480, addEventListener: (key, handler) => { events[`window:${key}`] = handler; }, matchMedia: query => query.includes('reduced-motion') ? reduced : { matches: false, addEventListener() {} } },
   document: {
     querySelector: selector => selector === '#menu-toggle' ? toggle : selector === '#mobile-navigation' ? menu : selector === '.site-header' ? { contains: target => target.insideHeader } : null,
@@ -71,6 +75,7 @@ events['document:focusin']({ target: new TestNode() });
 assert.equal(menu.hidden, true);
 assert.equal(attributes['aria-expanded'], 'false');
 assert.equal(animations, 1);
+assert.equal(lastEasing, motionTokens['--motion-enter']);
 assert.equal(focus, false);
 reduced.matches = true;
 // A separate context mirrors a separate module scope.

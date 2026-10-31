@@ -26,13 +26,13 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .section-entering {
-    animation: section-enter 320ms cubic-bezier(.2,.65,.3,1) both;
+    animation: section-enter 320ms var(--motion-enter) both;
   }
   .home-hero.section-entering {
     animation: none;
   }
   .home-hero.section-entering .hero-copy > :is(h1, .home-intro, .hero-buttons) {
-    animation: hero-copy-enter 240ms cubic-bezier(.2,.65,.3,1) both;
+    animation: hero-copy-enter 240ms var(--motion-enter) both;
     animation-delay: var(--hero-enter-delay);
   }
   .home-hero.section-entering h1 {
@@ -45,7 +45,7 @@
     --hero-enter-delay: 90ms;
   }
   .button {
-    transition: background 180ms ease, color 180ms ease, transform 160ms ease;
+    transition: background 180ms var(--motion-ui), color 180ms var(--motion-ui), transform 160ms var(--motion-ui);
   }
   .button:active {
     transform: translateY(1px);

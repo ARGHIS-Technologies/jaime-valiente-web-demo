@@ -106,7 +106,7 @@ main:focus {
 }
 .arrow {
   flex: none;
-  transition: transform .2s;
+  transition: transform .2s var(--motion-ui);
 }
 .button {
   padding: 14px 24px;
@@ -116,7 +116,7 @@ main:focus {
   font-size: 16px;
   font-weight: 600;
   border: 1px solid transparent;
-  transition: background .2s,color .2s;
+  transition: background .2s var(--motion-ui),color .2s var(--motion-ui);
 }
 .button:hover .arrow,.text-link:hover .arrow {
   transform: translateX(4px);
@@ -253,7 +253,7 @@ main:focus {
   background: var(--bronze);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform .2s;
+  transition: transform .2s var(--motion-ui);
 }
 .nav-link:hover:after,.nav-link.is-current:after {
   transform: scaleX(1);

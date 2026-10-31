@@ -66,7 +66,7 @@ p {
 .text-link {
   position: relative;
   border-bottom-color: #a5ada0;
-  transition: border-color 180ms ease;
+  transition: border-color 180ms var(--motion-ui);
 }
 .text-link::after {
   content: '';
@@ -77,7 +77,7 @@ p {
   background: currentColor;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 200ms ease;
+  transition: transform 200ms var(--motion-ui);
 }
 .text-link:hover::after, .text-link:focus-visible::after {
   transform: scaleX(1);
@@ -447,7 +447,7 @@ p {
   content: '';
 }
 .disclosure-icon {
-  transition: transform 180ms ease;
+  transition: transform 180ms var(--motion-ui);
 }
 .verification-disclosure[open] .disclosure-icon {
   transform: rotate(45deg);
@@ -485,7 +485,7 @@ p {
   color: #d7c6ab;
 }
 .external-symbol {
-  transition: transform 180ms ease;
+  transition: transform 180ms var(--motion-ui);
 }
 .contact-channel strong {
   font-size: 26px;
@@ -627,7 +627,7 @@ p {
   border-color: var(--green);
 }
 .hero-secondary .hero-direction {
-  transition: transform 180ms ease;
+  transition: transform 180ms var(--motion-ui);
 }
 .hero-secondary:hover .hero-direction {
   transform: translateY(3px);

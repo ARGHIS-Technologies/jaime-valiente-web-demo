@@ -1,0 +1,7 @@
+/* Open Props (MIT), selected easing tokens.
+   Source: https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.easing.js
+   Copyright (c) 2021 Adam Argyle. License: public/licenses/open-props.txt */
+:root {
+  --motion-ui: cubic-bezier(.25, 0, .3, 1);
+  --motion-enter: cubic-bezier(0, 0, .3, 1);
+}
