@@ -1,0 +1,35 @@
+{
+  "since": "2026-10-31T15:24:53.611Z",
+  "checks": [
+    {
+      "fontPreloads": 2,
+      "fonts": "loaded",
+      "h1": "Tu abogado,\nen Cádiz y Arcos.",
+      "page": "Inicio escritorio"
+    },
+    {
+      "focus": "SUMMARY",
+      "open": true,
+      "page": "Información profesional",
+      "pendingItems": 4
+    },
+    {
+      "expanded": "false",
+      "focus": "Solicitar consulta",
+      "hidden": true,
+      "page": "Salida del menú con Tab"
+    },
+    {
+      "focus": "menu-toggle",
+      "hidden": true,
+      "page": "Escape del menú"
+    },
+    {
+      "activeId": "canales",
+      "headerBottom": 78.80000305175781,
+      "page": "Contacto desde Cádiz",
+      "top": 101.20598602294922
+    }
+  ],
+  "logs": []
+}

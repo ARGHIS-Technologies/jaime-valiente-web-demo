@@ -91,4 +91,12 @@ La recomendación es aprobar esta dirección sobre la arquitectura existente y c
 
 ## Publicación
 
-El despliegue y la comprobación pública de esta revisión se registrarán al completarse. Solo se actualizará el repositorio personal de mmlab-dev.
+Aplicación publicada: `ee1d4ebc7e794ec14a0095393667056b99dffb65`.
+
+[Actions 41214508787](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41214508787) completó build y deploy con éxito, incluyendo tipos, construcción, verificación de salida y regresión de movimiento/menú. [Registro](despliegue.json).
+
+Los 22 archivos públicos coinciden por SHA256 con la salida local y devuelven HTTP 200. Una ruta de prueba inexistente devuelve HTTP 404 con la página personalizada. [Comprobación pública](publicacion.json).
+
+En el navegador público se comprobaron las dos precargas de fuentes y su carga completa; el desplegable de información profesional con teclado; la salida del menú por Tab; Escape y devolución de foco; y el enlace desde Cádiz a los canales de Contacto, con foco y destino visibles bajo la cabecera. Sin nuevas incidencias en el registro consultado durante ese recorrido. [Navegación pública](navegacion-publica.json) y capturas `publico-*.jpg`.
+
+Solo se ha actualizado el repositorio personal de mmlab-dev. Los commits posteriores de documentación no cambian la aplicación identificada arriba. La web real, sus DNS y su canal documental no se modifican.

@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: dirección de arte y contraste
+## Revisión vigente: auditoría integral y correcciones
+
+Aplicación `ee1d4ebc7e794ec14a0095393667056b99dffb65`, publicada correctamente por [Actions 41214508787](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41214508787). Los 22 archivos públicos coinciden por SHA256 con el build. Comprobados en la demo pública el menú por Tab/Escape, el foco en Contacto y el desplegable profesional. [Informe vigente](auditoria-integral/INFORME.md).
+
+## Registro histórico: dirección de arte y contraste
 
 Aplicación `8bd60e529624d42e1a715cc5478bfe427c8b6d7c`, publicada correctamente por [Actions 41204893433](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41204893433). Los 22 archivos públicos coinciden por SHA256 con la salida revisada. Recorridos de particulares, empresas y clientes comprobados sin nuevas incidencias. Ver [informe vigente y capturas](direccion-arte/INFORME.md).
 
