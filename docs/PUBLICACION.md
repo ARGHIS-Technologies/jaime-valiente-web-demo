@@ -1,6 +1,12 @@
-# Publicación verificada de la demo
+# Publicaciones verificadas de la demo
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
+
+## Revisión vigente: refinamiento editorial
+
+Aplicación `b6c14475c776e8ff69b2ea9544f3bb29df8d7851`, publicada correctamente por [Actions 41193991168](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41193991168). Se comprobaron los 22 archivos públicos por HTTP y SHA256, la página 404 y los recorridos públicos. Ver [informe y evidencias actuales](refinamiento/INFORME.md).
+
+## Registro histórico: primera entrega
 
 - **Demo:** https://mmlab-dev.github.io/jaime-valiente-web-demo/
 - **Repositorio personal público:** https://github.com/mmlab-dev/jaime-valiente-web-demo

@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "brand": "Jaime ValienteALEMÁN · ABOGADO",
+      "fonts": "loaded",
+      "h1": "Asesoramiento para empresas y autónomos.",
+      "page": "Empresas escritorio"
+    },
+    {
+      "channels": [
+        "tel:+34692203087",
+        "mailto:jvalientea@gmail.com",
+        "https://wa.me/34692203087"
+      ],
+      "h1": "Hablemos\nde tu consulta.",
+      "page": "Contacto móvil"
+    },
+    {
+      "headerBottom": 78.80000305175781,
+      "page": "Ancla de canales tras finalizar el desplazamiento",
+      "top": 224.6750030517578
+    },
+    {
+      "forms": 0,
+      "h1": "Área de clientes.",
+      "page": "Clientes móvil",
+      "state": "DEMO · ACCESO NO HABILITADO"
+    }
+  ],
+  "publicLogs": []
+}

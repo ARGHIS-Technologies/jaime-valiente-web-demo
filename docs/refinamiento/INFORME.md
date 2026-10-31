@@ -138,4 +138,12 @@ Quedan fuera de esta comprobación Safari, dispositivos físicos, un lector de p
 
 ## Publicación
 
-El resultado del despliegue y la comprobación de las rutas públicas se añadirán aquí tras completarse. Se mantendrá el dominio real al margen de esta demo.
+Aplicación publicada: `b6c14475c776e8ff69b2ea9544f3bb29df8d7851`.
+
+[GitHub Actions 41193991168](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41193991168): build y deploy completados con éxito; incluye comprobación de tipos, construcción, enlaces y movimiento reducido. Evidencia: [despliegue.json](despliegue.json).
+
+Las once páginas y todos los recursos de la salida estática —22 archivos en total— devuelven HTTP 200 y coinciden por SHA256 con el build revisado. Una ruta inexistente devuelve 404 con la página personalizada. Evidencia: [publicacion.json](publicacion.json).
+
+En el navegador público se comprobó Inicio a 1440, Empresas a 1440, menú móvil hacia Contacto, destinos de teléfono/correo/WhatsApp, enlace de oficinas a los canales y Área de clientes sin formularios. Los canales quedan visibles por debajo de la cabecera al completar el desplazamiento. Fuentes cargadas y marca completa verificadas. Evidencia: [navegacion-publica.json](navegacion-publica.json) y capturas `publico-*.jpg`.
+
+GitHub Pages mantiene HTTPS, publicación por workflow y `cname: null`. Se ha usado exclusivamente el repositorio personal de mmlab-dev. Los commits posteriores de documentación y capturas no cambian esta aplicación ni provocan un despliegue adicional. La web real y su dominio permanecen al margen de esta demo.
