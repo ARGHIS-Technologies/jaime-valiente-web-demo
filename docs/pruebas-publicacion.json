@@ -11,7 +11,7 @@
     {
       "route": "area-clientes/",
       "status": 200,
-      "bytes": 10085,
+      "bytes": 10100,
       "matchesLocalBuild": true
     },
     {
@@ -81,9 +81,9 @@
       "matchesLocalBuild": true
     },
     {
-      "route": "_astro/Layout.CT_rmBUH.css",
+      "route": "_astro/Layout.DQ7vjTXg.css",
       "status": 200,
-      "bytes": 31453,
+      "bytes": 31481,
       "matchesLocalBuild": true
     },
     {

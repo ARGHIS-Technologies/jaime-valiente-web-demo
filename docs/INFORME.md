@@ -40,7 +40,7 @@ Los datos pendientes de Jaime se detallan en `PENDIENTES.md`; las diferencias fr
 
 ## Publicación
 
-La publicación y sus comprobaciones públicas se registrarán en `PUBLICACION.md` tras completarse. El repositorio se limita al proyecto de la demo; no incluye credenciales, archivos de clientes, documentos del espacio de trabajo ni referencias de autenticación.
+La publicación y sus comprobaciones públicas constan en `PUBLICACION.md`. El repositorio se limita al proyecto de la demo; no incluye credenciales, archivos de clientes, documentos del espacio de trabajo ni referencias de autenticación.
 
 ## Revisión adicional del sistema de movimiento
 

@@ -1,0 +1,28 @@
+# Publicación verificada de la demo
+
+Fecha: 31 de octubre de 2026, Europe/Madrid.
+
+- **Demo:** https://mmlab-dev.github.io/jaime-valiente-web-demo/
+- **Repositorio personal público:** https://github.com/mmlab-dev/jaime-valiente-web-demo
+- **Propietario confirmado:** `mmlab-dev`, tipo de cuenta `User`. La selección fue confirmada por el usuario antes de crear el repositorio.
+- **Versión de aplicación desplegada:** `4d344b87b2cfd9cb096c187b9586ad775faf39a8`.
+- **GitHub Actions:** https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41186264909
+- **Resultado:** trabajos `build` y `deploy` completados con `success`.
+
+El trabajo de build ejecutó correctamente `npm ci`, `npm run check`, `npm run build`, `npm run verify` y la carga del artefacto de Pages. El despliegue se realizó mediante GitHub Actions, con HTTPS y sin dominio personalizado (`cname: null`).
+
+## Comprobaciones públicas realizadas
+
+Se solicitaron las 11 páginas generadas y los recursos de la salida estática: 22 archivos en total, excluido el marcador `.nojekyll`. Todos devolvieron HTTP 200 y coincidieron por SHA256 con el build local. Esto incluye el CSS y los ocho ficheros de fuentes WOFF/WOFF2. Una ruta deliberadamente inexistente devolvió HTTP 404 y el contenido personalizado del despacho.
+
+Se abrió la demo pública en el navegador integrado y se comprobó la navegación de escritorio a Empresas, la apertura del menú móvil con teclado, el recorrido a Empresas y el acceso al Área de clientes. El aviso final de clientes se volvió a comprobar tras actualizar el navegador. Sin errores o advertencias en el registro consultado. No se enviaron formularios, mensajes, correos o documentos ni se iniciaron llamadas.
+
+Evidencias: `pruebas-publicacion.json`, `pruebas-navegacion-publica.json` y capturas `capturas/publico-inicio-1440.jpg` y `capturas/publico-inicio-390.jpg`. La matriz de 55 observaciones responsive y las capturas del resto de páginas están en esta misma carpeta.
+
+Los commits posteriores que solo actualizan este informe o capturas no cambian la aplicación ni provocan un despliegue adicional. La fuente de la aplicación y el workflow de despliegue quedan identificados por el commit y la ejecución anteriores.
+
+## Límites de la entrega
+
+Demo para revisión de diseño. Se mantienen los datos profesionales, operativos y legales pendientes de validar con Jaime. No se ha modificado la web real, sus DNS, su correo o el sistema documental. No se han usado repositorios de una organización. No hay backend, autenticación, recepción de documentos, analítica o servicios de pago en la demo.
+
+No se declara una auditoría WCAG completa, prueba en dispositivos físicos o puntuación Lighthouse. Consultar `INFORME.md`, `PENDIENTES.md`, `DESVIACIONES.md` y `PLAN-DISENO.md` para el alcance exacto.
