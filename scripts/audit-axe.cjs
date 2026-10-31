@@ -1,6 +1,8 @@
 // Lighthouse CI audit hook. This dedicated headless fixture never uses the user's browser.
 const { writeFile } = require('node:fs/promises');
 const axePackage = require('axe-core/package.json');
+const assert = require('node:assert/strict');
+const inventory = require('../docs/navegacion-movil/contenido-anterior.json');
 let audited = false;
 const routes = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/', '404.html'];
 
@@ -31,6 +33,33 @@ module.exports = async (browser, { url }) => {
         });
         await page.addScriptTag({ path: require.resolve('axe-core/axe.min.js') });
         await check(route, width, 'default');
+        if (inventory[route.replace('/', '')]) {
+          const items = await page.$$eval('.service-list li', nodes => nodes.map(n => n.textContent.trim()));
+          assert.deepEqual(items.sort(), [...inventory[route.replace('/', '')].items].sort(), `Preserved service inventory: ${route}`);
+        }
+        if (width === 390 && ['particulares/', 'empresas/'].includes(route)) {
+          const target = route === 'particulares/' ? 'penal' : 'contable-fiscal';
+          assert.equal(await page.$eval('.area-index-mobile', n => n.open), false);
+          await page.click('.area-index-mobile summary');
+          await check(route, width, 'area-index-open');
+          await page.click(`.area-index-mobile a[href="#${target}"]`);
+          await page.waitForFunction(id => document.activeElement?.id === id, {}, target);
+          const destination = await page.evaluate(id => ({
+            open: document.querySelector('.area-index-mobile').open,
+            top: document.getElementById(id).getBoundingClientRect().top,
+            bottom: document.querySelector('[data-area-index]').getBoundingClientRect().bottom,
+          }), target);
+          assert.equal(destination.open, false);
+          assert.ok(destination.top >= destination.bottom + 12, `Unobscured section: ${route}`);
+          await check(route, width, 'area-index-destination');
+          await page.click('.area-index-mobile summary');
+          await page.keyboard.press('Escape');
+          assert.equal(await page.$eval('.area-index-mobile', n => n.open), false);
+          assert.equal(await page.$eval('.area-index-mobile summary', n => n === document.activeElement), true);
+          await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
+          assert.equal(await page.$eval('.area-index-caret', n => getComputedStyle(n).transitionDuration), '0s');
+          await page.emulateMediaFeatures([]);
+        }
         if (width === 390 && route === '') {
           await page.click('#menu-toggle');
           await page.waitForFunction(() => document.querySelector('#menu-toggle').getAttribute('aria-expanded') === 'true');
@@ -42,6 +71,16 @@ module.exports = async (browser, { url }) => {
         }
       }
     }
+    // With scripts disabled the native disclosure stays in normal flow; links remain usable.
+    await page.setJavaScriptEnabled(false);
+    await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
+    await page.goto(`${origin}/jaime-valiente-web-demo/particulares/`, { waitUntil: 'networkidle0' });
+    await page.click('.area-index-mobile summary');
+    assert.equal(await page.$eval('.area-index-mobile', n => n.open), true);
+    await page.click('.area-index-mobile a[href="#penal"]');
+    assert.equal(new URL(page.url()).hash, '#penal');
+    assert.equal(await page.$eval('[data-area-index]', n => getComputedStyle(n).position), 'static');
+    await page.setJavaScriptEnabled(true);
     await writeFile('.quality/axe.json', JSON.stringify({ engine: `axe-core ${axePackage.version}`, results }, null, 2));
     audited = true;
     console.log(`axe-core: ${results.length} page states checked`);

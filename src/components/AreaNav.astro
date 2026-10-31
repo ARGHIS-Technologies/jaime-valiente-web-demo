@@ -1,0 +1,74 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  audience: 'particulares' | 'empresas';
+  areas: { id: string; label: string }[];
+}
+const { audience, areas } = Astro.props;
+---
+<aside class="area-index" data-area-index>
+  <nav class="area-nav area-index-desktop" aria-label={`Áreas para ${audience}`}>
+    <p>En esta página</p>
+    {areas.map(area => <a href={`#${area.id}`}>{area.label}</a>)}
+  </nav>
+  <details class="area-index-mobile">
+    <summary>Áreas de {audience}<Icon name="caret-right" size={18} class="area-index-caret" /></summary>
+    <nav aria-label={`Áreas para ${audience}`}>
+      {areas.map(area => <a href={`#${area.id}`}>{area.label}</a>)}
+    </nav>
+  </details>
+</aside>
+<style>
+  .area-index { position: sticky; top: 130px; align-self: start; }
+  .area-index .area-nav { position: static; }
+  .area-index-mobile { display: none; }
+  @media (max-width: 767px) {
+    .area-index { position: static; margin-bottom: 28px; }
+    .area-index[data-enhanced] { position: sticky; top: 79px; z-index: 20; }
+    .area-index-desktop { display: none; }
+    .area-index-mobile {
+      display: block; background: #e5eadd; color: var(--green);
+      border-top: 2px solid var(--green); border-bottom: 1px solid var(--green);
+      max-height: calc(100svh - 91px); overflow-y: auto;
+    }
+    summary {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      min-height: 51px; padding: 12px 18px; list-style: none;
+      cursor: pointer; font-size: 16px; font-weight: 600;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary :global(.area-index-caret) { flex: none; transform: rotate(90deg); transition: transform 150ms var(--motion-ui); }
+    details[open] summary :global(.area-index-caret) { transform: rotate(-90deg); }
+    .area-index-mobile a {
+      display: block; padding: 13px 18px; min-height: 48px;
+      border-top: 1px solid var(--line); font-size: 16px; line-height: 1.4;
+    }
+    .area-index-mobile a:hover { background: #dbe3d2; }
+    summary:focus-visible, .area-index-mobile a:focus-visible { outline: 2px solid var(--green); outline-offset: -4px; }
+    :global(html:has([data-area-index][data-enhanced])) { --anchor-offset: 154px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    summary :global(.area-index-caret) { transition: none; }
+  }
+</style>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-area-index]').forEach(index => {
+    const details = index.querySelector<HTMLDetailsElement>('details');
+    const summary = details?.querySelector('summary');
+    if (!details || !summary) return;
+    index.dataset.enhanced = '';
+    const close = () => { details.open = false; };
+    // Close before the native fragment jump, so its position uses the compact index.
+    details.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+    details.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && details.open) { close(); summary.focus(); }
+    });
+    document.addEventListener('focusin', event => {
+      if (event.target instanceof Node && !index.contains(event.target)) close();
+    });
+    document.addEventListener('pointerdown', event => {
+      if (event.target instanceof Node && !index.contains(event.target)) close();
+    });
+    window.matchMedia('(min-width: 768px)').addEventListener('change', close);
+  });
+</script>
