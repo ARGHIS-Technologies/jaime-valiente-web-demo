@@ -1,8 +1,10 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [flechas, proporciones de tableta y entrada secuenciada](docs/detalles-interaccion/INFORME.md), con capturas, pruebas y publicación verificada.
+**Revisión vigente:** [iconografía Phosphor](docs/iconografia/INFORME.md), con procedencia, licencia, capturas y verificaciones.
 
 Dirección visual: [composición editorial y presencia personal](docs/composicion-editorial/INFORME.md).
+
+Iconos: selección local de Phosphor Icons, peso regular, renderizada por Astro. [Procedencia y hashes](src/assets/icons/phosphor/provenance.json) · [Licencia MIT incluida en la publicación](public/licenses/phosphor-icons.txt).
 
 Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalienteabogado.es`.
 

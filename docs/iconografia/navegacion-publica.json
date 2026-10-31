@@ -1,0 +1,35 @@
+{
+  "channels": [
+    {
+      "href": "tel:+34692203087",
+      "icons": [
+        "phone"
+      ],
+      "name": "LLAMAR AL DESPACHO +34 692 203 087"
+    },
+    {
+      "href": "mailto:jvalientea@gmail.com",
+      "icons": [
+        "envelope-simple"
+      ],
+      "name": "ESCRIBIR UN CORREO jvalientea@gmail.com"
+    },
+    {
+      "href": "https://wa.me/34692203087",
+      "icons": [
+        "chat-circle-dots",
+        "arrow-square-out"
+      ],
+      "name": "SERVICIO EXTERNO · NUEVA PESTAÑA Abrir WhatsApp"
+    }
+  ],
+  "linkedSVGImages": 0,
+  "title": "Contacto en Cádiz y Arcos | Jaime Valiente Abogado · Demo",
+  "unicodeArrows": false,
+  "visibleFolder": "folder-simple",
+  "menu": {
+    "closed": true,
+    "focus": "menu-toggle"
+  },
+  "logs": []
+}

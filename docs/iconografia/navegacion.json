@@ -1,0 +1,24 @@
+{
+  "menu": {
+    "closeGlyph": "block",
+    "expanded": "true",
+    "openGlyph": "none",
+    "svgFocusable": 0
+  },
+  "exit": {
+    "closed": true,
+    "focus": "Solicitar consulta"
+  },
+  "escape": {
+    "closeGlyph": "none",
+    "closed": true,
+    "focus": "menu-toggle",
+    "openGlyph": "block"
+  },
+  "disclosure": {
+    "glyph": "plus",
+    "hidden": "true",
+    "open": true
+  },
+  "logs": []
+}

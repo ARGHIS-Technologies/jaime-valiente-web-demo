@@ -1,0 +1,235 @@
+{
+  "matches": true,
+  "before": [
+    {
+      "route": "particulares/",
+      "sections": [
+        {
+          "id": "civil",
+          "intro": "Asesoramiento en contratos y obligaciones, responsabilidad civil e indemnizaciones y procedimientos judiciales civiles.",
+          "items": [
+            "Contratos y obligaciones",
+            "Responsabilidad civil e indemnizaciones",
+            "Procedimientos judiciales civiles"
+          ],
+          "title": "Derecho civil"
+        },
+        {
+          "id": "familia",
+          "intro": "Asesoramiento en asuntos familiares y sucesorios. Consulta el alcance de cada servicio para plantear tu situación.",
+          "items": [
+            "Divorcios y separaciones",
+            "Guarda y custodia",
+            "Pensiones de alimentos",
+            "Liquidación del régimen económico matrimonial",
+            "Herencias y sucesiones",
+            "Testamentos y cuadernos particionales",
+            "Adjudicación y reparto de bienes hereditarios",
+            "Conflictos entre herederos"
+          ],
+          "title": "Familia y sucesiones"
+        },
+        {
+          "id": "penal",
+          "intro": "Asistencia y defensa penal y acusación particular. Contacta para consultar la atención de tu asunto.",
+          "items": [
+            "Asistencia y defensa penal",
+            "Acusación particular",
+            "Denuncias y querellas",
+            "Delitos contra las personas y el patrimonio"
+          ],
+          "title": "Derecho penal"
+        }
+      ]
+    },
+    {
+      "route": "empresas/",
+      "sections": [
+        {
+          "id": "mercantil",
+          "intro": "Asesoramiento jurídico a sociedades y empresas, desde su organización hasta sus contratos y operaciones empresariales.",
+          "items": [
+            "Asesoramiento jurídico a sociedades y empresas",
+            "Constitución y organización de sociedades",
+            "Preparación y redacción de actas",
+            "Convocatoria y celebración de juntas de socios",
+            "Redacción y revisión de contratos mercantiles",
+            "Asesoramiento en acuerdos y operaciones empresariales"
+          ],
+          "title": "Jurídico y mercantil"
+        },
+        {
+          "id": "laboral",
+          "intro": "Asesoramiento laboral dirigido a empresas y autónomos. Consulta el alcance de la atención que necesita tu actividad.",
+          "items": [
+            "Elaboración y gestión de nóminas",
+            "Gestión de seguros sociales",
+            "Contratación laboral",
+            "Procedimientos laborales",
+            "Despidos, sanciones y reclamaciones laborales"
+          ],
+          "title": "Asesoramiento laboral"
+        },
+        {
+          "id": "contable-fiscal",
+          "intro": "Asesoramiento contable y fiscal a empresas y autónomos, con atención a la contabilidad, los impuestos y los procedimientos tributarios.",
+          "items": [
+            "Llevanza y supervisión de contabilidades",
+            "Organización y control contable",
+            "Elaboración de informes contables",
+            "Asesoramiento fiscal a empresas y autónomos",
+            "Preparación y presentación de impuestos",
+            "Planificación fiscal",
+            "Atención a requerimientos y procedimientos tributarios"
+          ],
+          "title": "Contable y fiscal"
+        }
+      ]
+    },
+    {
+      "route": "reclamaciones/",
+      "sections": [
+        {
+          "id": "deuda",
+          "intro": "Si necesitas consultar una deuda, contacta con el despacho para exponer brevemente su origen y tu situación. La vía de actuación deberá valorarse según el asunto.",
+          "items": [],
+          "title": "Deudas pendientes"
+        },
+        {
+          "id": "negociacion",
+          "intro": "Asesoramiento en negociación y resolución extrajudicial de conflictos. Contacta con el despacho para consultar su encaje en tu asunto.",
+          "items": [],
+          "title": "Negociación extrajudicial"
+        },
+        {
+          "id": "judicial",
+          "intro": "Asesoramiento en reclamaciones judiciales de deudas y procedimientos monitorios. Contacta para consultar qué atención puede ofrecerte el despacho.",
+          "items": [],
+          "title": "Reclamación judicial y monitorios"
+        },
+        {
+          "id": "ejecucion",
+          "intro": "Si tu consulta se relaciona con el cumplimiento de una resolución judicial, explica brevemente qué necesitas al solicitar la consulta; la actuación dependerá de la valoración del asunto.",
+          "items": [],
+          "title": "Ejecución de resoluciones"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "route": "particulares/",
+      "sections": [
+        {
+          "id": "civil",
+          "intro": "Asesoramiento en contratos y obligaciones, responsabilidad civil e indemnizaciones y procedimientos judiciales civiles.",
+          "items": [
+            "Contratos y obligaciones",
+            "Responsabilidad civil e indemnizaciones",
+            "Procedimientos judiciales civiles"
+          ],
+          "title": "Derecho civil"
+        },
+        {
+          "id": "familia",
+          "intro": "Asesoramiento en asuntos familiares y sucesorios. Consulta el alcance de cada servicio para plantear tu situación.",
+          "items": [
+            "Divorcios y separaciones",
+            "Guarda y custodia",
+            "Pensiones de alimentos",
+            "Liquidación del régimen económico matrimonial",
+            "Herencias y sucesiones",
+            "Testamentos y cuadernos particionales",
+            "Adjudicación y reparto de bienes hereditarios",
+            "Conflictos entre herederos"
+          ],
+          "title": "Familia y sucesiones"
+        },
+        {
+          "id": "penal",
+          "intro": "Asistencia y defensa penal y acusación particular. Contacta para consultar la atención de tu asunto.",
+          "items": [
+            "Asistencia y defensa penal",
+            "Acusación particular",
+            "Denuncias y querellas",
+            "Delitos contra las personas y el patrimonio"
+          ],
+          "title": "Derecho penal"
+        }
+      ]
+    },
+    {
+      "route": "empresas/",
+      "sections": [
+        {
+          "id": "mercantil",
+          "intro": "Asesoramiento jurídico a sociedades y empresas, desde su organización hasta sus contratos y operaciones empresariales.",
+          "items": [
+            "Asesoramiento jurídico a sociedades y empresas",
+            "Constitución y organización de sociedades",
+            "Preparación y redacción de actas",
+            "Convocatoria y celebración de juntas de socios",
+            "Redacción y revisión de contratos mercantiles",
+            "Asesoramiento en acuerdos y operaciones empresariales"
+          ],
+          "title": "Jurídico y mercantil"
+        },
+        {
+          "id": "laboral",
+          "intro": "Asesoramiento laboral dirigido a empresas y autónomos. Consulta el alcance de la atención que necesita tu actividad.",
+          "items": [
+            "Elaboración y gestión de nóminas",
+            "Gestión de seguros sociales",
+            "Contratación laboral",
+            "Procedimientos laborales",
+            "Despidos, sanciones y reclamaciones laborales"
+          ],
+          "title": "Asesoramiento laboral"
+        },
+        {
+          "id": "contable-fiscal",
+          "intro": "Asesoramiento contable y fiscal a empresas y autónomos, con atención a la contabilidad, los impuestos y los procedimientos tributarios.",
+          "items": [
+            "Llevanza y supervisión de contabilidades",
+            "Organización y control contable",
+            "Elaboración de informes contables",
+            "Asesoramiento fiscal a empresas y autónomos",
+            "Preparación y presentación de impuestos",
+            "Planificación fiscal",
+            "Atención a requerimientos y procedimientos tributarios"
+          ],
+          "title": "Contable y fiscal"
+        }
+      ]
+    },
+    {
+      "route": "reclamaciones/",
+      "sections": [
+        {
+          "id": "deuda",
+          "intro": "Si necesitas consultar una deuda, contacta con el despacho para exponer brevemente su origen y tu situación. La vía de actuación deberá valorarse según el asunto.",
+          "items": [],
+          "title": "Deudas pendientes"
+        },
+        {
+          "id": "negociacion",
+          "intro": "Asesoramiento en negociación y resolución extrajudicial de conflictos. Contacta con el despacho para consultar su encaje en tu asunto.",
+          "items": [],
+          "title": "Negociación extrajudicial"
+        },
+        {
+          "id": "judicial",
+          "intro": "Asesoramiento en reclamaciones judiciales de deudas y procedimientos monitorios. Contacta para consultar qué atención puede ofrecerte el despacho.",
+          "items": [],
+          "title": "Reclamación judicial y monitorios"
+        },
+        {
+          "id": "ejecucion",
+          "intro": "Si tu consulta se relaciona con el cumplimiento de una resolución judicial, explica brevemente qué necesitas al solicitar la consulta; la actuación dependerá de la valoración del asunto.",
+          "items": [],
+          "title": "Ejecución de resoluciones"
+        }
+      ]
+    }
+  ]
+}

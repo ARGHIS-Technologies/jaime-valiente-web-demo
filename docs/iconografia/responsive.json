@@ -1,0 +1,497 @@
+[
+  {
+    "route": "",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 26,
+    "width": 320
+  },
+  {
+    "route": "particulares/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 11,
+    "width": 320
+  },
+  {
+    "route": "empresas/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 12,
+    "width": 320
+  },
+  {
+    "route": "reclamaciones/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 14,
+    "width": 320
+  },
+  {
+    "route": "el-despacho/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 16,
+    "width": 320
+  },
+  {
+    "route": "contacto/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 15,
+    "width": 320
+  },
+  {
+    "route": "area-clientes/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 9,
+    "width": 320
+  },
+  {
+    "route": "aviso-legal/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 320
+  },
+  {
+    "route": "privacidad/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 320
+  },
+  {
+    "route": "cookies/",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 320
+  },
+  {
+    "route": "404.html",
+    "availableWidth": 305,
+    "documentWidth": 305,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 8,
+    "width": 320
+  },
+  {
+    "route": "",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 26,
+    "width": 390
+  },
+  {
+    "route": "particulares/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 11,
+    "width": 390
+  },
+  {
+    "route": "empresas/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 12,
+    "width": 390
+  },
+  {
+    "route": "reclamaciones/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 14,
+    "width": 390
+  },
+  {
+    "route": "el-despacho/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 16,
+    "width": 390
+  },
+  {
+    "route": "contacto/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 15,
+    "width": 390
+  },
+  {
+    "route": "area-clientes/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 9,
+    "width": 390
+  },
+  {
+    "route": "aviso-legal/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 390
+  },
+  {
+    "route": "privacidad/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 390
+  },
+  {
+    "route": "cookies/",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 390
+  },
+  {
+    "route": "404.html",
+    "availableWidth": 375,
+    "documentWidth": 375,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 8,
+    "width": 390
+  },
+  {
+    "route": "",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 26,
+    "width": 768
+  },
+  {
+    "route": "particulares/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 11,
+    "width": 768
+  },
+  {
+    "route": "empresas/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 12,
+    "width": 768
+  },
+  {
+    "route": "reclamaciones/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 14,
+    "width": 768
+  },
+  {
+    "route": "el-despacho/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 16,
+    "width": 768
+  },
+  {
+    "route": "contacto/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 15,
+    "width": 768
+  },
+  {
+    "route": "area-clientes/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 9,
+    "width": 768
+  },
+  {
+    "route": "aviso-legal/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 768
+  },
+  {
+    "route": "privacidad/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 768
+  },
+  {
+    "route": "cookies/",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 768
+  },
+  {
+    "route": "404.html",
+    "availableWidth": 753,
+    "documentWidth": 753,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 8,
+    "width": 768
+  },
+  {
+    "route": "",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 26,
+    "width": 1024
+  },
+  {
+    "route": "particulares/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 11,
+    "width": 1024
+  },
+  {
+    "route": "empresas/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 12,
+    "width": 1024
+  },
+  {
+    "route": "reclamaciones/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 14,
+    "width": 1024
+  },
+  {
+    "route": "el-despacho/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 16,
+    "width": 1024
+  },
+  {
+    "route": "contacto/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 15,
+    "width": 1024
+  },
+  {
+    "route": "area-clientes/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 9,
+    "width": 1024
+  },
+  {
+    "route": "aviso-legal/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 1024
+  },
+  {
+    "route": "privacidad/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 1024
+  },
+  {
+    "route": "cookies/",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 6,
+    "width": 1024
+  },
+  {
+    "route": "404.html",
+    "availableWidth": 1009,
+    "documentWidth": 1009,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 8,
+    "width": 1024
+  },
+  {
+    "route": "",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 25,
+    "width": 1440
+  },
+  {
+    "route": "particulares/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 10,
+    "width": 1440
+  },
+  {
+    "route": "empresas/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 11,
+    "width": 1440
+  },
+  {
+    "route": "reclamaciones/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 13,
+    "width": 1440
+  },
+  {
+    "route": "el-despacho/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 15,
+    "width": 1440
+  },
+  {
+    "route": "contacto/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 14,
+    "width": 1440
+  },
+  {
+    "route": "area-clientes/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 8,
+    "width": 1440
+  },
+  {
+    "route": "aviso-legal/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 5,
+    "width": 1440
+  },
+  {
+    "route": "privacidad/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 5,
+    "width": 1440
+  },
+  {
+    "route": "cookies/",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 5,
+    "width": 1440
+  },
+  {
+    "route": "404.html",
+    "availableWidth": 1425,
+    "documentWidth": 1425,
+    "h1": 1,
+    "overflow": [],
+    "visibleIcons": 7,
+    "width": 1440
+  }
+]

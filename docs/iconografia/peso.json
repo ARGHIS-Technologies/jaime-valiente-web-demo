@@ -1,0 +1,44 @@
+[
+  {
+    "route": "",
+    "previousHasIconSystem": false,
+    "before": {
+      "html": 17481,
+      "gzip": 4087,
+      "inlineJS": 2163
+    },
+    "after": {
+      "html": 25067,
+      "gzip": 5331,
+      "inlineJS": 2163
+    }
+  },
+  {
+    "route": "contacto/",
+    "previousHasIconSystem": false,
+    "before": {
+      "html": 13085,
+      "gzip": 3744,
+      "inlineJS": 2163
+    },
+    "after": {
+      "html": 20582,
+      "gzip": 5225,
+      "inlineJS": 2163
+    }
+  },
+  {
+    "route": "area-clientes/",
+    "previousHasIconSystem": false,
+    "before": {
+      "html": 10745,
+      "gzip": 3257,
+      "inlineJS": 2163
+    },
+    "after": {
+      "html": 16376,
+      "gzip": 4598,
+      "inlineJS": 2163
+    }
+  }
+]

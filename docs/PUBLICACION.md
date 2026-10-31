@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: detalles de interacción
+## Revisión vigente: iconografía Phosphor
+
+Aplicación `0ed62616ec8e73cc27727bcfd5282134ee833805`, publicada correctamente por [Actions 41228963311](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41228963311). Los 38 archivos públicos coinciden por SHA256 con el build, incluidos licencia y SVG estáticos. Comprobados Contacto en escritorio y móvil, iconos semánticos, carpeta de clientes y menú con Escape. [Informe vigente y comparativas](iconografia/INFORME.md).
+
+## Registro histórico: detalles de interacción
 
 Aplicación `1341beb2cb755385f196d2dbc40f697e8456ed2a`, publicada correctamente por [Actions 41222893257](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41222893257). Los 22 archivos públicos coinciden por SHA256 con el build. Comprobados las acciones compactas en tableta, las seis flechas y los tiempos efectivos de entrada; recorrido a Familia con foco y destino visibles. [Informe vigente](detalles-interaccion/INFORME.md).
 

@@ -53,3 +53,7 @@ Inicio y El despacho se revisan primero en escritorio y móvil; tras corregir lo
 ## Detalles de interacción — revisión 6
 
 Flechas junto a los títulos de especialidad, acciones compactas en tableta y entrada de Inicio en una secuencia de 330 ms, con CSS y el observador existente. Se conserva movimiento reducido y contenido visible por defecto. [Revisión, capturas y verificaciones](detalles-interaccion/INFORME.md).
+
+## Iconografía Phosphor — revisión 7
+
+Se seleccionan quince SVG oficiales de Phosphor, peso regular, fijados por commit y con licencia MIT incluida. Iconos semánticos para contacto, ubicaciones y documentación; chevrons y flechas coherentes para navegación. SVG locales renderizados por Astro, sin instalar paquetes, fuentes de iconos o JavaScript adicional. [Criterio, procedencia y pruebas](iconografia/INFORME.md).

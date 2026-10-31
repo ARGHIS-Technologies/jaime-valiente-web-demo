@@ -1,0 +1,573 @@
+[
+  {
+    "route": "",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "arrow-down",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 8.660907262809385
+      },
+      {
+        "name": "caret-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "caret-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "caret-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "caret-right",
+        "ratio": 12.247914732951708
+      },
+      {
+        "name": "caret-right",
+        "ratio": 12.247914732951708
+      },
+      {
+        "name": "caret-right",
+        "ratio": 12.247914732951708
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "map-pin",
+        "ratio": 5.897247035037468
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "map-pin",
+        "ratio": 5.897247035037468
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "particulares/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "empresas/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 14.404655226523197
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "reclamaciones/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 14.404655226523197
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 14.404655226523197
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "el-despacho/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "plus",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "map-pin",
+        "ratio": 5.897247035037468
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "map-pin",
+        "ratio": 5.897247035037468
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "contacto/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "phone",
+        "ratio": 6.961101422009982
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 6.961101422009982
+      },
+      {
+        "name": "chat-circle-dots",
+        "ratio": 6.961101422009982
+      },
+      {
+        "name": "arrow-square-out",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 15.001976310589232
+      },
+      {
+        "name": "map-pin",
+        "ratio": 5.897247035037468
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "map-pin",
+        "ratio": 5.897247035037468
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "area-clientes/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "file-text",
+        "ratio": 6.961101422009982
+      },
+      {
+        "name": "chat-circle-dots",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "info",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "aviso-legal/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "privacidad/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "cookies/",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  },
+  {
+    "route": "404.html",
+    "icons": [
+      {
+        "name": "folder-simple",
+        "ratio": 13.537518142378712
+      },
+      {
+        "name": "list",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 11.643323985949785
+      },
+      {
+        "name": "arrow-right",
+        "ratio": 10.506729675751467
+      },
+      {
+        "name": "phone",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "envelope-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "folder-simple",
+        "ratio": 8.476215317522469
+      },
+      {
+        "name": "arrow-up",
+        "ratio": 8.746732943889015
+      }
+    ]
+  }
+]
