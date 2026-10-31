@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import ServiceBlock from '../components/ServiceBlock.astro';
+import ContactCta from '../components/ContactCta.astro';
+import { href } from '../data/site';
+---
+<Layout current="empresas/" title="Asesoramiento para empresas y autónomos | Jaime Valiente" description="Asesoramiento jurídico y mercantil, laboral, contable y fiscal para empresas y autónomos. Demo para revisión.">
+<PageHero number="02" eyebrow="Empresas y autónomos" title="Asesoramiento para empresas y autónomos." description="Servicios jurídicos y mercantiles, laborales, contables y fiscales para empresas y autónomos. Consulta el ámbito de cada área y contacta para concretar las necesidades de tu actividad." action="Consultar sobre mi empresa" dark />
+<div class="shell area-layout"><nav class="area-nav" aria-label="Áreas para empresas"><p>En esta página</p><a href="#mercantil">Jurídico y mercantil</a><a href="#laboral">Laboral</a><a href="#contable-fiscal">Contable y fiscal</a></nav><div>
+<ServiceBlock id="mercantil" number="01" title="Jurídico y mercantil" intro="Asesoramiento jurídico a sociedades y empresas, desde su organización hasta sus contratos y operaciones empresariales." items={['Asesoramiento jurídico a sociedades y empresas','Constitución y organización de sociedades','Preparación y redacción de actas','Convocatoria y celebración de juntas de socios','Redacción y revisión de contratos mercantiles','Asesoramiento en acuerdos y operaciones empresariales']} action="Consultar sobre mi empresa" />
+<ServiceBlock id="laboral" number="02" title="Asesoramiento laboral" intro="Asesoramiento laboral dirigido a empresas y autónomos. Consulta el alcance de la atención que necesita tu actividad." items={['Elaboración y gestión de nóminas','Gestión de seguros sociales','Contratación laboral','Procedimientos laborales','Despidos, sanciones y reclamaciones laborales']} action="Consultar sobre el área laboral" />
+<ServiceBlock id="contable-fiscal" number="03" title="Contable y fiscal" intro="Asesoramiento contable y fiscal a empresas y autónomos, con atención a la contabilidad, los impuestos y los procedimientos tributarios." items={['Llevanza y supervisión de contabilidades','Organización y control contable','Elaboración de informes contables','Asesoramiento fiscal a empresas y autónomos','Preparación y presentación de impuestos','Planificación fiscal','Atención a requerimientos y procedimientos tributarios']} action="Consultar sobre contabilidad o fiscalidad" />
+<div class="related-card"><p class="eyebrow">Cantidades pendientes de cobro</p><h3>Reclamación de deudas</h3><p>Si necesitas consultar una deuda pendiente de cobro, accede al área de reclamaciones para conocer los servicios de negociación, reclamación judicial y ejecución.</p><a class="text-link" href={href('reclamaciones/')}>Ir a Reclamaciones <span aria-hidden="true">→</span></a></div></div></div>
+<ContactCta title="Cuéntanos qué necesita tu empresa." description="Contacta con el despacho para concretar el área de asesoramiento y las condiciones de atención." action="Consultar sobre mi empresa" />
+</Layout>

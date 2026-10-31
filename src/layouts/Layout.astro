@@ -1,0 +1,13 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Reveal from '../components/Reveal.astro';
+import { href } from '../data/site';
+import '../styles/global.css';
+import '../styles/motion.css';
+interface Props { title: string; description: string; current?: string; }
+const { title, description, current = '' } = Astro.props;
+const canonical = new URL(href(current), Astro.site);
+---
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#243D3A" /><title>{title} · Demo</title><meta name="description" content={description} /><meta name="robots" content="noindex, follow" /><link rel="canonical" href={canonical} /><link rel="icon" type="image/svg+xml" href={href('favicon.svg')} /><meta property="og:title" content={`${title} · Demo de diseño`} /><meta property="og:description" content={description} /><meta property="og:type" content="website" /><meta property="og:locale" content="es_ES" /><meta property="og:url" content={canonical} /></head><body class="motion-enabled"><a class="skip-link" href="#contenido">Saltar al contenido</a><Header current={current} /><main id="contenido" tabindex="-1"><slot /></main><Footer /><Reveal /></body></html>

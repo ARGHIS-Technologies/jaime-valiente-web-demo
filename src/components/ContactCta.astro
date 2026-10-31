@@ -1,0 +1,6 @@
+---
+import { href } from '../data/site';
+import Arrow from './Arrow.astro';
+const { title = 'Plantea tu consulta.', description = 'Contacta para explicar brevemente qué necesitas y consultar las condiciones de atención.', action = 'Contactar con el despacho' } = Astro.props;
+---
+<section class="contact-cta"><div class="shell cta-grid"><div><p class="eyebrow">El siguiente paso</p><h2>{title}</h2></div><div><p>{description}</p><a class="button button-light" href={href('contacto/')}>{action}<Arrow /></a></div></div></section>

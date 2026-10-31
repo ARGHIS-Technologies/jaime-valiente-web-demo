@@ -1,0 +1,21 @@
+<script>
+  // The content is visible by default; the observer only starts a small CSS animation.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const targets = document.querySelectorAll<HTMLElement>('.motion-enabled main > section, .motion-enabled .service-block');
+  if (!reducedMotion.matches && 'IntersectionObserver' in window && targets.length) {
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add('section-entering');
+        observer.unobserve(entry.target);
+      }
+    }, { threshold: 0.04 });
+    targets.forEach(target => observer.observe(target));
+    reducedMotion.addEventListener('change', event => {
+      if (event.matches) {
+        observer.disconnect();
+        targets.forEach(target => target.classList.remove('section-entering'));
+      }
+    });
+  }
+</script>

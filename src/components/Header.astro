@@ -1,0 +1,52 @@
+---
+import { navigation, href } from '../data/site';
+const { current = '' } = Astro.props;
+---
+<div class="demo-strip"><div class="shell flex items-center justify-between gap-4"><span><span class="demo-dot" aria-hidden="true"></span> Demo de diseño <span class="demo-detail">· Propuesta para revisión del despacho</span></span><span class="demo-location">Cádiz & Arcos de la Frontera</span></div></div>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href={href()} aria-label="Jaime Valiente Abogado Inicio"><span>Jaime Valiente<span class="wordmark-dot">.</span></span><span class="wordmark-sub">ABOGADO</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal">{navigation.map(item => <a class:list={['nav-link', { 'is-current': item.path === current }]} aria-current={item.path === current ? 'page' : undefined} href={href(item.path)}>{item.label}</a>)}</nav>
+    <div class="header-actions"><a class="client-link" aria-label="Área de clientes" href={href('area-clientes/')} aria-current={current === 'area-clientes/' ? 'page' : undefined}><span class="client-full">Área de clientes</span><span class="client-short">Clientes</span> <span aria-hidden="true">↗</span></a><a class="header-cta" href={href('contacto/')}>Solicitar cita</a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-label">Menú</span><span class="menu-lines" aria-hidden="true"><i></i><i></i></span></button></div>
+  </div>
+  <nav id="mobile-navigation" class="mobile-navigation" aria-label="Navegación móvil" hidden><div class="shell">{navigation.map((item,index) => <a class:list={{ 'is-current': item.path === current }} aria-current={item.path === current ? 'page' : undefined} href={href(item.path)}><span class="menu-number">0{index+1}</span><span>{item.label}</span><span aria-hidden="true">↗</span></a>)}<a class="mobile-contact" href={href('contacto/')}>Solicitar cita <span aria-hidden="true">→</span></a></div></nav>
+  <noscript><nav class="no-script-nav shell" aria-label="Menú sin JavaScript">{navigation.map(item => <a href={href(item.path)}>{item.label}</a>)}</nav></noscript>
+</header>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('#menu-toggle');
+  const menu = document.querySelector<HTMLElement>('#mobile-navigation');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let menuAnimation: Animation | undefined;
+  function closeMenu(returnFocus = false) {
+    if (!toggle || !menu) return;
+    menuAnimation?.cancel();
+    toggle.setAttribute('aria-expanded', 'false');
+    if (returnFocus) toggle.focus();
+    menu.inert = true;
+    if (reducedMotion.matches || menu.hidden) { menu.hidden = true; return; }
+    menuAnimation = menu.animate([{ opacity: 1, transform: 'translateY(0)' }, { opacity: 0, transform: 'translateY(-4px)' }], { duration: 140, easing: 'ease-out' });
+    menuAnimation.onfinish = () => { if (toggle.getAttribute('aria-expanded') === 'false') menu.hidden = true; };
+  }
+  toggle?.addEventListener('click', () => {
+    if (!menu) return;
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    if (!open) { closeMenu(); return; }
+    menuAnimation?.cancel();
+    toggle.setAttribute('aria-expanded', 'true');
+    menu.hidden = false;
+    menu.inert = false;
+    if (!reducedMotion.matches) menuAnimation = menu.animate([{ opacity: 0, transform: 'translateY(-6px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 180, easing: 'ease-out' });
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') closeMenu(true);
+  });
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
+  document.addEventListener('pointerdown', event => {
+    if (toggle?.getAttribute('aria-expanded') === 'true' && event.target instanceof Node && !document.querySelector('.site-header')?.contains(event.target)) closeMenu();
+  });
+  window.matchMedia('(min-width: 1200px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+  reducedMotion.addEventListener('change', () => {
+    menuAnimation?.cancel();
+    if (menu && toggle) menu.hidden = toggle.getAttribute('aria-expanded') !== 'true';
+  });
+</script>

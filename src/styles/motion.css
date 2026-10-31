@@ -1,0 +1,24 @@
+/* Native MPA transitions: unsupported browsers retain normal full-page navigation. */
+@view-transition { navigation: auto; }
+::view-transition-group(root) { animation-duration: 160ms; }
+@keyframes section-enter { from { opacity: .94; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .section-entering { animation: section-enter 360ms cubic-bezier(.2,.65,.3,1) both; }
+  .button { transition: background 180ms ease, color 180ms ease, transform 160ms ease; }
+  .button:active { transform: translateY(1px); }
+  .contact-channel:hover .arrow { transform: translateX(4px); }
+  @media (hover: hover) and (pointer: fine) {
+    .service-card { transition: background 200ms ease, border-color 200ms ease, transform 200ms ease; }
+    .service-card:hover { transform: translateY(-3px); }
+  }
+}
+.service-card:focus-within { border-color: var(--green); }
+.client-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.area-nav a:hover { color: var(--bronze-text); }
+.mobile-navigation { position: absolute; inset-inline: 0; top: 100%; box-shadow: 0 18px 26px #20282b12; }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  .section-entering { animation: none !important; transform: none !important; opacity: 1 !important; }
+  .service-card:hover, .button:active, .arrow { transform: none !important; }
+}

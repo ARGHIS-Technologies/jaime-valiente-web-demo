@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Demo: todas las páginas incluyen meta robots noindex, follow.

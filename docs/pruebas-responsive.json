@@ -1,0 +1,442 @@
+[
+  {
+    "route": "",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "particulares/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "empresas/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "reclamaciones/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "el-despacho/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Abogado.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "contacto/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Contacta\ncon el despacho.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "area-clientes/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "aviso-legal/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "privacidad/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "cookies/",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "404.html",
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "route": "",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "particulares/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "empresas/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "reclamaciones/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "el-despacho/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Abogado.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "contacto/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Contacta\ncon el despacho.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "area-clientes/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "aviso-legal/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "privacidad/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "cookies/",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "404.html",
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "route": "",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "particulares/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "empresas/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "reclamaciones/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "el-despacho/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Abogado.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "contacto/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Contacta\ncon el despacho.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "area-clientes/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "aviso-legal/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "privacidad/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "cookies/",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "404.html",
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "route": "",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "particulares/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "empresas/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "reclamaciones/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "el-despacho/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Abogado.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "contacto/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Contacta\ncon el despacho.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "area-clientes/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "aviso-legal/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "privacidad/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "cookies/",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "404.html",
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "route": "",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Asesoramiento\njurídico y empresarial\nen Cádiz y Arcos de la Frontera",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "particulares/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "empresas/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "reclamaciones/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "el-despacho/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Abogado.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "contacto/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Contacta\ncon el despacho.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "area-clientes/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "aviso-legal/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "privacidad/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "cookies/",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "route": "404.html",
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "scroll": 1425,
+    "width": 1440
+  }
+]

@@ -1,0 +1,40 @@
+import { readFile, readdir, stat } from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+
+const root = path.resolve('dist');
+const base = '/jaime-valiente-web-demo/';
+const expected = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/'];
+const files = [];
+async function walk(dir) { for (const item of await readdir(dir, {withFileTypes:true})) { const file=path.join(dir,item.name); if(item.isDirectory()) await walk(file); else files.push(file); } }
+await walk(root);
+for (const route of expected) assert.ok(files.includes(path.join(root,route,'index.html')),`Missing route ${route}`);
+assert.ok(files.includes(path.join(root,'404.html')),'Missing 404.html');
+let references=0;
+for (const file of files.filter(f=>f.endsWith('.html'))) {
+ const html=await readFile(file,'utf8');
+ assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`Exactly one H1 in ${file}`);
+ assert.match(html,/<html[^>]+lang="es"/,`Spanish language ${file}`);
+ assert.match(html,/<meta name="robots" content="noindex, follow"/,`Demo noindex ${file}`);
+ assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
+ assert.doesNotMatch(html,/script\.google\.com|AKfycb|GTM-|G-[A-Z0-9]{7,}/,`No Apps Script or analytics ${file}`);
+ assert.match(html,/Demo de diseño/,`Demo label ${file}`);
+ for(const match of html.matchAll(/(?:href|src)="([^"\s]+)"/g)) {
+  const target=match[1];
+  if (/^(https?:|mailto:|tel:|data:|#)/.test(target)) continue;
+  references++;
+  assert.ok(target.startsWith(base),`Missing GitHub Pages base: ${target} in ${file}`);
+  const clean=decodeURIComponent(target.slice(base.length).split(/[?#]/)[0]);
+  let dest=path.resolve(root,clean);
+  assert.ok(dest.startsWith(root),`Path outside output ${target}`);
+  try { if((await stat(dest)).isDirectory())dest=path.join(dest,'index.html'); await stat(dest); }
+  catch { throw Error(`Broken local reference ${target} in ${file}`); }
+  if(target.includes('#')) {
+   const fragment=target.split('#')[1];
+   if(fragment && dest.endsWith('.html')) assert.ok((await readFile(dest,'utf8')).includes(`id="${fragment}"`),`Missing anchor ${target}`);
+  }
+ }
+}
+const sizes={html:0,css:0,js:0,fonts:0};
+for(const file of files){ const size=(await stat(file)).size; if(file.endsWith('.html'))sizes.html+=size; if(file.endsWith('.css'))sizes.css+=size; if(file.endsWith('.js'))sizes.js+=size; if(file.endsWith('.woff2'))sizes.fonts+=size; }
+console.log(JSON.stringify({status:'passed',pages:expected.length+1,localReferencesChecked:references,bytesUncompressed:sizes},null,2));
