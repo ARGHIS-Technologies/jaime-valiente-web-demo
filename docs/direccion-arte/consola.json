@@ -1,0 +1,11 @@
+{
+  "since": "2026-10-31T12:56:08.719Z",
+  "logs": [
+    {
+      "level": "error",
+      "message": "InvalidStateError: Transition was aborted because of invalid state. Page already revealed",
+      "timestamp": "2026-10-31T13:07:58.050Z",
+      "url": "http://127.0.0.1:4321/jaime-valiente-web-demo/empresas/#contable-fiscal"
+    }
+  ]
+}

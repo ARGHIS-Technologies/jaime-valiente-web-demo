@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "reducedMotion": {
+    "menuAnimations": 0,
+    "revealObservers": 0,
+    "escapeReturnsFocus": true,
+    "instantClose": true,
+    "cssRulesReviewed": true
+  },
+  "scope": "Actual component scripts in a controlled JS context; CSS rules inspected. OS preference and browser rendering not emulated."
+}

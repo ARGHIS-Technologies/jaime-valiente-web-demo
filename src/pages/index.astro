@@ -3,18 +3,68 @@ import Layout from '../layouts/Layout.astro';
 import Arrow from '../components/Arrow.astro';
 import Offices from '../components/Offices.astro';
 import ContactCta from '../components/ContactCta.astro';
+import ServiceGuide from '../components/ServiceGuide.astro';
 import { href } from '../data/site';
 const areas = [
-  { number:'01', category:'Asuntos personales', title:'Particulares', text:'Contratos, responsabilidad civil, familia, herencias y asuntos penales.', path:'particulares/', action:'Ver servicios para particulares' },
-  { number:'02', category:'Tu actividad profesional', title:'Empresas', text:'Asesoramiento jurídico y mercantil, laboral, contable y fiscal para empresas y autónomos.', path:'empresas/', action:'Ver servicios para empresas' },
-  { number:'03', category:'Deudas y resoluciones', title:'Reclamaciones', text:'Deudas, procedimientos monitorios, ejecución de resoluciones y negociación.', path:'reclamaciones/', action:'Consultar reclamaciones' },
+  { number: '01', title: 'Particulares', summary: 'Civil · Familia y herencias · Penal', path: 'particulares/' },
+  { number: '02', title: 'Empresas', summary: 'Jurídico y mercantil · Laboral · Contable y fiscal', path: 'empresas/' },
+  { number: '03', title: 'Reclamaciones', summary: 'Deudas · Monitorios · Negociación · Ejecución', path: 'reclamaciones/' },
+];
+const personal = [
+  { title: 'Derecho civil', text: 'Contratos, obligaciones y responsabilidad civil.', path: 'particulares/#civil' },
+  { title: 'Familia y sucesiones', text: 'Divorcios, custodia, alimentos y herencias.', path: 'particulares/#familia' },
+  { title: 'Derecho penal', text: 'Asistencia y defensa, acusación particular, denuncias y querellas.', path: 'particulares/#penal' },
+];
+const business = [
+  { title: 'Jurídico y mercantil', text: 'Sociedades, contratos y operaciones empresariales.', path: 'empresas/#mercantil' },
+  { title: 'Asesoramiento laboral', text: 'Nóminas, contratación y procedimientos laborales.', path: 'empresas/#laboral' },
+  { title: 'Contable y fiscal', text: 'Contabilidad, impuestos y procedimientos tributarios.', path: 'empresas/#contable-fiscal' },
 ];
 ---
-<Layout title="Jaime Valiente Abogado en Cádiz y Arcos" description="Demo de diseño. Asesoramiento jurídico para particulares, empresas y autónomos en Cádiz y Arcos de la Frontera.">
-  <section class="home-hero"><div class="shell"><div class="hero-topline"><p class="eyebrow">Asesoramiento jurídico y empresarial</p><span class="hero-meta">Cádiz · Arcos de la Frontera</span></div><div class="hero-layout"><div><h1>Claridad jurídica<br />para <em>decisiones<br class="hero-desktop-break" /> importantes.</em></h1><p class="home-intro">Jaime Valiente Alemán. Asesoramiento a particulares, empresas y autónomos: de los asuntos personales a las necesidades de tu actividad profesional.</p><div class="hero-buttons"><a class="button button-dark" href={href('contacto/')}>Solicitar consulta<Arrow /></a><a class="button button-outline" href="#servicios">Conocer los servicios <span aria-hidden="true">↓</span></a></div></div><aside class="hero-index" aria-label="Encuentra tu área de consulta"><p class="eyebrow">¿En qué podemos ayudarte?</p>{areas.map(area => <a href={href(area.path)}><span class="section-number">{area.number}</span><span><strong>{area.title}</strong><small>{area.category}</small></span><Arrow /></a>)}<p class="hero-index-note">Atención en Cádiz y Arcos de la Frontera.<br /><a href={href('contacto/')}>Consultar ubicaciones y cita <span aria-hidden="true">↗</span></a></p></aside></div><div class="hero-bottom"><span>Cercanía · Rigor · Transparencia</span><a href={href('el-despacho/')}>Conocer el despacho <Arrow /></a></div></div></section>
-  <section id="servicios" class="section"><div class="shell"><div class="section-header"><div><p class="eyebrow">Áreas de actuación</p><h2>Servicios según<br />tu necesidad.</h2></div><p>Asesoramiento para los asuntos personales y las necesidades de tu actividad profesional. Encuentra el área relacionada con tu consulta.</p></div><div class="service-cards">{areas.map(area => <article class="service-card"><div class="service-card-top"><span class="section-number">{area.number}</span><span class="service-card-category">{area.category}</span></div><h3>{area.title}</h3><p>{area.text}</p><a class="text-link" href={href(area.path)}>{area.action}<Arrow /></a></article>)}</div></div></section>
-  <section class="statement-section"><div class="shell statement-grid"><div class="identity-note"><p class="eyebrow">Jaime Valiente Alemán</p><p class="identity-title">Abogado.<br /><em>Cádiz y Arcos.</em></p><p>Asuntos personales.<br />Actividad empresarial.<br />Una atención cercana.</p></div><div><p class="eyebrow">El despacho</p><h2>Tu asunto merece<br /><em>una atención personal.</em></h2><p class="statement-copy">Asesoramiento jurídico y empresarial con cercanía, rigor y transparencia. Consulta las áreas del despacho y plantea qué necesitas.</p><a class="text-link" href={href('el-despacho/')}>Conocer el despacho<Arrow /></a></div></div></section>
-  <section class="section"><div class="shell consultation-grid"><div><p class="eyebrow">Antes de una consulta</p><h2>Empieza por<br />contarnos qué necesitas.</h2></div><div class="consultation-copy"><p>Contacta para explicar brevemente qué necesitas y consultar las condiciones de atención. Evita enviar documentación sensible en el primer mensaje.</p><a class="text-link" href={href('contacto/')}>Ver los medios de contacto<Arrow /></a><div class="client-note"><p>¿Ya eres cliente del despacho?</p><a class="text-link" href={href('area-clientes/')}>Ir al Área de clientes<Arrow /></a></div></div></div></section>
-  <section class="section locations-section"><div class="shell"><div class="section-header"><div><p class="eyebrow">Ubicaciones publicadas</p><h2>Cádiz y Arcos<br />de la Frontera.</h2></div><p>Consulta los datos de contacto del despacho y las condiciones de atención al solicitar tu cita.</p></div><Offices /><p class="location-disclaimer">Datos publicados en la web actual, pendientes de ratificación para la versión definitiva. La grafía de las direcciones y los edificios se conserva como figura en la auditoría.</p></div></section>
-  <ContactCta title="¿Quieres plantear una consulta?" action="Solicitar cita" description="Contacta con el despacho. El primer contacto permite consultar la atención y las condiciones de tu asunto." />
+<Layout title="Jaime Valiente Alemán | Abogado en Cádiz y Arcos" description="Demo de diseño. Asesoramiento jurídico para particulares y asesoramiento a empresas y autónomos en Cádiz y Arcos de la Frontera.">
+  <section class="home-hero">
+    <div class="shell">
+      <div class="hero-topline"><p class="eyebrow">Jaime Valiente Alemán · Abogado</p><span class="hero-meta">Cádiz · Arcos de la Frontera</span></div>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <h1>Tu abogado,<br /><em>en Cádiz y Arcos.</em></h1>
+          <p class="home-intro">Asesoramiento jurídico para tus asuntos personales. Atención jurídica y mercantil, laboral, contable y fiscal para empresas y autónomos.</p>
+          <div class="hero-buttons"><a class="button button-dark" href={href('contacto/')}>Solicitar consulta<Arrow /></a><a class="hero-secondary" href="#servicios">Explorar los servicios <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-personal-note">Cercanía para escuchar.<br />Rigor para asesorar.</p>
+        </div>
+        <aside class="hero-index" aria-label="Encuentra tu área de consulta">
+          <p class="eyebrow">Áreas del despacho</p>
+          {areas.map(area => <a href={href(area.path)}><span class="section-number">{area.number}</span><span><strong>{area.title}</strong><small>{area.summary}</small></span><Arrow /></a>)}
+          <p class="hero-index-note">¿No sabes qué área corresponde a tu asunto?<br /><a href={href('contacto/')}>Plantea tu consulta al despacho <span aria-hidden="true">↗</span></a></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section id="servicios" class="section services-section">
+    <div class="shell">
+      <div class="section-header"><div><p class="eyebrow">Encuentra tu área</p><h2>Asuntos personales.<br /><em>Actividad empresarial.</em></h2></div><p>Consulta las especialidades del despacho y accede directamente a la información relacionada con tu situación.</p></div>
+      <div class="practice-grid">
+        <ServiceGuide number="01" title="Para particulares." items={personal} />
+        <ServiceGuide number="02" title="Para empresas y autónomos." items={business} business />
+      </div>
+      <div class="debt-feature"><div><p class="eyebrow">Cantidades pendientes de cobro</p><h3>Reclamación de deudas.</h3></div><p>Negociación, reclamación judicial, procedimientos monitorios y ejecución de resoluciones.</p><a class="text-link" href={href('reclamaciones/')}>Consultar Reclamaciones<Arrow /></a></div>
+    </div>
+  </section>
+  <section class="statement-section">
+    <div class="shell">
+      <div class="statement-grid">
+        <div class="identity-note"><p class="eyebrow">El despacho</p><p class="identity-title">Jaime Valiente<br /><em>Alemán.</em></p><p>Abogado<br />Cádiz · Arcos de la Frontera</p></div>
+        <div><h2>Escuchar tu situación.<br /><em>Asesorar con rigor.</em></h2><p class="statement-copy">Atención cercana, personalizada, rigurosa y transparente. Asesoramiento a particulares, empresas y autónomos desde las dos ubicaciones publicadas del despacho.</p><a class="text-link" href={href('el-despacho/')}>Conocer a Jaime Valiente<Arrow /></a></div>
+      </div>
+      <div class="statement-client"><p>¿Ya eres cliente del despacho?</p><a class="text-link" href={href('area-clientes/')}>Consultar el envío de documentación<Arrow /></a></div>
+    </div>
+  </section>
+  <section class="section locations-section">
+    <div class="shell">
+      <div class="section-header"><div><p class="eyebrow">Dónde encontrarnos</p><h2>Dos ubicaciones.<br /><em>Un contacto directo.</em></h2></div><p>Contacta para consultar la disponibilidad y las condiciones de atención antes de desplazarte.</p></div>
+      <Offices />
+      <p class="location-disclaimer">Datos publicados en la web actual, pendientes de ratificación para la versión definitiva. La grafía de las direcciones y los edificios se conserva como figura en la auditoría.</p>
+    </div>
+  </section>
+  <ContactCta title="Hablemos de tu consulta." action="Solicitar consulta" description="Explica brevemente qué necesitas y consulta las condiciones de atención. Evita enviar documentación sensible en el primer mensaje." />
 </Layout>

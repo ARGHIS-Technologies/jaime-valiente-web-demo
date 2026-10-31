@@ -9,7 +9,7 @@
 | [Starwind UI](https://github.com/starwind-ui/starwind-ui) | Sus primitivas accesibles son relevantes para interacciones complejas. El menú de esta demo es una divulgación sencilla, ya probada con teclado, Escape y devolución de foco. No se necesitan diálogos, selectores o formularios complejos. Incorporar un runtime adicional duplicaría ese comportamiento. | No instalar. Reconsiderar solo ante una necesidad funcional o de accesibilidad concreta que el componente resuelva mejor. |
 | [Motion](https://motion.dev/) | Adecuado para gestos, física y composiciones que exceden CSS. La demo solo requiere respuestas de enlaces, menú y entradas discretas; no hay arrastre, gestos complejos o animaciones de estado compartido. | No instalar. CSS y APIs nativas cubren los efectos definidos. |
 | [Astro Components Kit](https://astrocomponents.dev/) | Referencia de composición, navegación, espaciado y estados. No se adopta la estética glass, neón ni un bloque prefabricado. Las afirmaciones de accesibilidad y rendimiento de una biblioteca no certifican esta demo. | Referencia visual únicamente. No instalar ni copiar una plantilla. |
-| [Astro View Transitions](https://docs.astro.build/en/guides/view-transitions/) | La guía distingue las transiciones nativas entre documentos de ClientRouter. No se necesita persistencia de estado ni enrutado SPA para esta web estática. | Transiciones CSS nativas MPA con mejora progresiva; no añadir ClientRouter ni dependencias. Navegación ordinaria cuando no exista soporte. |
+| [Astro View Transitions](https://docs.astro.build/en/guides/view-transitions/) | La guía distingue las transiciones nativas entre documentos de ClientRouter. No se necesita persistencia de estado ni enrutado SPA para esta web estática. | Revisión 3: navegación MPA convencional, sin ClientRouter ni dependencias. La transición nativa entre documentos se probó y se desactivó tras una incidencia observada al entrar en especialidades; se mantienen las entradas y estados con CSS. |
 
 ## Dirección propia
 
@@ -21,7 +21,7 @@ Tipografía Source Serif 4 y Source Sans 3; marca nominal; marfil, petróleo y a
 - Tarjetas: filas editoriales con respuesta de borde y flecha, sin elevar su posición; foco visible independiente del movimiento.
 - Menú: apertura de 180 ms y cierre de 150 ms con APIs nativas; estado ARIA, foco, Escape y enlaces conservados. Panel bajo la cabecera sin desplazar el contenido.
 - Secciones: desplazamiento de 8 px y opacidad mínima de 0,94 durante 320 ms, una vez al entrar. IntersectionObserver solo dispara una clase CSS; sin observador o JavaScript, el contenido permanece visible.
-- Navegación entre páginas: transición nativa de 160 ms si el navegador la admite. Sin interceptar enlaces ni depender de un router cliente.
+- Navegación entre páginas: convencional en la revisión 3, tras reproducir una incidencia de estado con una transición nativa. Sin interceptar enlaces ni depender de un router cliente.
 - Movimiento reducido: sin desplazamientos, animaciones o desplazamiento suave; no se inicia el observador y el menú cambia de estado inmediatamente.
 
 ## Puertas de calidad antes de publicar
@@ -37,3 +37,7 @@ Las capturas y resultados del informe registran comprobaciones ejecutadas. No se
 ## Refinamiento posterior
 
 La segunda revisión conserva estas referencias y dependencias. El menú permanece opaco durante la apertura y el cierre. Auditoría, iteraciones, capturas y evidencia actualizada en [refinamiento/INFORME.md](refinamiento/INFORME.md).
+
+## Dirección de arte y contraste — revisión 3
+
+Se da peso al petróleo desde la entrada, se sustituyen los resúmenes repetidos por una guía a especialidades y se refuerzan el nombre y las ubicaciones. Contacto y Clientes comparten superficies funcionales verdes; se conservan los recursos nativos y no se instalan dependencias. Ver [informe vigente](direccion-arte/INFORME.md).

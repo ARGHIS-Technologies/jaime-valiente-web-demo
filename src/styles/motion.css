@@ -1,6 +1,7 @@
-/* Native MPA transitions: unsupported browsers retain normal full-page navigation. */
-@view-transition { navigation: auto; }
-::view-transition-group(root) { animation-duration: 160ms; }
+/* Use regular document navigation: native cross-document transitions produced
+   a reveal-state error when entering a service fragment in the QA browser.
+   Section entrances and interface states retain their small CSS animations. */
+@view-transition { navigation: none; }
 @keyframes section-enter { from { opacity: .94; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: no-preference) {
   .section-entering { animation: section-enter 320ms cubic-bezier(.2,.65,.3,1) both; }

@@ -1,6 +1,6 @@
-# Jaime Valiente Abogado — Demo de diseño
+# Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [informe del refinamiento editorial](docs/refinamiento/INFORME.md), con comparativas, pruebas y límites.
+**Revisión vigente:** [dirección de arte y contraste](docs/direccion-arte/INFORME.md), con comparativas, pruebas y límites.
 
 Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalienteabogado.es`.
 

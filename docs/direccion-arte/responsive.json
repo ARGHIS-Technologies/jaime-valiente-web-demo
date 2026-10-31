@@ -1,0 +1,552 @@
+[
+  {
+    "route": "",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Tu abogado,\nen Cádiz y Arcos.",
+    "height": 6290,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "particulares/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "height": 4246,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "empresas/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "height": 4815,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "reclamaciones/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "height": 4515,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "el-despacho/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Alemán.",
+    "height": 4246,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "contacto/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Hablemos\nde tu consulta.",
+    "height": 3659,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "area-clientes/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "height": 2354,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "aviso-legal/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "height": 2296,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "privacidad/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "height": 2335,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "cookies/",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "height": 2346,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "404.html",
+    "width": 320,
+    "client": 305,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "height": 1582,
+    "overflowNodes": [],
+    "scroll": 305
+  },
+  {
+    "route": "",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Tu abogado,\nen Cádiz y Arcos.",
+    "height": 5526,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "particulares/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "height": 3670,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "empresas/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "height": 4171,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "reclamaciones/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "height": 3894,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "el-despacho/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Alemán.",
+    "height": 3738,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "contacto/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Hablemos\nde tu consulta.",
+    "height": 3239,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "area-clientes/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "height": 2065,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "aviso-legal/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "height": 1892,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "privacidad/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "height": 1996,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "cookies/",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "height": 1946,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "404.html",
+    "width": 390,
+    "client": 375,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "height": 1275,
+    "overflowNodes": [],
+    "scroll": 375
+  },
+  {
+    "route": "",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Tu abogado,\nen Cádiz y Arcos.",
+    "height": 4145,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "particulares/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "height": 3254,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "empresas/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "height": 3554,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "reclamaciones/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "height": 3330,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "el-despacho/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Alemán.",
+    "height": 2904,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "contacto/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Hablemos\nde tu consulta.",
+    "height": 2608,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "area-clientes/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "height": 1378,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "aviso-legal/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "height": 1526,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "privacidad/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "height": 1583,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "cookies/",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "height": 1554,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "404.html",
+    "width": 768,
+    "client": 753,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "height": 1099,
+    "overflowNodes": [],
+    "scroll": 753
+  },
+  {
+    "route": "",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Tu abogado,\nen Cádiz y Arcos.",
+    "height": 3665,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "particulares/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "height": 2766,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "empresas/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "height": 3015,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "reclamaciones/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "height": 2790,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "el-despacho/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Alemán.",
+    "height": 2494,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "contacto/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Hablemos\nde tu consulta.",
+    "height": 2255,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "area-clientes/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "height": 1292,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "aviso-legal/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "height": 1526,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "privacidad/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "height": 1554,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "cookies/",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "height": 1554,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "404.html",
+    "width": 1024,
+    "client": 1009,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "height": 1030,
+    "overflowNodes": [],
+    "scroll": 1009
+  },
+  {
+    "route": "",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Tu abogado,\nen Cádiz y Arcos.",
+    "height": 3558,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "particulares/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Servicios jurídicos para particulares.",
+    "height": 2591,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "empresas/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "height": 2882,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "reclamaciones/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Reclamación de deudas y ejecución de resoluciones.",
+    "height": 2534,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "el-despacho/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Jaime Valiente Alemán.",
+    "height": 2423,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "contacto/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Hablemos\nde tu consulta.",
+    "height": 2210,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "area-clientes/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Área de clientes.",
+    "height": 1209,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "aviso-legal/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Aviso legal.",
+    "height": 1534,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "privacidad/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Privacidad.",
+    "height": 1562,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "cookies/",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "Cookies.",
+    "height": 1562,
+    "overflowNodes": [],
+    "scroll": 1425
+  },
+  {
+    "route": "404.html",
+    "width": 1440,
+    "client": 1425,
+    "fonts": "loaded",
+    "h1": "No encontramos\nesta página.",
+    "height": 1038,
+    "overflowNodes": [],
+    "scroll": 1425
+  }
+]

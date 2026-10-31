@@ -1,0 +1,27 @@
+{
+  "since": "2026-10-31T13:15:23.995Z",
+  "decision": "Navegación convencional entre documentos; entradas de secciones y microinteracciones CSS conservadas.",
+  "journeys": [
+    {
+      "h1": "Servicios jurídicos para particulares.",
+      "journey": "Familia y sucesiones",
+      "target": "Familia\ny sucesiones"
+    },
+    {
+      "h1": "Asesoramiento para empresas y autónomos.",
+      "journey": "Contable y fiscal",
+      "target": "Contable y fiscal"
+    },
+    {
+      "expanded": "true",
+      "focus": "01Inicio↗",
+      "journey": "Menú después de entrar en una especialidad"
+    },
+    {
+      "focus": "menu-toggle",
+      "hidden": true,
+      "journey": "Cierre del menú después del acceso directo"
+    }
+  ],
+  "logs": []
+}

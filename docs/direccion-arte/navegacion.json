@@ -1,0 +1,32 @@
+[
+  {
+    "canonical": "https://mmlab-dev.github.io/jaime-valiente-web-demo/particulares/",
+    "h1": "Servicios jurídicos para particulares.",
+    "journey": "Particular desde la guía de Inicio",
+    "target": "Familia\ny sucesiones"
+  },
+  {
+    "canonical": "https://mmlab-dev.github.io/jaime-valiente-web-demo/empresas/",
+    "h1": "Asesoramiento para empresas y autónomos.",
+    "journey": "Empresa desde la guía de Inicio",
+    "target": "Contable y fiscal"
+  },
+  {
+    "expanded": "true",
+    "focus": "01Inicio↗",
+    "journey": "Teclado del menú en la página cargada",
+    "outline": "rgb(139, 107, 69) solid 2.4px"
+  },
+  {
+    "expanded": "false",
+    "focus": "menu-toggle",
+    "hidden": true,
+    "journey": "Cierre del menú"
+  },
+  {
+    "forms": 0,
+    "h1": "Área de clientes.",
+    "journey": "Cliente existente desde cabecera",
+    "status": "DEMO · ACCESO NO HABILITADO"
+  }
+]

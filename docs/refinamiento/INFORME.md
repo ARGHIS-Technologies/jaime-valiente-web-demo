@@ -2,6 +2,8 @@
 
 31 de octubre de 2026. Jaime Valiente Alemán · Abogado.
 
+**Revisión vigente:** [dirección de arte, revisión 3](../direccion-arte/INFORME.md). Este documento conserva la revisión anterior.
+
 Demo: https://mmlab-dev.github.io/jaime-valiente-web-demo/
 
 Repositorio personal: https://github.com/mmlab-dev/jaime-valiente-web-demo
