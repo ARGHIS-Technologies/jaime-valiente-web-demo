@@ -19,9 +19,17 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
  assert.doesNotMatch(html,/script\.google\.com|AKfycb|GTM-|G-[A-Z0-9]{7,}/,`No Apps Script or analytics ${file}`);
  assert.match(html,/Demo de diseño/,`Demo label ${file}`);
+ const fontPreloads=[...html.matchAll(/<link\b[^>]*rel="preload"[^>]*>/g)].map(match=>match[0]).filter(tag=>tag.includes('as="font"'));
+ assert.equal(fontPreloads.length,2,`Two critical font preloads in ${file}`);
+ for(const tag of fontPreloads) assert.match(tag,/type="font\/woff2"[^>]*crossorigin="anonymous"/,`Font format and credentials mode in ${file}`);
  for(const match of html.matchAll(/(?:href|src)="([^"\s]+)"/g)) {
   const target=match[1];
-  if (/^(https?:|mailto:|tel:|data:|#)/.test(target)) continue;
+  if(target.startsWith('#')) {
+   references++;
+   assert.ok(html.includes(`id="${target.slice(1)}"`),`Missing same-document target ${target} in ${file}`);
+   continue;
+  }
+  if (/^(https?:|mailto:|tel:|data:)/.test(target)) continue;
   references++;
   assert.ok(target.startsWith(base),`Missing GitHub Pages base: ${target} in ${file}`);
   const clean=decodeURIComponent(target.slice(base.length).split(/[?#]/)[0]);

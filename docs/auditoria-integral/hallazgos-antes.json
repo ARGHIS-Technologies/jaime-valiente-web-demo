@@ -1,0 +1,44 @@
+{
+  "menuExit": {
+    "expanded": "true",
+    "focus": "Solicitar consulta",
+    "focusTop": 384,
+    "menuBottom": 534.3999938964844
+  },
+  "fragment": {
+    "active": "BODY",
+    "activeId": "",
+    "headerBottom": 78.80000305175781,
+    "target": "familia",
+    "top": 209.71250915527344
+  },
+  "shortViewport": {
+    "height": 480,
+    "menuBottom": 447.29732513427734,
+    "menuClient": 338,
+    "menuScroll": 455,
+    "menuTop": 107.29729461669922
+  },
+  "homeSections": [
+    {
+      "class": "home-hero section-entering",
+      "height": 863.3500366210938
+    },
+    {
+      "class": "section services-section",
+      "height": 1745.5125732421875
+    },
+    {
+      "class": "statement-section",
+      "height": 775.4500122070312
+    },
+    {
+      "class": "section locations-section",
+      "height": 951.7000122070312
+    },
+    {
+      "class": "contact-cta",
+      "height": 382.2749938964844
+    }
+  ]
+}

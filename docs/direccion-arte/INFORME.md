@@ -2,6 +2,8 @@
 
 31 de octubre de 2026. Jaime Valiente Alemán · Abogado.
 
+**Revisión vigente:** [auditoría integral, revisión 4](../auditoria-integral/INFORME.md). Este documento conserva la evidencia de la revisión 3.
+
 [Demo](https://mmlab-dev.github.io/jaime-valiente-web-demo/) · [Repositorio personal](https://github.com/mmlab-dev/jaime-valiente-web-demo)
 
 ## Problema abordado

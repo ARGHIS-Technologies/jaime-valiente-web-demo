@@ -1,0 +1,70 @@
+{
+  "homeSections": [
+    {
+      "class": "home-hero section-entering",
+      "height": 709.5499877929688
+    },
+    {
+      "class": "section services-section",
+      "height": 1428.4625244140625
+    },
+    {
+      "class": "statement-section",
+      "height": 696.75
+    },
+    {
+      "class": "section locations-section",
+      "height": 938.2750244140624
+    },
+    {
+      "class": "contact-cta",
+      "height": 382.2749938964844
+    }
+  ],
+  "menuExit": {
+    "expanded": "false",
+    "focus": "Solicitar consulta",
+    "focusTop": 391.2000122070313,
+    "hidden": true
+  },
+  "fragment": {
+    "active": "SECTION",
+    "activeId": "familia",
+    "headerBottom": 78.80000305175781,
+    "target": "familia",
+    "top": 101.7125015258789
+  },
+  "disclosure": {
+    "contentVisible": true,
+    "focus": "SUMMARY",
+    "open": true,
+    "summary": "Demo · Información profesional pendiente\n+"
+  },
+  "shortViewport": {
+    "height": 480,
+    "menuBottom": 462.8981323242187,
+    "menuClient": 388,
+    "menuScroll": 455,
+    "menuTop": 72.89816284179688,
+    "exitCloses": true
+  },
+  "landscape": {
+    "focus": "Solicitar consulta →",
+    "focusBottom": 357.6000061035156,
+    "focusTop": 299.6000061035156,
+    "height": 390,
+    "menuBottom": 378,
+    "menuTop": 122.8000030517578,
+    "width": 844,
+    "exitCloses": true
+  },
+  "contactFragment": {
+    "activeId": "canales",
+    "headerBottom": 78.80000305175781,
+    "targetTop": 100.58855438232422
+  },
+  "skipLink": {
+    "active": "MAIN",
+    "id": "contenido"
+  }
+}

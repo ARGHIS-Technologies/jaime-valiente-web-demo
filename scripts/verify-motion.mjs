@@ -13,6 +13,7 @@ const script = async file => {
 const header = await script('src/components/Header.astro');
 const reveal = await script('src/components/Reveal.astro');
 let animations = 0, observers = 0, focus = false;
+class TestNode { constructor(insideHeader = false) { this.insideHeader = insideHeader; } }
 const events = {}, attributes = { 'aria-expanded': 'false' };
 const toggle = {
   setAttribute: (key, value) => { attributes[key] = value; },
@@ -22,14 +23,17 @@ const toggle = {
 };
 const menu = {
   hidden: true, inert: true,
+  style: {},
+  getBoundingClientRect: () => ({ top: 110 }),
   animate: () => { animations++; return { cancel() {} }; },
   querySelectorAll: () => [],
 };
 const reduced = { matches: true, addEventListener() {} };
 const context = {
-  window: { matchMedia: query => query.includes('reduced-motion') ? reduced : { matches: false, addEventListener() {} } },
+  Node: TestNode,
+  window: { innerHeight: 480, addEventListener: (key, handler) => { events[`window:${key}`] = handler; }, matchMedia: query => query.includes('reduced-motion') ? reduced : { matches: false, addEventListener() {} } },
   document: {
-    querySelector: selector => selector === '#menu-toggle' ? toggle : selector === '#mobile-navigation' ? menu : null,
+    querySelector: selector => selector === '#menu-toggle' ? toggle : selector === '#mobile-navigation' ? menu : selector === '.site-header' ? { contains: target => target.insideHeader } : null,
     querySelectorAll: () => [{ classList: { add() { throw Error('Unexpected reveal'); } } }],
     addEventListener: (key, handler) => { events[`document:${key}`] = handler; },
   },
@@ -46,6 +50,29 @@ assert.equal(menu.hidden, true);
 assert.equal(menu.inert, true);
 assert.equal(focus, true);
 assert.equal(animations, 0);
+assert.equal(menu.style.maxHeight, '358px');
+// A keyboard user leaving the disclosure keeps the new focus and sees the page.
+focus = false;
+events['toggle:click']();
+events['document:focusin']({ target: new TestNode(true) });
+assert.equal(menu.hidden, false);
+events['document:focusin']({ target: new TestNode() });
+assert.equal(menu.hidden, true);
+assert.equal(menu.inert, true);
+assert.equal(focus, false);
+const reducedAnimations = animations;
+// The same regression must close immediately even when normal motion is enabled.
+reduced.matches = false;
+events['toggle:click']();
+context.window.innerHeight = 360;
+events['window:resize']();
+assert.equal(menu.style.maxHeight, '238px');
+events['document:focusin']({ target: new TestNode() });
+assert.equal(menu.hidden, true);
+assert.equal(attributes['aria-expanded'], 'false');
+assert.equal(animations, 1);
+assert.equal(focus, false);
+reduced.matches = true;
 // A separate context mirrors a separate module scope.
 runInNewContext(reveal, { ...context, window: { ...context.window, IntersectionObserver: context.IntersectionObserver } });
 assert.equal(observers, 0);
@@ -53,4 +80,4 @@ const css = await readFile('src/styles/motion.css', 'utf8');
 assert.match(css, /@media\s*\(prefers-reduced-motion:\s*reduce\)/);
 assert.match(css, /@view-transition\s*\{\s*navigation:\s*none/);
 assert.match(css, /animation:\s*none\s*!important/);
-console.log(JSON.stringify({ passed: true, reducedMotion: { menuAnimations: animations, revealObservers: observers, escapeReturnsFocus: focus, instantClose: menu.hidden, cssRulesReviewed: true }, scope: 'Actual component scripts in a controlled JS context; CSS rules inspected. OS preference and browser rendering not emulated.' }, null, 2));
+console.log(JSON.stringify({ passed: true, reducedMotion: { menuAnimations: reducedAnimations, revealObservers: observers, escapeReturnsFocus: true, instantClose: menu.hidden, cssRulesReviewed: true }, keyboard: { leavingMenuClosesImmediately: true, outsideFocusPreserved: true, viewportHeightRespected: true }, scope: 'Actual component scripts in a controlled JS context; CSS rules inspected. OS preference and browser rendering not emulated.' }, null, 2));

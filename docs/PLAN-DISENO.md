@@ -41,3 +41,7 @@ La segunda revisión conserva estas referencias y dependencias. El menú permane
 ## Dirección de arte y contraste — revisión 3
 
 Se da peso al petróleo desde la entrada, se sustituyen los resúmenes repetidos por una guía a especialidades y se refuerzan el nombre y las ubicaciones. Contacto y Clientes comparten superficies funcionales verdes; se conservan los recursos nativos y no se instalan dependencias. Ver [informe vigente](direccion-arte/INFORME.md).
+
+## Auditoría integral — revisión 4
+
+La salida del menú por Tab se cierra inmediatamente y conserva el nuevo foco. Los destinos de enlaces reciben foco nativo y una única separación para la cabecera; los saltos son inmediatos tras reproducir un problema con el desplazamiento suave en Contacto. Se mantienen las entradas discretas y los estados CSS. Se compacta móvil, se incorpora un desplegable HTML nativo para datos pendientes, se limpian estilos y se precargan dos fuentes existentes. Informe actual: [auditoría integral](auditoria-integral/INFORME.md).

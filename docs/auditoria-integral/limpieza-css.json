@@ -1,0 +1,23 @@
+{
+  "deadClassesConfirmedUnused": [
+    "hero-signature",
+    "signature-label",
+    "signature-statement",
+    "signature-footer",
+    "editorial-stamp",
+    "stamp-frame",
+    "wordmark-dot",
+    "document-shape",
+    "service-cards",
+    "service-card",
+    "service-card-top",
+    "service-card-category",
+    "hero-bottom",
+    "hero-desktop-break",
+    "location-line",
+    "header-cta"
+  ],
+  "selectorsRemoved": 69,
+  "earlierDeclarationsRemoved": 166,
+  "method": "PostCSS already installed by the project; no new dependency. Original stylesheet order and media contexts preserved."
+}

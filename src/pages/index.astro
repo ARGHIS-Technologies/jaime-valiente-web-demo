@@ -11,14 +11,14 @@ const areas = [
   { number: '03', title: 'Reclamaciones', summary: 'Deudas · Monitorios · Negociación · Ejecución', path: 'reclamaciones/' },
 ];
 const personal = [
-  { title: 'Derecho civil', text: 'Contratos, obligaciones y responsabilidad civil.', path: 'particulares/#civil' },
-  { title: 'Familia y sucesiones', text: 'Divorcios, custodia, alimentos y herencias.', path: 'particulares/#familia' },
-  { title: 'Derecho penal', text: 'Asistencia y defensa, acusación particular, denuncias y querellas.', path: 'particulares/#penal' },
+  { title: 'Derecho civil', text: 'Contratos y responsabilidad civil.', path: 'particulares/#civil' },
+  { title: 'Familia y sucesiones', text: 'Familia, divorcios y herencias.', path: 'particulares/#familia' },
+  { title: 'Derecho penal', text: 'Defensa y acusación particular.', path: 'particulares/#penal' },
 ];
 const business = [
-  { title: 'Jurídico y mercantil', text: 'Sociedades, contratos y operaciones empresariales.', path: 'empresas/#mercantil' },
-  { title: 'Asesoramiento laboral', text: 'Nóminas, contratación y procedimientos laborales.', path: 'empresas/#laboral' },
-  { title: 'Contable y fiscal', text: 'Contabilidad, impuestos y procedimientos tributarios.', path: 'empresas/#contable-fiscal' },
+  { title: 'Jurídico y mercantil', text: 'Sociedades y contratos mercantiles.', path: 'empresas/#mercantil' },
+  { title: 'Asesoramiento laboral', text: 'Contratación y gestión de nóminas.', path: 'empresas/#laboral' },
+  { title: 'Contable y fiscal', text: 'Contabilidad e impuestos.', path: 'empresas/#contable-fiscal' },
 ];
 ---
 <Layout title="Jaime Valiente Alemán | Abogado en Cádiz y Arcos" description="Demo de diseño. Asesoramiento jurídico para particulares y asesoramiento a empresas y autónomos en Cádiz y Arcos de la Frontera.">
@@ -35,26 +35,26 @@ const business = [
         <aside class="hero-index" aria-label="Encuentra tu área de consulta">
           <p class="eyebrow">Áreas del despacho</p>
           {areas.map(area => <a href={href(area.path)}><span class="section-number">{area.number}</span><span><strong>{area.title}</strong><small>{area.summary}</small></span><Arrow /></a>)}
-          <p class="hero-index-note">¿No sabes qué área corresponde a tu asunto?<br /><a href={href('contacto/')}>Plantea tu consulta al despacho <span aria-hidden="true">↗</span></a></p>
+          <p class="hero-index-note"><span class="hero-index-help">¿No sabes qué área corresponde a tu asunto?</span><a href={href('contacto/')}>Plantea tu consulta al despacho <span aria-hidden="true">↗</span></a></p>
         </aside>
       </div>
     </div>
   </section>
-  <section id="servicios" class="section services-section">
+  <section id="servicios" class="section services-section" tabindex="-1" aria-labelledby="servicios-title">
     <div class="shell">
-      <div class="section-header"><div><p class="eyebrow">Encuentra tu área</p><h2>Asuntos personales.<br /><em>Actividad empresarial.</em></h2></div><p>Consulta las especialidades del despacho y accede directamente a la información relacionada con tu situación.</p></div>
+      <div class="section-header"><div><p class="eyebrow">Encuentra tu área</p><h2 id="servicios-title">Asuntos personales.<br /><em>Actividad empresarial.</em></h2></div><p>Consulta las especialidades del despacho y accede directamente a la información relacionada con tu situación.</p></div>
       <div class="practice-grid">
         <ServiceGuide number="01" title="Para particulares." items={personal} />
         <ServiceGuide number="02" title="Para empresas y autónomos." items={business} business />
       </div>
-      <div class="debt-feature"><div><p class="eyebrow">Cantidades pendientes de cobro</p><h3>Reclamación de deudas.</h3></div><p>Negociación, reclamación judicial, procedimientos monitorios y ejecución de resoluciones.</p><a class="text-link" href={href('reclamaciones/')}>Consultar Reclamaciones<Arrow /></a></div>
+      <div class="debt-feature"><div><p class="eyebrow">Reclamaciones</p><h3>Deudas pendientes.</h3></div><p>Negociación, reclamación judicial, monitorios y ejecución de resoluciones.</p><a class="text-link" href={href('reclamaciones/')}>Consultar Reclamaciones<Arrow /></a></div>
     </div>
   </section>
   <section class="statement-section">
     <div class="shell">
       <div class="statement-grid">
         <div class="identity-note"><p class="eyebrow">El despacho</p><p class="identity-title">Jaime Valiente<br /><em>Alemán.</em></p><p>Abogado<br />Cádiz · Arcos de la Frontera</p></div>
-        <div><h2>Escuchar tu situación.<br /><em>Asesorar con rigor.</em></h2><p class="statement-copy">Atención cercana, personalizada, rigurosa y transparente. Asesoramiento a particulares, empresas y autónomos desde las dos ubicaciones publicadas del despacho.</p><a class="text-link" href={href('el-despacho/')}>Conocer a Jaime Valiente<Arrow /></a></div>
+        <div><h2>Escuchar tu situación.<br /><em>Asesorar con rigor.</em></h2><p class="statement-copy">Atención cercana, personalizada, rigurosa y transparente para particulares, empresas y autónomos en Cádiz y Arcos de la Frontera.</p><a class="text-link" href={href('el-despacho/')}>Conocer a Jaime Valiente<Arrow /></a></div>
       </div>
       <div class="statement-client"><p>¿Ya eres cliente del despacho?</p><a class="text-link" href={href('area-clientes/')}>Consultar el envío de documentación<Arrow /></a></div>
     </div>
