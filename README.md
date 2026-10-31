@@ -1,6 +1,6 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [iconografía Phosphor](docs/iconografia/INFORME.md), con procedencia, licencia, capturas y verificaciones.
+**Revisión vigente:** [Lighthouse CI, axe-core y Open Props](docs/auditoria-herramientas/INFORME.md), con hallazgos corregidos, mediciones y publicación verificada.
 
 Dirección visual: [composición editorial y presencia personal](docs/composicion-editorial/INFORME.md).
 
@@ -63,11 +63,29 @@ docs/            Informe, pendientes, desviaciones, pruebas y capturas
 .github/workflows/deploy.yml
 ```
 
+## Auditoría con Lighthouse CI y axe-core
+
+Las herramientas de auditoría son dependencias de desarrollo; no se incorporan a las páginas publicadas. Se necesita Chrome instalado y Node 24 para reproducir el entorno comprobado. En PowerShell:
+
+```powershell
+$env:CHROME_PATH='C:/Program Files/Google/Chrome/Application/chrome.exe'
+npm run build
+npm run audit:quality
+```
+
+El comando comprueba 24 estados con axe-core (once rutas en móvil/escritorio, menú abierto y datos profesionales desplegados) y recoge tres mediciones móviles simuladas de Lighthouse en Inicio, Particulares, Empresas, Contacto y Clientes. Los resultados completos están en `.quality/` y `.lighthouseci/`, ignorados por Git. `npm run audit:a11y` conserva todos los estados axe y reduce la medición Lighthouse a Inicio para revisar accesibilidad durante desarrollo.
+
+La publicación exige cero infracciones automáticas de axe y medianas de rendimiento ≥90, accesibilidad automática 100, buenas prácticas ≥95, LCP ≤2.500 ms, CLS ≤0,1 y TBT ≤200 ms. Un resultado incompleto nuevo también bloquea para revisión manual. Se conserva una excepción documentada de contraste del texto de Inicio tapado por el menú opaco; el estado normal y el menú se revisaron por separado. SEO se informa completo y conserva el `noindex` deliberado de la demo. Estas mediciones de laboratorio no representan datos de usuarios reales ni una certificación WCAG.
+
+Las versiones de las herramientas y las correcciones transitivas están fijadas en `package.json` y el lockfile. Los `overrides` actualizan Lighthouse/Chrome Launcher y dependencias con avisos conocidos; se validan con el comando completo y `npm audit`. No usar `npm audit fix --force` para cambiar versiones sin comprobar compatibilidad. GitHub Actions guarda los informes durante 14 días y bloquea Pages si falla una puerta de calidad. No se suben a servicios de informes externos.
+
+Open Props aporta únicamente dos curvas de movimiento seleccionadas en `src/styles/tokens.css`, con licencia incluida. Los estilos y el menú nativo comparten esos valores; permanecen el diseño y el movimiento reducido.
+
 ## Publicar en GitHub Pages
 
 La configuración real de Astro es `site: https://mmlab-dev.github.io` y `base: /jaime-valiente-web-demo`. Todos los enlaces internos, scripts, estilos y fuentes respetan ese subdirectorio. No hay archivo CNAME ni dominio personalizado.
 
-En el repositorio personal, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y despliega `dist/` con las acciones oficiales de GitHub. Los cambios exclusivos de documentación no provocan un nuevo despliegue. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
+En el repositorio personal, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y ejecuta las puertas Lighthouse/axe antes de desplegar `dist/` con las acciones oficiales de GitHub. La auditoría completa requiere varios minutos. Los cambios exclusivos de documentación no provocan un nuevo despliegue. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
 
 Para publicar un cambio ya revisado:
 

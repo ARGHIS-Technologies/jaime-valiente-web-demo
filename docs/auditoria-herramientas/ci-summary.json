@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2026-10-31T19:04:40.540Z",
+  "environment": "Isolated local static build; simulated mobile Lighthouse; no field data",
+  "lighthouse": [
+    {
+      "route": "/jaime-valiente-web-demo/",
+      "runs": 3,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 755.2847999999999,
+        "largest-contentful-paint": 755.2847999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.00005406102651644081,
+        "speed-index": 755.2847999999999
+      },
+      "findings": [
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 140 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/particulares/",
+      "runs": 3,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 755.8348000000001,
+        "largest-contentful-paint": 755.8348000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.00003188655677614539,
+        "speed-index": 755.8348000000001
+      },
+      "findings": [
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 120 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/empresas/",
+      "runs": 3,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 755.0242000000001,
+        "largest-contentful-paint": 755.0242000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 755.0242000000001
+      },
+      "findings": [
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 140 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/contacto/",
+      "runs": 3,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 755.5510999999999,
+        "largest-contentful-paint": 755.5510999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 755.5510999999999
+      },
+      "findings": [
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 140 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/area-clientes/",
+      "runs": 3,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 756.0397,
+        "largest-contentful-paint": 756.0397,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.00002764468971427485,
+        "speed-index": 756.0397
+      },
+      "findings": [
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 140 ms"
+        }
+      ]
+    }
+  ],
+  "axe": {
+    "engine": "axe-core 4.14.0",
+    "states": 24,
+    "violations": [],
+    "incompleteCount": 1,
+    "reviewedMenuOverlap": 1,
+    "unexpectedIncomplete": []
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "engine": "axe-core 4.14.0",
+  "results": [
+    {
+      "route": "",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "",
+      "width": 390,
+      "state": "menu-open",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                ".hero-copy > .eyebrow"
+              ],
+              "html": "<p class=\"eyebrow\">Jaime Valiente Alemán · Abogado</p>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "html": "<h1>Tu abogado,<br><em>en Cádiz y Arcos.</em></h1>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "em"
+              ],
+              "html": "<em>en Cádiz y Arcos.</em>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".home-intro"
+              ],
+              "html": "<p class=\"home-intro\">Asesoramiento jurídico para tus asuntos personales. Atención jurídica y mercantil, laboral, contable y fiscal para empresas y autónomos.</p>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".hero-buttons > .button.button-dark"
+              ],
+              "html": "<a class=\"button button-dark\" href=\"/jaime-valiente-web-demo/contacto/\">",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".hero-secondary"
+              ],
+              "html": "<a class=\"hero-secondary\" href=\"#servicios\">",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".hero-index-label"
+              ],
+              "html": "<p class=\"hero-index-label\">¿Qué necesitas consultar?</p>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a:nth-child(2) > strong"
+              ],
+              "html": "<strong>Particulares</strong>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "particulares/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "empresas/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "reclamaciones/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "el-despacho/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "el-despacho/",
+      "width": 390,
+      "state": "professional-details-open",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "contacto/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "area-clientes/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "aviso-legal/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "privacidad/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "cookies/",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "404.html",
+      "width": 390,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "particulares/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "empresas/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "reclamaciones/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "el-despacho/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "contacto/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "area-clientes/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "aviso-legal/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "privacidad/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "cookies/",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "404.html",
+      "width": 1440,
+      "state": "default",
+      "violations": [],
+      "incomplete": []
+    }
+  ]
+}

@@ -1,0 +1,1274 @@
+{
+  "generatedAt": "2026-10-31T18:46:58.349Z",
+  "environment": "Isolated local static build; simulated mobile Lighthouse; no field data",
+  "lighthouse": [
+    {
+      "route": "/jaime-valiente-web-demo/",
+      "runs": 1,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 757.0591999999999,
+        "largest-contentful-paint": 757.0591999999999,
+        "total-blocking-time": 57.47040000000004,
+        "cumulative-layout-shift": 0,
+        "speed-index": 757.0591999999999
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.77,
+          "displayValue": "170 ms"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 120 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/particulares/",
+      "runs": 1,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 757.3982000000001,
+        "largest-contentful-paint": 757.3982000000001,
+        "total-blocking-time": 17.5,
+        "cumulative-layout-shift": 0.00003188655677614539,
+        "speed-index": 757.3982000000001
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.98,
+          "displayValue": "90 ms"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 50 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/empresas/",
+      "runs": 1,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 758.0286000000001,
+        "largest-contentful-paint": 758.0286000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 758.0286000000001
+      },
+      "findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 90 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/contacto/",
+      "runs": 1,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 0.94,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 757.4498000000001,
+        "largest-contentful-paint": 757.4498000000001,
+        "total-blocking-time": 294.27510000000007,
+        "cumulative-layout-shift": 0,
+        "speed-index": 966.1880320117093
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.79,
+          "displayValue": "290 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.18,
+          "displayValue": "390 ms"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 50 ms"
+        }
+      ]
+    },
+    {
+      "route": "/jaime-valiente-web-demo/area-clientes/",
+      "runs": 1,
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 757.9525000000001,
+        "largest-contentful-paint": 757.9525000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0003504828317837908,
+        "speed-index": 757.9525000000001
+      },
+      "findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 60 ms"
+        }
+      ]
+    }
+  ],
+  "axe": {
+    "engine": "axe-core 4.14.0",
+    "states": 24,
+    "violations": [
+      {
+        "route": "",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "",
+        "width": 390,
+        "state": "menu-open",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "",
+        "width": 390,
+        "state": "menu-open",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "particulares/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "particulares/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "empresas/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "empresas/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "reclamaciones/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "reclamaciones/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "el-despacho/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "el-despacho/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "el-despacho/",
+        "width": 390,
+        "state": "professional-details-open",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "el-despacho/",
+        "width": 390,
+        "state": "professional-details-open",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "contacto/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "contacto/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "area-clientes/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "area-clientes/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "aviso-legal/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "aviso-legal/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "privacidad/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "privacidad/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "cookies/",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "cookies/",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "404.html",
+        "width": 390,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "404.html",
+        "width": 390,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "particulares/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "particulares/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "empresas/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "empresas/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "reclamaciones/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "reclamaciones/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "el-despacho/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "el-despacho/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "contacto/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "contacto/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "area-clientes/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "area-clientes/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "aviso-legal/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "aviso-legal/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "privacidad/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "privacidad/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "cookies/",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "cookies/",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "route": "404.html",
+        "width": 1440,
+        "state": "default",
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".header-inner > .wordmark[href$=\"jaime-valiente-web-demo/\"]"
+            ],
+            "html": "<a class=\"wordmark\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          },
+          {
+            "target": [
+              ".footer-brand"
+            ],
+            "html": "<a class=\"wordmark footer-brand\" href=\"/jaime-valiente-web-demo/\" aria-label=\"Jaime Valiente Alemán, abogado. Inicio\"><span>Jaime Valiente</span><span class=\"wordmark-sub\">ALEMÁN · ABOGADO</span></a>",
+            "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        ]
+      },
+      {
+        "route": "404.html",
+        "width": 1440,
+        "state": "default",
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".demo-strip"
+            ],
+            "html": "<div class=\"demo-strip\">",
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ],
+    "incompleteCount": 1
+  }
+}

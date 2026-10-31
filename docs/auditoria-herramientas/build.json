@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "pages": 11,
+  "localReferencesChecked": 481,
+  "decorativeIconsChecked": 217,
+  "iconLicenseIncluded": true,
+  "bytesUncompressed": {
+    "html": 198765,
+    "css": 43746,
+    "js": 0,
+    "fonts": 71544
+  }
+}

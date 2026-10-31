@@ -57,3 +57,7 @@ Flechas junto a los títulos de especialidad, acciones compactas en tableta y en
 ## Iconografía Phosphor — revisión 7
 
 Se seleccionan quince SVG oficiales de Phosphor, peso regular, fijados por commit y con licencia MIT incluida. Iconos semánticos para contacto, ubicaciones y documentación; chevrons y flechas coherentes para navegación. SVG locales renderizados por Astro, sin instalar paquetes, fuentes de iconos o JavaScript adicional. [Criterio, procedencia y pruebas](iconografia/INFORME.md).
+
+## Herramientas de calidad y Open Props — revisión 8
+
+Se aplican dos curvas seleccionadas de Open Props, con licencia local, a estilos y menú. Axe revisa 24 estados de once rutas; Lighthouse recoge tres mediciones de cinco páginas representativas. Se corrigen el nombre accesible de la marca y la región del aviso de demo. La publicación queda condicionada a las nuevas puertas de calidad y conserva `noindex`. [Resultados, hallazgos y alcance](auditoria-herramientas/INFORME.md).

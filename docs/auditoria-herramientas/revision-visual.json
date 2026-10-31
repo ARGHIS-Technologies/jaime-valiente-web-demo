@@ -1,0 +1,46 @@
+{
+  "menu": {
+    "closed": true,
+    "focus": "Solicitar consulta"
+  },
+  "widths": [
+    {
+      "available": 305,
+      "documentWidth": 305,
+      "width": 320
+    },
+    {
+      "available": 375,
+      "documentWidth": 375,
+      "width": 390
+    },
+    {
+      "available": 753,
+      "documentWidth": 753,
+      "width": 768
+    },
+    {
+      "available": 1009,
+      "documentWidth": 1009,
+      "width": 1024
+    },
+    {
+      "available": 1425,
+      "documentWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "motion": {
+    "brand": "Jaime Valiente\nALEMÁN · ABOGADO\n· Inicio",
+    "brandOverride": null,
+    "demoRegion": "Demostración de diseño",
+    "entryAnimation": "cubic-bezier(0, 0, 0.3, 1)",
+    "entryCurve": "cubic-bezier(0, 0, .3, 1)",
+    "uiCurve": "cubic-bezier(.25, 0, .3, 1)"
+  },
+  "manualContrast": {
+    "scope": "Menu-open axe incomplete covers text behind an opaque disclosure; default state passed axe contrast; open menu and restored page visually inspected",
+    "screenshot": "menu-390.png"
+  },
+  "logs": []
+}

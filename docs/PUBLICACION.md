@@ -2,7 +2,11 @@
 
 Fecha: 31 de octubre de 2026, Europe/Madrid.
 
-## Revisión vigente: iconografía Phosphor
+## Revisión vigente: Lighthouse CI, axe-core y Open Props
+
+Aplicación `66c9497adf1825e5cd28fb727942de994a89d476`, publicada correctamente por [Actions 41232166276](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41232166276) tras superar las nuevas puertas de calidad. Cinco páginas por tres ejecuciones: medianas 100 en rendimiento, accesibilidad automática y buenas prácticas. Axe: 24 estados, cero infracciones, un incompleto conocido revisado. Los 39 archivos públicos coinciden por SHA256 con el build. [Informe vigente, mediciones y límites](auditoria-herramientas/INFORME.md).
+
+## Registro histórico: iconografía Phosphor
 
 Aplicación `0ed62616ec8e73cc27727bcfd5282134ee833805`, publicada correctamente por [Actions 41228963311](https://github.com/mmlab-dev/jaime-valiente-web-demo/actions/runs/41228963311). Los 38 archivos públicos coinciden por SHA256 con el build, incluidos licencia y SVG estáticos. Comprobados Contacto en escritorio y móvil, iconos semánticos, carpeta de clientes y menú con Escape. [Informe vigente y comparativas](iconografia/INFORME.md).
 

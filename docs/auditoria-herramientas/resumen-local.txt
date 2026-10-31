@@ -1,0 +1,28 @@
+{
+  "lighthouse": [
+    {
+      "route": "/jaime-valiente-web-demo/",
+      "runs": 1,
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 0.63
+      },
+      "metrics": {
+        "first-contentful-paint": 757.8467,
+        "largest-contentful-paint": 757.8467,
+        "total-blocking-time": 47.07664999999997,
+        "cumulative-layout-shift": 0.00127795761599323,
+        "speed-index": 757.8467
+      }
+    }
+  ],
+  "axe": {
+    "states": 24,
+    "violations": 0,
+    "ruleIds": [],
+    "incompleteCount": 1,
+    "unexpectedIncomplete": 0
+  }
+}
