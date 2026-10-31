@@ -2,15 +2,13 @@
 import Arrow from './Arrow.astro';
 import { href } from '../data/site';
 interface Props {
-  number: string;
   title: string;
   items: { title: string; text: string; path: string }[];
   business?: boolean;
 }
-const { number, title, items, business = false } = Astro.props;
+const { title, items, business = false } = Astro.props;
 ---
 <article class:list={['practice-group', { 'practice-business': business }]}>
-  <p class="practice-number"><span>{number}</span><span>{business ? 'Tu actividad profesional' : 'Tu vida personal'}</span></p>
   <h3>{title}</h3>
   <ul>{items.map(item => <li><a href={href(item.path)}><span><strong>{item.title}</strong><small>{item.text}</small></span><Arrow /></a></li>)}</ul>
 </article>

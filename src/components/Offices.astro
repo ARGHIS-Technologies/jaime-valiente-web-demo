@@ -3,4 +3,4 @@ import { offices, href } from '../data/site';
 import Arrow from './Arrow.astro';
 const { compact = false } = Astro.props;
 ---
-<div class:list={['offices-grid', { compact }]}>{offices.map(office => <article class="office"><div class="office-top"><span class="section-number">{office.number}</span><span class="office-province">CÁDIZ</span></div><h3>{office.city}</h3><address>{office.address}<br />{office.building}</address><a class="text-link" href={href('contacto/#canales')}>Consultar atención en {office.city === 'Cádiz' ? 'Cádiz' : 'Arcos'}<Arrow /></a></article>)}</div>
+<div class:list={['offices-grid', { compact }]}>{offices.map(office => <article class="office"><h3>{office.city}</h3><address>{office.address}<br />{office.building}</address><a class="text-link" href={href('contacto/#canales')}>Consultar atención en {office.city === 'Cádiz' ? 'Cádiz' : 'Arcos'}<Arrow /></a></article>)}</div>
