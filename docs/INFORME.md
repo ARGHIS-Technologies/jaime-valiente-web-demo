@@ -12,7 +12,7 @@ La portada usa una composición tipográfica; no hay fotografías ni retratos fi
 
 | Prueba | Resultado y alcance |
 | --- | --- |
-| Comprobación Astro y TypeScript | 22 archivos, cero errores, advertencias o sugerencias en la última ejecución. |
+| Comprobación Astro y TypeScript | 23 archivos, cero errores, advertencias o sugerencias en la última ejecución. |
 | Build de producción | Correcto; 11 documentos HTML estáticos, incluida 404. |
 | Verificación del build | 428 referencias internas comprobadas; rutas, recursos y anclas resueltos bajo `/jaime-valiente-web-demo/`; un H1 e idioma español; noindex y aviso demo presentes; sin formularios o integración Apps Script. |
 | Responsive | 11 rutas × 5 anchos = 55 observaciones en el navegador integrado Chromium: 320, 390, 768, 1024 y 1440 px. Sin desbordamientos finales. Datos en `pruebas-responsive.json`. |
@@ -28,7 +28,7 @@ Los JSON reflejan el estado final de las observaciones afectadas tras corregir i
 
 ## Peso y rendimiento
 
-Salida estática sin imágenes de contenido. CSS global aproximadamente 31,5 KB y fuentes WOFF2 locales 71,5 KB en total, sin comprimir. HTML de las 11 páginas aproximadamente 126,5 KB en total; cada página incluye el pequeño script del menú integrado en su HTML. La cifra de JS externo del verificador es cero porque no se emite un archivo JS separado; no significa ausencia absoluta de JavaScript.
+Salida estática sin imágenes de contenido. CSS global aproximadamente 31,5 KB y fuentes WOFF2 locales 71,5 KB en total, sin comprimir. HTML de las 11 páginas aproximadamente 126,7 KB en total; cada página incluye el pequeño script del menú integrado en su HTML. La cifra de JS externo del verificador es cero porque no se emite un archivo JS separado; no significa ausencia absoluta de JavaScript.
 
 No se ha ejecutado Lighthouse ni medido Core Web Vitals de campo. Los tamaños y la arquitectura ligera son comprobaciones realizadas, no una puntuación de rendimiento certificada.
 
@@ -49,3 +49,5 @@ Se evaluaron Starwind, Motion, Astro Components Kit y las transiciones de Astro 
 Evaluación crítica de los pilotos: jerarquía tipográfica editorial legible, alineación de contenido y cabecera consistente, acciones claras y panel de marca sin retrato ficticio. Se conservó la adaptación específica de tableta que había corregido el panel estrecho. El contraste del bronce textual se mantuvo corregido. El movimiento no oculta el contenido ni retrasa su disponibilidad.
 
 Ver [plan y referencias](PLAN-DISENO.md).
+
+La revisión pública inicial verificó 23 archivos con HTTP 200 y coincidencia SHA256 con el build, además de una ruta inexistente con HTTP 404 y página personalizada. La navegación pública de escritorio y móvil se ejecutó sin errores de consola. El aviso de clientes se expresa en lenguaje de uso, sin nombrar las herramientas que no se integran.

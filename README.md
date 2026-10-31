@@ -60,7 +60,7 @@ docs/            Informe, pendientes, desviaciones, pruebas y capturas
 
 La configuración real de Astro es `site: https://mmlab-dev.github.io` y `base: /jaime-valiente-web-demo`. Todos los enlaces internos, scripts, estilos y fuentes respetan ese subdirectorio. No hay archivo CNAME ni dominio personalizado.
 
-En el repositorio personal, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y despliega `dist/` con las acciones oficiales de GitHub. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
+En el repositorio personal, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y despliega `dist/` con las acciones oficiales de GitHub. Los cambios exclusivos de documentación no provocan un nuevo despliegue. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
 
 Para publicar un cambio ya revisado:
 
@@ -87,3 +87,5 @@ Ver [informe y pruebas](docs/INFORME.md), [pendientes](docs/PENDIENTES.md), [des
 - [API GitHub Pages](https://docs.github.com/en/rest/pages/pages)
 
 Publicar esta demo no autoriza a sustituir la web del despacho. Una versión definitiva requiere validación editorial, operativa y jurídica y autorización expresa de publicación en el dominio real.
+
+Para contrastar una publicación con el build local, ejecutar `node scripts/verify-public.mjs docs/pruebas-publicacion.json`. Compara páginas y recursos por SHA256 y comprueba la 404 pública.

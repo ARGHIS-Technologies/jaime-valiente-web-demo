@@ -1,0 +1,12 @@
+[
+  {
+    "action": "menu-mobile-enter-empresas",
+    "url": "https://mmlab-dev.github.io/jaime-valiente-web-demo/empresas/",
+    "heading": "Asesoramiento para empresas y autónomos."
+  },
+  {
+    "action": "header-clients",
+    "url": "https://mmlab-dev.github.io/jaime-valiente-web-demo/area-clientes/",
+    "heading": "Área de clientes."
+  }
+]
