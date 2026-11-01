@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<title>Estudio para Cádiz</title><desc>Composición abstracta de horizonte, luz y volúmenes claros, reservada para una futura fotografía.</desc>
+<path fill="#e8dfcf" d="M0 0h1200v800H0z"/>
+<circle cx="906" cy="190" r="111" fill="#c4aa87"/>
+<path fill="#7d9384" d="M0 425h1200v375H0z"/>
+<path fill="#38534b" d="M0 502h1200v298H0z"/>
+<path fill="#243d3a" d="M0 596h1200v204H0z"/>
+<path fill="#f6f3ec" d="M0 800V213h205v587z"/>
+<path fill="#e5eadd" d="M205 213 352 312v488H205z"/>
+<path fill="#f6f3ec" d="M352 800V335h204v465z"/>
+<path fill="#ded4c1" d="m556 335 112 74v391H556z"/>
+<path fill="#d1bb99" d="M0 713 352 624l204 73 644-95v198H0z"/>
+<path fill="#e8dfcf" d="m0 800 352-176 204 73-42 103z"/>
+</svg>

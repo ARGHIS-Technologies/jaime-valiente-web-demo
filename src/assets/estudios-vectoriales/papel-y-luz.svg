@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<title>Papel y luz</title><desc>Estudio abstracto de planos de papel, una abertura y luz lateral; composición provisional.</desc>
+<path fill="#e8dfcf" d="M0 0h1200v800H0z"/>
+<path fill="#243d3a" d="M750 0h450v800H750z"/>
+<path fill="#314c46" d="M750 0h450L750 620z"/>
+<path fill="#c4aa87" d="M0 610 750 310v490H0z"/>
+<path fill="#9f835e" d="m154 215 529-98 135 569-551 96z"/>
+<path fill="#d9ccb5" d="m117 176 529-98 132 569-551 96z"/>
+<path fill="#f6f3ec" d="m186 116 505 104-113 544L73 660z"/>
+<path fill="#e5eadd" d="m186 116 505 104-73 350L110 480z"/>
+<path fill="#d7dfd0" d="m186 116 505 104-342 179z"/>
+<path fill="#b99a72" d="m900 258 300-121v86L900 344z"/>
+<path fill="#ece3d3" d="m900 344 300-121v237l-300 121z"/>
+</svg>

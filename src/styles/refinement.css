@@ -55,10 +55,6 @@ p {
   padding-left: 22px;
   gap: 8px;
 }
-.eyebrow {
-  margin-bottom: 19px;
-  letter-spacing: .16em;
-}
 .button {
   gap: 22px;
   min-height: 52px;
@@ -140,22 +136,10 @@ p {
   text-decoration-thickness: 1px;
   text-underline-offset: 6px;
 }
-.hero-index > a:hover .arrow {
-  transform: translateX(3px);
-}
-.hero-index-note {
-  font-size: 13px;
-  color: #d6e1d8;
-  margin-top: 10px;
-  line-height: 1.6;
-}
-.hero-index-note a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 0;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+@media (hover: hover) and (pointer: fine) {
+  .hero-index > a:hover .arrow {
+    transform: translateX(3px);
+  }
 }
 .section {
   padding-block: var(--section-space);
@@ -169,7 +153,7 @@ p {
   font-size: 46px;
   color: var(--green);
 }
-.section-header p:not(.eyebrow) {
+.section-header p {
   max-width: 48ch;
 }
 .statement-section {
@@ -275,9 +259,6 @@ p {
   line-height: 1.1;
   max-width: 16ch;
 }
-.page-hero .eyebrow {
-  margin-bottom: 20px;
-}
 .page-hero-aside .lead {
   font-size: 18px;
   line-height: 1.6;
@@ -293,14 +274,8 @@ p {
   background: #fff;
   color: var(--ink);
 }
-.page-hero-dark .eyebrow {
-  color: var(--green);
-}
 .page-hero-dark .breadcrumb {
   color: var(--muted);
-}
-.page-hero-dark .eyebrow span {
-  color: var(--bronze-text);
 }
 .page-hero-dark .page-hero-aside {
   background: #e5eadd;
@@ -333,9 +308,6 @@ p {
 }
 .service-title h2 {
   font-size: 33px;
-}
-.service-title .section-number {
-  margin-bottom: 15px;
 }
 .service-intro {
   font-size: 18px;
@@ -382,7 +354,7 @@ p {
   font-size: 48px;
   color: var(--green);
 }
-.cta-grid p:not(.eyebrow) {
+.cta-grid p {
   font-size: 18px;
   color: var(--muted);
 }
@@ -417,7 +389,7 @@ p {
 .mobile-navigation .is-current {
   color: var(--green);
 }
-.mobile-navigation .is-current > span:nth-child(2) {
+.mobile-navigation .is-current > span:first-child {
   text-decoration: underline;
   text-underline-offset: 7px;
   text-decoration-thickness: 1px;
@@ -629,8 +601,10 @@ p {
 .hero-secondary .hero-direction {
   transition: transform 180ms var(--motion-ui);
 }
-.hero-secondary:hover .hero-direction {
-  transform: translateY(3px);
+@media (hover: hover) and (pointer: fine) {
+  .hero-secondary:hover .hero-direction {
+    transform: translateY(3px);
+  }
 }
 .services-section {
   background: #fff;
@@ -702,8 +676,10 @@ p {
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
 }
-.practice-group a:hover .arrow {
-  transform: translateX(4px);
+@media (hover: hover) and (pointer: fine) {
+  .practice-group a:hover .arrow {
+    transform: translateX(4px);
+  }
 }
 .debt-feature {
   display: grid;
@@ -713,10 +689,6 @@ p {
   border-top: 1px solid #b4a489;
   padding: 28px 0 0;
   margin-top: 32px;
-}
-.debt-feature .eyebrow {
-  font-size: 11px;
-  margin-bottom: 12px;
 }
 .debt-feature h3 {
   font-size: 30px;
@@ -729,9 +701,6 @@ p {
 .debt-feature .text-link {
   font-size: 15px;
   white-space: nowrap;
-}
-.statement-section .eyebrow {
-  color: #d7c6ab;
 }
 .statement-section .text-link {
   color: var(--paper);
@@ -756,9 +725,6 @@ p {
 .area-layout > div {
   background: #fff;
   padding: 30px;
-}
-.contact-cta .eyebrow {
-  color: var(--green);
 }
 :is(.hero-index, .statement-section) a:focus-visible {
   outline-color: var(--paper);
@@ -795,10 +761,6 @@ p {
 .profile-hero .breadcrumb {
   color: #d6e1d8;
   margin-bottom: 35px;
-}
-.profile-hero .eyebrow {
-  color: #d7c6ab;
-  margin-bottom: 15px;
 }
 .profile-hero h1 {
   font-size: clamp(64px, 6.3vw, 90px);
@@ -904,9 +866,6 @@ p {
   }
   .service-title {
     align-items: baseline;
-  }
-  .service-title .section-number {
-    margin-bottom: 0;
   }
   .contact-layout, .client-layout {
     gap: 50px;
@@ -1101,9 +1060,6 @@ p {
   .hero-index strong {
     font-size: 25px;
   }
-  .hero-index-note {
-    margin-top: 12px;
-  }
   .section-header {
     grid-template-columns: 1fr;
     gap: 19px;
@@ -1256,9 +1212,6 @@ p {
     font-size: 41px;
     max-width: 17ch;
   }
-  .page-hero .eyebrow {
-    margin-bottom: 17px;
-  }
   .page-hero-aside {
     border-left: 0;
     padding: 0;
@@ -1323,7 +1276,7 @@ p {
   .cta-grid h2 {
     font-size: 37px;
   }
-  .cta-grid p:not(.eyebrow) {
+  .cta-grid p {
     font-size: 17px;
   }
   .site-footer {

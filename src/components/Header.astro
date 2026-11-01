@@ -3,14 +3,14 @@ import { navigation, href } from '../data/site';
 import Icon from './Icon.astro';
 const { current = '' } = Astro.props;
 ---
-<div class="demo-strip" role="region" aria-label="Demostración de diseño"><div class="shell flex items-center justify-between gap-4"><span><span class="demo-dot" aria-hidden="true"></span> Demo de diseño <span class="demo-detail">· Propuesta para revisión del despacho</span></span><span class="demo-location">Cádiz & Arcos de la Frontera</span></div></div>
+<div class="demo-strip" role="region" aria-label="Demostración de diseño"><div class="shell flex items-center justify-between gap-4"><span><span class="demo-dot" aria-hidden="true"></span> Demo de diseño <span class="demo-detail">· Estudios vectoriales provisionales</span></span><span class="demo-location">Cádiz & Arcos de la Frontera</span></div></div>
 <header class="site-header">
   <div class="shell header-inner">
     <a class="wordmark" href={href()}><span>Jaime Valiente</span><span class="wordmark-sub">ALEMÁN · ABOGADO</span><span class="sr-only"> · Inicio</span></a>
     <nav class="desktop-nav" aria-label="Navegación principal">{navigation.map(item => <a class:list={['nav-link', { 'is-current': item.path === current }]} aria-current={item.path === current ? 'page' : undefined} href={href(item.path)}>{item.label}</a>)}</nav>
     <div class="header-actions"><a class="client-link" aria-label="Área de clientes" href={href('area-clientes/')} aria-current={current === 'area-clientes/' ? 'page' : undefined}><span class="client-full">Área de clientes</span><span class="client-short">Clientes</span><Icon name="folder-simple" size={18} /></a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-label">Menú</span><Icon name="list" size={22} class="menu-open" /><Icon name="x" size={22} class="menu-close" /></button></div>
   </div>
-  <nav id="mobile-navigation" class="mobile-navigation" aria-label="Navegación móvil" hidden><div class="shell">{navigation.map((item,index) => <a class:list={{ 'is-current': item.path === current }} aria-current={item.path === current ? 'page' : undefined} href={href(item.path)}><span class="menu-number">0{index+1}</span><span>{item.label}</span><Icon name="caret-right" class="menu-direction" /></a>)}<a class="mobile-contact" href={href('contacto/')}>Solicitar consulta<Icon name="arrow-right" class="menu-direction" /></a></div></nav>
+  <nav id="mobile-navigation" class="mobile-navigation" aria-label="Navegación móvil" hidden><div class="shell">{navigation.map(item => <a class:list={{ 'is-current': item.path === current }} aria-current={item.path === current ? 'page' : undefined} href={href(item.path)}><span>{item.label}</span><Icon name="caret-right" class="menu-direction" /></a>)}<a class="mobile-contact" href={href('contacto/')}>Solicitar consulta<Icon name="arrow-right" class="menu-direction" /></a></div></nav>
   <noscript><nav class="no-script-nav shell" aria-label="Menú sin JavaScript">{navigation.map(item => <a href={href(item.path)}>{item.label}</a>)}</nav></noscript>
 </header>
 <script>
@@ -36,21 +36,22 @@ const { current = '' } = Astro.props;
     menuAnimation = menu.animate([{ transform: 'translateY(0)' }, { transform: 'translateY(-4px)' }], { duration: 150, easing: closeEasing });
     menuAnimation.onfinish = () => { if (toggle.getAttribute('aria-expanded') === 'false') menu.hidden = true; };
   }
-  toggle?.addEventListener('click', () => {
+  toggle?.addEventListener('click', event => {
     if (!menu) return;
     const open = toggle.getAttribute('aria-expanded') !== 'true';
-    if (!open) { closeMenu(); return; }
+    const keyboard = event.detail === 0;
+    if (!open) { closeMenu(false, keyboard); return; }
     menuAnimation?.cancel();
     toggle.setAttribute('aria-expanded', 'true');
     menu.hidden = false;
     menu.inert = false;
     fitMenu();
-    if (!reducedMotion.matches) menuAnimation = menu.animate([{ transform: 'translateY(-6px)' }, { transform: 'translateY(0)' }], { duration: 180, easing: openEasing });
+    if (!reducedMotion.matches && !keyboard) menuAnimation = menu.animate([{ transform: 'translateY(-6px)' }, { transform: 'translateY(0)' }], { duration: 180, easing: openEasing });
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') closeMenu(true);
+    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') closeMenu(true, true);
   });
-  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', event => closeMenu(false, event.detail === 0)));
   document.addEventListener('focusin', event => {
     if (toggle?.getAttribute('aria-expanded') === 'true' && event.target instanceof Node && !header?.contains(event.target)) closeMenu(false, true);
   });

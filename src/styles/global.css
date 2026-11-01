@@ -86,19 +86,6 @@ main:focus {
 .skip-link:focus {
   transform: none;
 }
-.eyebrow {
-  font-family: var(--sans);
-  font-size: 12px;
-  line-height: 1.4;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--green);
-}
-.section-number {
-  font-size: 13px;
-  letter-spacing: .08em;
-  color: var(--bronze);
-}
 .icon {
   display: inline-block;
   flex-shrink: 0;
@@ -118,8 +105,10 @@ main:focus {
   border: 1px solid transparent;
   transition: background .2s var(--motion-ui),color .2s var(--motion-ui);
 }
-.button:hover .arrow,.text-link:hover .arrow {
-  transform: translateX(4px);
+@media (hover: hover) and (pointer: fine) {
+  .button:hover .arrow,.text-link:hover .arrow {
+    transform: translateX(4px);
+  }
 }
 .button-dark {
   color: #fff;
@@ -308,10 +297,6 @@ main:focus {
 .mobile-navigation .menu-direction {
   margin-left: auto;
 }
-.menu-number {
-  font: 12px var(--sans);
-  color: var(--bronze);
-}
 .mobile-navigation .mobile-contact {
   font: 600 16px var(--sans);
   margin-top: 20px;
@@ -351,7 +336,7 @@ main:focus {
   gap: 70px;
   align-items: end;
 }
-.section-header p:not(.eyebrow) {
+.section-header p {
   color: var(--muted);
 }
 .statement-section {
@@ -446,14 +431,10 @@ main:focus {
 .page-hero h1 {
   max-width: 760px;
 }
-.page-hero .eyebrow span {
-  color: var(--bronze);
-  margin-right: 12px;
-}
 .page-hero-dark {
   color: var(--paper);
 }
-.page-hero-dark .eyebrow,.page-hero-dark .breadcrumb,.page-hero-dark .lead {
+.page-hero-dark .breadcrumb,.page-hero-dark .lead {
   color: #d3dfd5;
 }
 .area-layout {
@@ -486,9 +467,6 @@ main:focus {
 }
 .service-block:last-child {
   margin-bottom: 0;
-}
-.service-title .section-number {
-  display: block;
 }
 .service-intro {
   color: var(--muted);
@@ -552,7 +530,7 @@ main:focus {
   grid-template-columns: 1.3fr 1fr;
   align-items: center;
 }
-.cta-grid p:not(.eyebrow) {
+.cta-grid p {
   font-size: 19px;
   margin-bottom: 25px;
 }
@@ -683,7 +661,7 @@ main:focus {
 .not-found h1 {
   margin-bottom: 24px;
 }
-.not-found>p:not(.eyebrow) {
+.not-found>p {
   font-size: 22px;
   color: var(--muted);
   margin-bottom: 35px;
@@ -848,11 +826,6 @@ main:focus {
   .home-hero {
     padding-top: 38px;
   }
-  .eyebrow {
-    font-size: 10px;
-    letter-spacing: .15em;
-    margin-bottom: 20px;
-  }
   .hero-layout {
     gap: 36px;
   }
@@ -876,7 +849,7 @@ main:focus {
   .section-header {
     gap: 22px;
   }
-  .section-header p:not(.eyebrow) {
+  .section-header p {
     font-size: 17px;
   }
   .statement-section {
@@ -1073,7 +1046,7 @@ main:focus {
 :root {
   --bronze-text: #75583a;
 }
-.section-number,.menu-number,.mobile-navigation .is-current,.page-hero:not(.page-hero-dark) .eyebrow span {
+.mobile-navigation .is-current {
   color: var(--bronze-text);
 }
 @media(max-width:767px) {

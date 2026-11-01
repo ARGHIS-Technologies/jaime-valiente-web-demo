@@ -44,7 +44,7 @@ const context = {
   IntersectionObserver: class { constructor() { observers++; } },
 };
 runInNewContext(header, context);
-events['toggle:click']();
+events['toggle:click']({ detail: 1 });
 assert.equal(attributes['aria-expanded'], 'true');
 assert.equal(menu.hidden, false);
 assert.equal(menu.inert, false);
@@ -57,7 +57,7 @@ assert.equal(animations, 0);
 assert.equal(menu.style.maxHeight, '358px');
 // A keyboard user leaving the disclosure keeps the new focus and sees the page.
 focus = false;
-events['toggle:click']();
+events['toggle:click']({ detail: 1 });
 events['document:focusin']({ target: new TestNode(true) });
 assert.equal(menu.hidden, false);
 events['document:focusin']({ target: new TestNode() });
@@ -67,7 +67,13 @@ assert.equal(focus, false);
 const reducedAnimations = animations;
 // The same regression must close immediately even when normal motion is enabled.
 reduced.matches = false;
-events['toggle:click']();
+events['toggle:click']({ detail: 0 });
+assert.equal(menu.hidden, false);
+assert.equal(animations, 0, 'Keyboard opening must be instant even with normal motion');
+events['toggle:click']({ detail: 0 });
+assert.equal(menu.hidden, true);
+assert.equal(animations, 0, 'Keyboard closing must be instant');
+events['toggle:click']({ detail: 1 });
 context.window.innerHeight = 360;
 events['window:resize']();
 assert.equal(menu.style.maxHeight, '238px');
@@ -77,6 +83,12 @@ assert.equal(attributes['aria-expanded'], 'false');
 assert.equal(animations, 1);
 assert.equal(lastEasing, motionTokens['--motion-enter']);
 assert.equal(focus, false);
+events['toggle:click']({ detail: 1 });
+const animationsBeforeEscape = animations;
+events['document:keydown']({ key: 'Escape' });
+assert.equal(menu.hidden, true);
+assert.equal(focus, true);
+assert.equal(animations, animationsBeforeEscape, 'Escape must close without an exit animation');
 reduced.matches = true;
 // A separate context mirrors a separate module scope.
 runInNewContext(reveal, { ...context, window: { ...context.window, IntersectionObserver: context.IntersectionObserver } });
@@ -85,4 +97,4 @@ const css = await readFile('src/styles/motion.css', 'utf8');
 assert.match(css, /@media\s*\(prefers-reduced-motion:\s*reduce\)/);
 assert.match(css, /@view-transition\s*\{\s*navigation:\s*none/);
 assert.match(css, /animation:\s*none\s*!important/);
-console.log(JSON.stringify({ passed: true, reducedMotion: { menuAnimations: reducedAnimations, revealObservers: observers, escapeReturnsFocus: true, instantClose: menu.hidden, cssRulesReviewed: true }, keyboard: { leavingMenuClosesImmediately: true, outsideFocusPreserved: true, viewportHeightRespected: true }, scope: 'Actual component scripts in a controlled JS context; CSS rules inspected. OS preference and browser rendering not emulated.' }, null, 2));
+console.log(JSON.stringify({ passed: true, reducedMotion: { menuAnimations: reducedAnimations, revealObservers: observers, escapeReturnsFocus: true, instantClose: menu.hidden, cssRulesReviewed: true }, keyboard: { activationIsInstant: true, escapeIsInstant: true, leavingMenuClosesImmediately: true, outsideFocusPreserved: true, viewportHeightRespected: true }, scope: 'Actual component scripts in a controlled JS context; CSS rules inspected. OS preference and browser rendering not emulated.' }, null, 2));

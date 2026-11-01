@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<title>Estudio para Arcos</title><desc>Ritmo abstracto de arcos y planos de luz; composición provisional, sin representar una oficina real.</desc>
+<path fill="#243d3a" d="M0 0h1200v800H0z"/>
+<path fill="#38534b" d="M0 0h1200L0 800z"/>
+<path fill="#c4aa87" d="M680 800V263a257 257 0 0 1 514 0v537z"/>
+<path fill="#a48761" d="M937 6a257 257 0 0 1 257 257v537H937z"/>
+<path fill="#f6f3ec" d="M134 800V323a258 258 0 0 1 516 0v477z"/>
+<path fill="#ded4c1" d="M392 65a258 258 0 0 1 258 258v477H392z"/>
+<path fill="#243d3a" d="M264 800V348a128 128 0 0 1 256 0v452z"/>
+<path fill="#b59a75" d="m0 730 264-72 256 142H0z"/>
+<path fill="#f6f3ec" d="M842 800V360a95 95 0 0 1 190 0v440z"/>
+<path fill="#ded4c1" d="M937 265a95 95 0 0 1 95 95v440h-95z"/>
+</svg>

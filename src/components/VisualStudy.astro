@@ -1,0 +1,15 @@
+---
+import type { VisualStudySpec } from '../data/visualStudies';
+interface Props { study: VisualStudySpec; tone?: 'light' | 'dark'; class?: string; eager?: boolean; }
+const { study, tone = 'light', class: className, eager = false } = Astro.props;
+---
+<figure class:list={['visual-study', { 'visual-study-dark': tone === 'dark' }, className]}>
+  <img src={study.src} alt={study.alt} width={study.width} height={study.height} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
+  <figcaption>{study.caption}</figcaption>
+</figure>
+<style>
+  .visual-study { margin: 0; min-width: 0; }
+  .visual-study img { display: block; width: 100%; height: auto; }
+  figcaption { margin-top: 12px; font: 13px/1.45 var(--sans); color: var(--muted); }
+  .visual-study-dark figcaption { color: #d6e1d8; }
+</style>

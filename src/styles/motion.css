@@ -26,7 +26,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .section-entering {
-    animation: section-enter 320ms var(--motion-enter) both;
+    animation: section-enter 280ms var(--motion-enter) both;
   }
   .home-hero.section-entering {
     animation: none;
@@ -50,6 +50,8 @@
   .button:active {
     transform: translateY(1px);
   }
+}
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
   .contact-channel:hover .external-symbol {
     transform: translate(2px, -2px);
   }

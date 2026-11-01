@@ -1,6 +1,8 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [paquete de marca y favicon trazado](docs/identidad-marca/INFORME.md), coherente con Source Serif 4 y con formatos alternativos de navegador.
+**Revisión vigente:** [refinamiento editorial y estudios vectoriales provisionales](docs/estudios-vectoriales/INFORME.md), con cinco composiciones originales en Inicio, El despacho y Contacto.
+
+Identidad: [paquete de marca y favicon trazado](docs/identidad-marca/INFORME.md), coherente con Source Serif 4 y con formatos alternativos de navegador.
 
 Navegación por áreas: [lectura y navegación móvil](docs/navegacion-movil/INFORME.md).
 

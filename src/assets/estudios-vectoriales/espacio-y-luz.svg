@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<title>Espacio y luz</title><desc>Arquitectura abstracta de umbrales y planos cálidos; no representa un espacio real del despacho.</desc>
+<path fill="#e8dfcf" d="M0 0h1200v800H0z"/>
+<path fill="#f6f3ec" d="M0 0h790L590 800H0z"/>
+<path fill="#cab18e" d="M790 0h410v800H590z"/>
+<path fill="#b29570" d="m790 0 170 100v700H590z"/>
+<path fill="#243d3a" d="M305 800V304a184 184 0 0 1 368 0v496z"/>
+<path fill="#38534b" d="M489 120a184 184 0 0 1 184 184v496H489z"/>
+<path fill="#182f2c" d="M305 800V304a184 184 0 0 1 112-170v666z"/>
+<path fill="#ded4c1" d="m0 663 489-133 711 270H0z"/>
+<path fill="#f6f3ec" d="m417 550 72-20 490 270H626z"/>
+<path fill="#c6ad88" d="M884 0h36v621l-36-14z"/>
+</svg>

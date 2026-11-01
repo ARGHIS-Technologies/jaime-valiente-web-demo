@@ -15,8 +15,8 @@ export const navigation = [
   { label: 'Contacto', path: 'contacto/' },
 ] as const;
 export const offices = [
-  { city: 'Cádiz', address: 'Avenida de la Ilustracion nº 6, 3º-1', building: 'Edificio Astarte · 11011 Cádiz', number: '01' },
-  { city: 'Arcos de la Frontera', address: 'Calle Seguidillas nº 4, oficina 7', building: 'Edificio Escontec · 11630 Arcos de la Frontera', number: '02' },
+  { city: 'Cádiz', address: 'Avenida de la Ilustracion nº 6, 3º-1', building: 'Edificio Astarte · 11011 Cádiz' },
+  { city: 'Arcos de la Frontera', address: 'Calle Seguidillas nº 4, oficina 7', building: 'Edificio Escontec · 11630 Arcos de la Frontera' },
 ] as const;
 export function href(path = ''): string {
   return `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
