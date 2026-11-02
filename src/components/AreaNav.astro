@@ -1,10 +1,11 @@
 ---
 import Icon from './Icon.astro';
 interface Props {
-  audience: 'particulares' | 'empresas';
+  audience: 'particulares' | 'empresas' | 'reclamaciones';
   areas: { id: string; label: string }[];
 }
 const { audience, areas } = Astro.props;
+const indexLabel = audience === 'reclamaciones' ? 'Ámbitos de reclamación' : `Áreas de ${audience}`;
 ---
 <aside class="area-index" data-area-index>
   <nav class="area-nav area-index-desktop" aria-label={`Áreas para ${audience}`}>
@@ -12,7 +13,7 @@ const { audience, areas } = Astro.props;
     {areas.map(area => <a href={`#${area.id}`}>{area.label}</a>)}
   </nav>
   <details class="area-index-mobile">
-    <summary>Áreas de {audience}<Icon name="caret-right" size={18} class="area-index-caret" /></summary>
+    <summary><span data-area-current>{indexLabel}</span><Icon name="caret-right" size={18} class="area-index-caret" /></summary>
     <nav aria-label={`Áreas para ${audience}`}>
       {areas.map(area => <a href={`#${area.id}`}>{area.label}</a>)}
     </nav>
@@ -70,5 +71,36 @@ const { audience, areas } = Astro.props;
       if (event.target instanceof Node && !index.contains(event.target)) close();
     });
     window.matchMedia('(min-width: 768px)').addEventListener('change', close);
+    // Native links remain usable without enhancement. The reading position is
+    // reflected in both indexes without moving focus or changing the URL.
+    const links = Array.from(index.querySelectorAll<HTMLAnchorElement>('a[href^="#"]'));
+    const sections = Array.from(new Set(links.map(link => document.getElementById(link.hash.slice(1))))).filter((section): section is HTMLElement => section !== null);
+    const label = index.querySelector<HTMLElement>('[data-area-current]');
+    const initialLabel = label?.textContent || '';
+    let queued = false;
+    let previous: string | undefined;
+    const updatePosition = () => {
+      queued = false;
+      const offset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--anchor-offset')) || 118;
+      const passed = sections.filter(section => section.getBoundingClientRect().top <= offset + 36);
+      const active = passed.at(-1);
+      const within = sections.length > 0 && sections[sections.length - 1].getBoundingClientRect().bottom > offset;
+      const id = within ? active?.id : undefined;
+      if (id === previous) return;
+      previous = id;
+      links.forEach(link => {
+        if (link.hash === `#${id}`) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+      const currentLabel = (id ? links.find(link => link.hash === `#${id}`)?.textContent : initialLabel) || initialLabel;
+      if (label) label.textContent = currentLabel;
+      summary.setAttribute('aria-label', id ? `${initialLabel}: ${currentLabel}` : initialLabel);
+    };
+    const schedule = () => {
+      if (!queued) { queued = true; requestAnimationFrame(updatePosition); }
+    };
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    updatePosition();
   });
 </script>

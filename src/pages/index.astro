@@ -36,7 +36,7 @@ const business = [
         <VisualStudy class="hero-study" study={visualStudies.work} eager />
         <nav class="hero-index" aria-label="Encuentra tu área de consulta">
           <p class="hero-index-label">¿Qué necesitas consultar?</p>
-          {areas.map(area => <a href={href(area.path)}><span><strong>{area.title}</strong><small>{area.detail}</small></span><Arrow /></a>)}
+          {areas.map(area => <a href={href(area.path)}><span><strong>{area.title}</strong><small>{area.detail}</small></span><span class="area-direction" aria-hidden="true"><Arrow /></span></a>)}
         </nav>
       </div>
     </div>

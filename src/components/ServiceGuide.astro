@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import Arrow from './Arrow.astro';
 import { href } from '../data/site';
 interface Props {
   title: string;
@@ -9,6 +10,6 @@ interface Props {
 const { title, items, business = false } = Astro.props;
 ---
 <article class:list={['practice-group', { 'practice-business': business }]}>
-  <h3>{title}</h3>
-  <ul>{items.map(item => <li><a href={href(item.path)}><span class="practice-heading"><strong>{item.title}</strong><Icon name="caret-right" class="arrow" /></span><small>{item.text}</small></a></li>)}</ul>
+  <div class="practice-header"><h3>{title}</h3><a class="practice-overview" href={href(business ? 'empresas/' : 'particulares/')} aria-label={`Ver servicios de ${title.toLowerCase()}`}>Ver servicios<Arrow /></a></div>
+  <ul>{items.map(item => <li><a href={href(item.path)}><span class="practice-copy"><strong>{item.title}</strong><small>{item.text}</small></span><span class="practice-direction" aria-hidden="true"><Icon name="caret-right" /></span></a></li>)}</ul>
 </article>

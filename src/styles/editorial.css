@@ -33,11 +33,61 @@
 .mobile-navigation .is-current > span:first-child { text-decoration: underline; text-underline-offset: 7px; }
 .wordmark > span:first-child { letter-spacing: -.035em; }
 .area-nav p { text-transform: none; letter-spacing: 0; font-size: 15px; }
+/* Original Astro/CSS treatment after reviewing 21st feature and navigation
+   references. No registry code, React runtime or animation dependency. */
+.hero-study img { aspect-ratio: 4 / 3; object-fit: cover; }
+.home-hero .hero-index { column-gap: 0; padding: 26px 32px 30px; }
+.hero-index-label { margin-bottom: 14px; }
+.home-hero .hero-index > a { grid-template-columns: minmax(0, 1fr) 36px; gap: 18px; padding-inline: 24px; }
+.home-hero .hero-index > a:first-of-type { padding-left: 0; }
+.home-hero .hero-index > a:last-of-type { padding-right: 0; }
+.home-hero .hero-index > a + a { border-left: 1px solid #ffffff35; }
+.area-direction { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid #8c9b8d; border-radius: 50%; }
+.hero-index > a:hover strong { text-decoration: none; }
+.hero-index a:is(:hover, :focus-visible) .area-direction { background: var(--paper); color: var(--green); border-color: var(--paper); }
+.hero-index a:hover .arrow { transform: none; }
+.services-heading { display: grid; grid-template-columns: 1.15fr 1fr; align-items: end; gap: 64px; max-width: none; }
+.services-heading p { margin: 0; max-width: 44ch; }
+.practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.practice-group { display: block; padding: 30px 32px 12px; background: var(--paper); border-top: 2px solid var(--bronze); }
+.practice-business { background: #e5eadd; border-top-color: var(--green); }
+.practice-header { min-height: 120px; }
+.practice-group h3 { font-size: 34px; max-width: none; }
+.practice-overview { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; margin-top: 6px; font-size: 15px; color: var(--bronze-text); }
+.practice-overview:hover { text-decoration: underline; text-underline-offset: 5px; }
+.practice-group ul { grid-template-columns: 1fr; gap: 0; }
+.practice-group li { border-top: 1px solid #c4c9bd; }
+.practice-group li a { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 23px 0; min-height: 98px; }
+.practice-copy { min-width: 0; }
+.practice-group strong { font-size: 27px; }
+.practice-direction { display: grid; place-items: center; flex: none; width: 36px; height: 36px; color: var(--green); background: transparent; }
+.practice-group a:is(:hover, :focus-visible) .practice-direction { background: var(--green); color: var(--paper); }
+.practice-group li a:hover strong { text-decoration: none; }
+.practice-group small { margin-top: 7px; }
+.practice-group a .arrow { margin-top: 0; }
+.area-nav a { position: relative; margin-inline: -10px; padding-inline: 10px; }
+.area-index a[aria-current="location"] { background: var(--green); color: var(--paper); text-decoration: none; }
+.area-nav a[aria-current="location"]::before { content: ''; position: absolute; left: 0; top: 14px; bottom: 14px; width: 2px; background: #d7c6ab; }
+.area-index a[aria-current="location"]:focus-visible { outline-color: var(--paper); outline-offset: -4px; }
+.page-hero-grid { padding-top: 12px; }
+.page-hero-aside .lead { max-width: 43ch; }
+.contact-cta { background: #e5eadd; border-top: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .area-direction, .practice-direction { transition: background-color 160ms var(--motion-ui), color 160ms var(--motion-ui), border-color 160ms var(--motion-ui); }
+}
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .practice-copy { transition: transform 160ms var(--motion-ui); }
+  .practice-group li a:hover .practice-copy { transform: translateX(3px); }
+}
 @media (max-width: 1199px) {
   .home-hero .hero-layout { gap: 36px 40px; }
   .home-hero h1 { font-size: 54px; }
   .home-intro { font-size: 18px; }
-  .home-hero .hero-index { column-gap: 28px; }
+  .home-hero .hero-index { column-gap: 0; }
+  .home-hero .hero-index > a { padding-inline: 16px; gap: 12px; }
+  .services-heading { gap: 40px; }
+  .practice-group { padding-inline: 26px; }
+  .practice-group h3 { font-size: 30px; }
   .hero-index strong { font-size: 28px; }
   .statement-grid.statement-with-visual { grid-template-columns: 190px minmax(0, 1fr) minmax(0, .9fr); gap: 28px; }
   .statement-with-visual .identity-title { font-size: 44px; }
@@ -46,6 +96,11 @@
   .profile-visual-layout h1 { font-size: 66px; }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
+  .services-heading { grid-template-columns: 1fr; gap: 20px; }
+  .practice-grid { grid-template-columns: 1fr; }
+  .practice-header { display: flex; justify-content: space-between; align-items: start; gap: 24px; min-height: 0; margin-bottom: 24px; }
+  .practice-header h3 { max-width: 70%; }
+  .practice-overview { margin: 0; flex: none; }
   .home-hero .hero-layout { grid-template-columns: minmax(0, 1fr) minmax(0, .75fr); gap: 32px; }
   .home-hero .hero-copy { grid-column: 1 / -1; }
   .home-hero h1 { font-size: 66px; }
@@ -53,6 +108,8 @@
   .hero-study { grid-column: 2; grid-row: 2; }
   .home-hero .hero-index { grid-column: 1; grid-row: 2; grid-template-columns: 1fr; column-gap: 0; padding: 24px 26px; }
   .home-hero .hero-index > a { padding-block: 12px; }
+  .home-hero .hero-index > a { padding-inline: 0; }
+  .home-hero .hero-index > a + a { border-left: 0; border-top: 1px solid #ffffff35; }
   .hero-index-label { margin-bottom: 12px; }
   .statement-grid.statement-with-visual { grid-template-columns: 220px minmax(0, 1fr); gap: 24px 32px; }
   .statement-with-visual > .visual-study { grid-column: 1; grid-row: 1 / span 2; }
@@ -76,6 +133,19 @@
   .hero-index strong { font-size: 28px; }
   .hero-index-label { margin-bottom: 9px; }
   .hero-study { order: 3; }
+  .hero-study img { aspect-ratio: 3 / 2; }
+  .home-hero .hero-index > a { padding-inline: 0; padding-block: 17px; }
+  .home-hero .hero-index > a + a { border-left: 0; border-top: 1px solid #ffffff35; }
+  .services-heading { grid-template-columns: 1fr; gap: 20px; }
+  .practice-grid { grid-template-columns: 1fr; gap: 22px; }
+  .practice-group { padding: 25px 24px 6px; }
+  .practice-header { min-height: 108px; }
+  .practice-group h3 { font-size: 31px; }
+  .practice-group strong { font-size: 25px; }
+  .practice-group li a { padding-block: 20px; min-height: 92px; gap: 16px; }
+  .practice-group .practice-copy { display: block; }
+  .practice-group .practice-direction { display: grid; }
+  .area-index-mobile a[aria-current="location"]:hover { background: var(--green); }
   .statement-grid.statement-with-visual { grid-template-columns: 1fr; gap: 28px; }
   .statement-with-visual .visual-study { max-width: 320px; }
   .statement-with-visual .identity-title { font-size: 46px; }

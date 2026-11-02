@@ -37,8 +37,8 @@ module.exports = async (browser, { url }) => {
           const items = await page.$$eval('.service-list li', nodes => nodes.map(n => n.textContent.trim()));
           assert.deepEqual(items.sort(), [...inventory[route.replace('/', '')].items].sort(), `Preserved service inventory: ${route}`);
         }
-        if (width === 390 && ['particulares/', 'empresas/'].includes(route)) {
-          const target = route === 'particulares/' ? 'penal' : 'contable-fiscal';
+        if (width === 390 && ['particulares/', 'empresas/', 'reclamaciones/'].includes(route)) {
+          const target = route === 'particulares/' ? 'penal' : route === 'empresas/' ? 'contable-fiscal' : 'ejecucion';
           assert.equal(await page.$eval('.area-index-mobile', n => n.open), false);
           await page.click('.area-index-mobile summary');
           await check(route, width, 'area-index-open');
@@ -51,6 +51,14 @@ module.exports = async (browser, { url }) => {
           }), target);
           assert.equal(destination.open, false);
           assert.ok(destination.top >= destination.bottom + 12, `Unobscured section: ${route}`);
+          await page.waitForFunction(id => [...document.querySelectorAll('[data-area-index] a[aria-current="location"]')].length === 2 && [...document.querySelectorAll('[data-area-index] a[aria-current="location"]')].every(a => a.hash === `#${id}`), {}, target);
+          const fragment = new URL(page.url()).hash;
+          await page.evaluate(() => window.scrollTo(0, 0));
+          await page.waitForFunction(() => document.querySelectorAll('[data-area-index] a[aria-current]').length === 0);
+          assert.equal(new URL(page.url()).hash, fragment, 'Reading position must not rewrite the URL');
+          assert.equal(await page.$eval(`#${target}`, n => n === document.activeElement), true, 'Reading position must not steal focus');
+          await page.$eval(`#${target}`, n => n.scrollIntoView());
+          await page.waitForFunction(id => document.querySelector(`.area-index-mobile a[href="#${id}"]`)?.getAttribute('aria-current') === 'location', {}, target);
           await check(route, width, 'area-index-destination');
           await page.click('.area-index-mobile summary');
           await page.keyboard.press('Escape');

@@ -1,5 +1,6 @@
 ---
 import Arrow from '../components/Arrow.astro';
+import AreaNav from '../components/AreaNav.astro';
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import ServiceBlock from '../components/ServiceBlock.astro';
@@ -8,7 +9,7 @@ import { href } from '../data/site';
 ---
 <Layout current="reclamaciones/" title="Reclamación de deudas | Jaime Valiente Abogado" description="Deudas, procedimientos monitorios, negociación y ejecución de resoluciones judiciales. Demo de diseño.">
 <PageHero eyebrow="Reclamaciones" title="Reclamación de deudas." description="Negociación, reclamación judicial de deudas y ejecución de resoluciones. Para particulares y empresas con cantidades pendientes de cobro." action="Consultar una reclamación" />
-<div class="shell area-layout"><nav class="area-nav" aria-label="Ámbitos de reclamación"><p>En esta página</p><a href="#deuda">Deudas</a><a href="#negociacion">Negociación</a><a href="#judicial">Reclamación judicial</a><a href="#ejecucion">Ejecución</a></nav><div>
+<div class="shell area-layout"><AreaNav audience="reclamaciones" areas={[{id:'deuda',label:'Deudas'},{id:'negociacion',label:'Negociación'},{id:'judicial',label:'Reclamación judicial'},{id:'ejecucion',label:'Ejecución'}]} /><div>
 <ServiceBlock id="deuda" title="Deudas pendientes" intro="Expón el origen de la deuda y tu situación. La vía de actuación dependerá de la valoración del asunto." items={[]} action="Consultar una deuda" />
 <ServiceBlock id="negociacion" title="Negociación extrajudicial" intro="Negociación para la resolución extrajudicial de conflictos, según las circunstancias del asunto." items={[]} action="Consultar sobre negociación" />
 <ServiceBlock id="judicial" title="Reclamación judicial y monitorios" intro="Reclamación judicial de deudas y procedimientos monitorios, previa valoración de la vía aplicable." items={[]} action="Consultar una reclamación" />
