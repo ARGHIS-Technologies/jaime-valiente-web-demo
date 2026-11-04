@@ -9,9 +9,9 @@ import ContactCta from '../components/ContactCta.astro';
 import ServiceGuide from '../components/ServiceGuide.astro';
 import { href } from '../data/site';
 const areas = [
-  { title: 'Particulares', detail: 'Civil, familia y penal.', path: 'particulares/' },
-  { title: 'Empresas', detail: 'Jurídico, laboral, contable y fiscal.', path: 'empresas/' },
-  { title: 'Reclamaciones', detail: 'Deudas y cantidades pendientes.', path: 'reclamaciones/' },
+  { title: 'Particulares', path: 'particulares/' },
+  { title: 'Empresas', path: 'empresas/' },
+  { title: 'Reclamaciones', path: 'reclamaciones/' },
 ];
 const personal = [
   { title: 'Derecho civil', text: 'Contratos y responsabilidad civil.', path: 'particulares/#civil' },
@@ -30,13 +30,15 @@ const business = [
       <div class="hero-layout">
         <div class="hero-copy">
           <h1>Tu abogado,<br />en Cádiz y Arcos.</h1>
+        </div>
+        <div class="hero-support">
           <p class="home-intro">Asesoramiento jurídico para tus asuntos personales. Atención jurídica y mercantil, laboral, contable y fiscal para empresas y autónomos.</p>
           <div class="hero-buttons"><a class="button button-dark" href={href('contacto/')}>Solicitar consulta<Arrow /></a><a class="hero-secondary" href="#servicios">Explorar los servicios <Icon name="arrow-down" class="hero-direction" size={18} /></a></div>
         </div>
         <VisualStudy class="hero-study" study={visualStudies.work} eager />
         <nav class="hero-index" aria-label="Encuentra tu área de consulta">
           <p class="hero-index-label">¿Qué necesitas consultar?</p>
-          {areas.map(area => <a href={href(area.path)}><span><strong>{area.title}</strong><small>{area.detail}</small></span><span class="area-direction" aria-hidden="true"><Arrow /></span></a>)}
+          {areas.map(area => <a href={href(area.path)}><strong>{area.title}</strong><span class="area-direction" aria-hidden="true"><Arrow /></span></a>)}
         </nav>
       </div>
     </div>
@@ -53,9 +55,9 @@ const business = [
   </section>
   <section class="statement-section">
     <div class="shell">
-      <div class="statement-grid statement-with-visual"><VisualStudy study={visualStudies.portrait} tone="dark" />
-        <div class="identity-note"><h2 class="identity-title">Jaime Valiente<br />Alemán.</h2><p>Abogado · Cádiz y Arcos de la Frontera</p></div>
-        <div class="statement-detail"><p class="statement-lead">Escuchar tu situación.<br />Asesorar con rigor.</p><p class="statement-copy">Atención cercana, personalizada y transparente para tus asuntos personales y profesionales.</p><a class="text-link" href={href('el-despacho/')}>Conocer a Jaime Valiente<Arrow /></a></div>
+      <div class="statement-grid statement-editorial">
+        <div class="identity-note"><h2 class="identity-title">Escuchar tu situación.<br />Asesorar con rigor.</h2></div>
+        <div class="statement-detail"><p class="statement-name">Jaime Valiente Alemán.</p><p class="statement-role">Abogado · Cádiz y Arcos de la Frontera</p><p class="statement-copy">Atención cercana, personalizada y transparente para tus asuntos personales y profesionales.</p><a class="text-link" href={href('el-despacho/')}>Conocer a Jaime Valiente<Arrow /></a></div>
       </div>
       <div class="statement-client"><p>¿Ya eres cliente del despacho?</p><a class="text-link" href={href('area-clientes/')}><Icon name="folder-simple" />Consultar el envío de documentación</a></div>
     </div>

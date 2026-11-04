@@ -19,6 +19,11 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
  assert.doesNotMatch(html,/script\.google\.com|AKfycb|GTM-|G-[A-Z0-9]{7,}/,`No Apps Script or analytics ${file}`);
  assert.match(html,/Demo de diseño/,`Demo label ${file}`);
+ const canonical=html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
+ assert.ok(canonical,`Canonical URL in ${file}`);
+ assert.equal(new URL(canonical).origin,'https://arghis-technologies.github.io',`Canonical uses the current organization in ${file}`);
+ assert.ok(new URL(canonical).pathname.startsWith(base),`Canonical preserves the Pages base in ${file}`);
+ assert.equal(html.match(/<meta property="og:url" content="([^"]+)"/)?.[1],canonical,`Social URL matches canonical in ${file}`);
  for(const match of html.matchAll(/<svg\b[^>]*>/g)) {
   icons++;
   assert.match(match[0], /aria-hidden="true"/, `Decorative icon excluded from accessibility tree in ${file}`);

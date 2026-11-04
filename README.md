@@ -1,6 +1,6 @@
 # Jaime Valiente Alemán — Demo de diseño
 
-**Revisión vigente:** [refinamiento editorial y estudios vectoriales provisionales](docs/estudios-vectoriales/INFORME.md), con cinco composiciones originales en Inicio, El despacho y Contacto.
+**Revisión vigente:** [dirección editorial y traslado a ARGHIS](docs/direccion-editorial-arghis/INFORME.md). Cinco estudios vectoriales originales y provisionales; composición revisada de Inicio y El despacho.
 
 Identidad: [paquete de marca y favicon trazado](docs/identidad-marca/INFORME.md), coherente con Source Serif 4 y con formatos alternativos de navegador.
 
@@ -14,9 +14,9 @@ Iconos: selección local de Phosphor Icons, peso regular, renderizada por Astro.
 
 Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalienteabogado.es`.
 
-- Propietario personal: **mmlab-dev**.
-- Repositorio: https://github.com/mmlab-dev/jaime-valiente-web-demo
-- URL de publicación: https://mmlab-dev.github.io/jaime-valiente-web-demo/
+- Organización propietaria: **ARGHIS-Technologies**.
+- Repositorio: https://github.com/ARGHIS-Technologies/jaime-valiente-web-demo
+- URL de publicación: https://arghis-technologies.github.io/jaime-valiente-web-demo/
 - Siete páginas: Inicio, Particulares, Empresas, Reclamaciones, El despacho, Contacto y Área de clientes.
 - Soporte: aviso legal, privacidad y cookies demostrativos, y 404 personalizada.
 
@@ -79,7 +79,7 @@ npm run build
 npm run audit:quality
 ```
 
-El comando comprueba 28 estados con axe-core (once rutas en móvil/escritorio, menú abierto, datos profesionales desplegados y los dos índices de áreas abiertos y tras seleccionar un destino) y recoge tres mediciones móviles simuladas de Lighthouse en Inicio, Particulares, Empresas, Contacto y Clientes. Los resultados completos están en `.quality/` y `.lighthouseci/`, ignorados por Git. `npm run audit:a11y` conserva todos los estados axe y reduce la medición Lighthouse a Inicio para revisar accesibilidad durante desarrollo.
+El comando comprueba 30 estados con axe-core (once rutas en móvil/escritorio, menú abierto, datos profesionales desplegados y los tres índices de áreas abiertos y tras seleccionar un destino) y recoge tres mediciones móviles simuladas de Lighthouse en Inicio, Particulares, Empresas, Contacto y Clientes. Los resultados completos están en `.quality/` y `.lighthouseci/`, ignorados por Git. `npm run audit:a11y` conserva todos los estados axe y reduce la medición Lighthouse a Inicio para revisar accesibilidad durante desarrollo.
 
 La publicación exige cero infracciones automáticas de axe y medianas de rendimiento ≥90, accesibilidad automática 100, buenas prácticas ≥95, LCP ≤2.500 ms, CLS ≤0,1 y TBT ≤200 ms. Un resultado incompleto nuevo también bloquea para revisión manual. Se conserva una excepción documentada de contraste del texto de Inicio tapado por el menú opaco; el estado normal y el menú se revisaron por separado. SEO se informa completo y conserva el `noindex` deliberado de la demo. Estas mediciones de laboratorio no representan datos de usuarios reales ni una certificación WCAG.
 
@@ -89,9 +89,9 @@ Open Props aporta únicamente dos curvas de movimiento seleccionadas en `src/sty
 
 ## Publicar en GitHub Pages
 
-La configuración real de Astro es `site: https://mmlab-dev.github.io` y `base: /jaime-valiente-web-demo`. Todos los enlaces internos, scripts, estilos y fuentes respetan ese subdirectorio. No hay archivo CNAME ni dominio personalizado.
+La configuración de Astro es `site: https://arghis-technologies.github.io` y `base: /jaime-valiente-web-demo`. Los metadatos canónicos y sociales usan la dirección de la organización. Todos los enlaces internos, scripts, estilos y fuentes respetan ese subdirectorio. No hay archivo CNAME ni dominio personalizado.
 
-En el repositorio personal, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y ejecuta las puertas Lighthouse/axe antes de desplegar `dist/` con las acciones oficiales de GitHub. La auditoría completa requiere varios minutos. Los cambios exclusivos de documentación no provocan un nuevo despliegue. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
+En el repositorio de la organización, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y ejecuta las puertas Lighthouse/axe antes de desplegar `dist/` con las acciones oficiales de GitHub. La auditoría completa requiere varios minutos. Los cambios exclusivos de documentación no provocan un nuevo despliegue. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
 
 Para publicar un cambio ya revisado:
 

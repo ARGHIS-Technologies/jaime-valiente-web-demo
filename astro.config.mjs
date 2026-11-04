@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://mmlab-dev.github.io',
+  site: 'https://arghis-technologies.github.io',
   base: '/jaime-valiente-web-demo',
   output: 'static',
   trailingSlash: 'always',
