@@ -3,12 +3,12 @@
 .site-header { background: var(--paper); }
 .wordmark > span:first-child { letter-spacing: -.035em; }
 
-/* An offset reading column connects the headline to the illustration. */
+/* Titles, introductory copy and actions share one reading edge. */
 .home-hero { padding-block: 56px 52px; }
 .home-hero .hero-layout { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px 28px; align-items: start; }
 .hero-copy { grid-column: 1 / 9; grid-row: 1; }
 .home-hero h1 { max-width: none; font-size: clamp(64px, 6.15vw, 88px); line-height: 1.05; letter-spacing: -.045em; color: var(--green); }
-.hero-support { grid-column: 2 / 8; grid-row: 2; padding-top: 4px; }
+.hero-support { grid-column: 1 / 8; grid-row: 2; padding-top: 4px; }
 .home-intro { max-width: 49ch; margin-top: 0; font-size: 19px; }
 .hero-support .hero-buttons { margin-top: 26px; }
 .hero-study { grid-column: 9 / -1; grid-row: 1 / span 2; align-self: start; }
@@ -57,7 +57,7 @@
 .profile-hero a:focus-visible { outline-color: var(--green); }
 .profile-visual-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 100px; align-items: start; }
 .profile-visual-layout h1 { font-size: clamp(72px, 6.8vw, 98px); line-height: 1.02; letter-spacing: -.045em; }
-.profile-visual-layout .profile-intro { display: block; max-width: 49ch; margin-top: 32px; margin-left: 48px; }
+.profile-visual-layout .profile-intro { display: block; max-width: 49ch; margin-top: 32px; }
 .profile-intro p { color: var(--muted); font-size: 19px; }
 .profile-visual-layout .profile-intro .button { margin-top: 27px; }
 .profile-signature { width: 100%; margin-top: 18px; }
@@ -117,7 +117,6 @@
   .statement-editorial .identity-title { font-size: 45px; }
   .profile-visual-layout { grid-template-columns: minmax(0, 1fr) 280px; gap: 60px; }
   .profile-visual-layout h1 { font-size: 76px; }
-  .profile-visual-layout .profile-intro { margin-left: 0; }
   .profile-body { gap: 60px; }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -137,7 +136,7 @@
   .practice-overview { margin: 0; flex: none; }
   .statement-grid.statement-editorial { grid-template-columns: 1fr; gap: 32px; }
   .statement-editorial .identity-title { font-size: 57px; }
-  .statement-detail { max-width: 52ch; margin-left: 20%; }
+  .statement-detail { max-width: 52ch; }
   .profile-visual-layout { grid-template-columns: minmax(0, 1fr) 230px; gap: 34px; }
   .profile-visual-layout h1 { font-size: 59px; }
   .profile-intro p { font-size: 18px; }
