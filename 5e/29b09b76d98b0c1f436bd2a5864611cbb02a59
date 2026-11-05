@@ -1,0 +1,29 @@
+.dockerignore
+  s_85ce451454ddfc::t_01bb26d692ba82 1-9
+.github/workflows/deploy-selfhosted.yml
+  s_85ce451454ddfc::t_25fba4ee3893c4 1-50
+Dockerfile
+  s_85ce451454ddfc::t_74dfec60d42981 1-16
+astro.config.mjs
+  s_85ce451454ddfc::t_1062a16518911f 4-7,9-10
+docker-compose.yml
+  s_85ce451454ddfc::t_a34ed060ce17e6 1-14
+nginx.conf
+  s_85ce451454ddfc::t_49df75ad198f2d 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "5e29b09b76d98b0c1f436bd2a5864611cbb02a59",
+  "prompts": {},
+  "sessions": {
+    "s_85ce451454ddfc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "107b1f44-2aac-4b90-bf76-5977440dfc9a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Jaime de Arcos <jaime.dearcos@gmail.com>"
+    }
+  }
+}
