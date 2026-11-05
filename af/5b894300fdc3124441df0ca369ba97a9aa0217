@@ -1,0 +1,33 @@
+.lighthouserc.cjs
+  s_85ce451454ddfc::t_d609aed029167f 2
+astro.config.mjs
+  s_85ce451454ddfc::t_0090e3eb428ee8 5-6
+public/CNAME
+  s_85ce451454ddfc::t_1b37ccc3b35062 1
+scripts/audit-axe.cjs
+  s_85ce451454ddfc::t_2c65a64a219938 29,85
+scripts/prepare-quality.mjs
+  s_85ce451454ddfc::t_6c29a9b73831a9 12
+scripts/verify-build.mjs
+  s_85ce451454ddfc::t_285949ac8d5cda 6,24
+scripts/verify-public.mjs
+  s_85ce451454ddfc::t_a59b34ee72e369 6
+README.md
+  s_85ce451454ddfc::t_ee2b05cb1ec822 19,32,92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "af5b894300fdc3124441df0ca369ba97a9aa0217",
+  "prompts": {},
+  "sessions": {
+    "s_85ce451454ddfc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "107b1f44-2aac-4b90-bf76-5977440dfc9a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Jaime de Arcos <jaimedas@inditex.com>"
+    }
+  }
+}
