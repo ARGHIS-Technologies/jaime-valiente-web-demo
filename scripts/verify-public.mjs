@@ -3,7 +3,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 
 const root=path.resolve('dist');
-const site='https://arghis-technologies.github.io/jaime-valiente-web-demo/';
+const site='https://jaimevaliente.com/';
 const files=[];
 async function walk(dir){for(const item of await readdir(dir,{withFileTypes:true})){const f=path.join(dir,item.name);if(item.isDirectory())await walk(f);else files.push(f);}}
 await walk(root);

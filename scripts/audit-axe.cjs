@@ -26,7 +26,7 @@ module.exports = async (browser, { url }) => {
     for (const width of [390, 1440]) {
       await page.setViewport({ width, height: width === 390 ? 844 : 1000, deviceScaleFactor: 1 });
       for (const route of routes) {
-        await page.goto(`${origin}/jaime-valiente-web-demo/${route}`, { waitUntil: 'networkidle0' });
+        await page.goto(`${origin}/${route}`, { waitUntil: 'networkidle0' });
         await page.evaluate(async () => {
           await document.fonts.ready;
           await Promise.all(document.getAnimations().map(a => a.finished.catch(() => {})));
@@ -82,7 +82,7 @@ module.exports = async (browser, { url }) => {
     // With scripts disabled the native disclosure stays in normal flow; links remain usable.
     await page.setJavaScriptEnabled(false);
     await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
-    await page.goto(`${origin}/jaime-valiente-web-demo/particulares/`, { waitUntil: 'networkidle0' });
+    await page.goto(`${origin}/particulares/`, { waitUntil: 'networkidle0' });
     await page.click('.area-index-mobile summary');
     assert.equal(await page.$eval('.area-index-mobile', n => n.open), true);
     await page.click('.area-index-mobile a[href="#penal"]');
