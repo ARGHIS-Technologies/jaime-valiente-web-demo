@@ -1,9 +1,13 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
+// GitHub Pages por defecto; el contenedor self-hosted construye con ASTRO_SITE/ASTRO_BASE=/.
+const site = process.env.ASTRO_SITE || 'https://arghis-technologies.github.io';
+const base = process.env.ASTRO_BASE || '/jaime-valiente-web-demo';
+
 export default defineConfig({
-  site: 'https://arghis-technologies.github.io',
-  base: '/jaime-valiente-web-demo',
+  site,
+  base,
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory' },

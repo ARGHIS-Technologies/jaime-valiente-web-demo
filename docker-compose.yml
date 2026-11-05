@@ -1,0 +1,14 @@
+name: jaimevaliente
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        ASTRO_SITE: "${JAIMEVALIENTE_SITE_URL:-http://localhost}"
+    container_name: jaimevaliente-web
+    restart: unless-stopped
+    # HTTPS y dominios los pone Nginx Proxy Manager, que apunta a <ip-servidor>:JAIMEVALIENTE_WEB_PORT.
+    # Por defecto solo localhost; en el servidor, JAIMEVALIENTE_WEB_PORT=<puerto>.
+    ports:
+      - "${JAIMEVALIENTE_WEB_PORT:-127.0.0.1:5176}:80"
