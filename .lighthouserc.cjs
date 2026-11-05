@@ -1,5 +1,5 @@
 // Audits use an isolated copy of the static build, including the GitHub Pages base.
-const base = 'http://localhost/jaime-valiente-web-demo/';
+const base = 'http://localhost/';
 module.exports = {
   ci: {
     collect: {

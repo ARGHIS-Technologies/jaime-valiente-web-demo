@@ -16,7 +16,7 @@ Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalie
 
 - Organización propietaria: **ARGHIS-Technologies**.
 - Repositorio: https://github.com/ARGHIS-Technologies/jaime-valiente-web-demo
-- URL de publicación: https://arghis-technologies.github.io/jaime-valiente-web-demo/
+- URL de publicación: https://jaimevaliente.com/
 - Siete páginas: Inicio, Particulares, Empresas, Reclamaciones, El despacho, Contacto y Área de clientes.
 - Soporte: aviso legal, privacidad y cookies demostrativos, y 404 personalizada.
 
@@ -29,7 +29,7 @@ npm ci
 npm run dev
 ```
 
-Abrir la URL que imprime Astro, incluyendo `/jaime-valiente-web-demo/`. No abrir `index.html` con `file://`.
+Abrir la URL que imprime Astro, (ahora en la raíz, `/`). No abrir `index.html` con `file://`.
 
 ```sh
 npm run check
@@ -89,7 +89,7 @@ Open Props aporta únicamente dos curvas de movimiento seleccionadas en `src/sty
 
 ## Publicar en GitHub Pages
 
-La configuración de Astro es `site: https://arghis-technologies.github.io` y `base: /jaime-valiente-web-demo`. Los metadatos canónicos y sociales usan la dirección de la organización. Todos los enlaces internos, scripts, estilos y fuentes respetan ese subdirectorio. No hay archivo CNAME ni dominio personalizado.
+La configuración de Astro es `site: https://jaimevaliente.com` y `base: /`. Los metadatos canónicos y sociales usan ese dominio. `public/CNAME` fija el dominio personalizado en GitHub Pages.
 
 En el repositorio de la organización, seleccionar **Settings → Pages → Source → GitHub Actions**. El workflow de `main` instala con `npm ci`, comprueba, construye, verifica y ejecuta las puertas Lighthouse/axe antes de desplegar `dist/` con las acciones oficiales de GitHub. La auditoría completa requiere varios minutos. Los cambios exclusivos de documentación no provocan un nuevo despliegue. Las acciones están fijadas por SHA y sus etiquetas de versión están documentadas en el workflow. La publicación usa OIDC y permisos por trabajo; no requiere secretos en el repositorio.
 

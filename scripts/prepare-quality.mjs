@@ -9,6 +9,6 @@ assert.equal(path.dirname(quality), workspace, 'Quality artifacts must stay in t
 assert.equal(path.dirname(fixture), quality, 'Only the isolated quality fixture may be replaced');
 await rm(fixture, { recursive: true, force: true });
 await mkdir(fixture, { recursive: true });
-await cp(path.resolve('dist'), path.join(fixture, 'jaime-valiente-web-demo'), { recursive: true });
+await cp(path.resolve('dist'), fixture, { recursive: true });
 await rm(path.join(quality, 'axe.json'), { force: true });
 console.log('Isolated quality fixture ready');

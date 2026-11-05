@@ -3,7 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 
 const root = path.resolve('dist');
-const base = '/jaime-valiente-web-demo/';
+const base = '/';
 const expected = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/'];
 const files = [];
 async function walk(dir) { for (const item of await readdir(dir, {withFileTypes:true})) { const file=path.join(dir,item.name); if(item.isDirectory()) await walk(file); else files.push(file); } }
@@ -21,7 +21,7 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  assert.match(html,/Demo de diseño/,`Demo label ${file}`);
  const canonical=html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
  assert.ok(canonical,`Canonical URL in ${file}`);
- assert.equal(new URL(canonical).origin,'https://arghis-technologies.github.io',`Canonical uses the current organization in ${file}`);
+ assert.equal(new URL(canonical).origin,'https://jaimevaliente.com',`Canonical uses the custom domain in ${file}`);
  assert.ok(new URL(canonical).pathname.startsWith(base),`Canonical preserves the Pages base in ${file}`);
  assert.equal(html.match(/<meta property="og:url" content="([^"]+)"/)?.[1],canonical,`Social URL matches canonical in ${file}`);
  for(const match of html.matchAll(/<svg\b[^>]*>/g)) {
