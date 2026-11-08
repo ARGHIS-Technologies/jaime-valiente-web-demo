@@ -79,6 +79,11 @@
       "name": "x",
       "bytes": 284,
       "sha256": "7397b15e1fa66eaf6ff9b59fe91d483cb5c3bcf75b2fe052097ab6f0593b513a"
+    },
+    {
+      "name": "whatsapp-logo",
+      "bytes": 703,
+      "sha256": "37474af9246a13b9b9fbf36561081d02c876db27682c1ac7ce8c2418c2a20320"
     }
   ]
 }

@@ -15,13 +15,14 @@ import Info from '../assets/icons/phosphor/info.svg';
 import Plus from '../assets/icons/phosphor/plus.svg';
 import List from '../assets/icons/phosphor/list.svg';
 import X from '../assets/icons/phosphor/x.svg';
+import WhatsappLogo from '../assets/icons/phosphor/whatsapp-logo.svg';
 
 const icons = {
   'arrow-right': ArrowRight, 'caret-right': CaretRight,
   'arrow-down': ArrowDown, 'arrow-up': ArrowUp, 'arrow-square-out': ArrowSquareOut,
   phone: Phone, 'envelope-simple': EnvelopeSimple, 'chat-circle-dots': ChatCircleDots,
   'map-pin': MapPin, 'folder-simple': FolderSimple, 'file-text': FileText,
-  info: Info, plus: Plus, list: List, x: X,
+  info: Info, plus: Plus, list: List, x: X, 'whatsapp-logo': WhatsappLogo,
 };
 interface Props { name: keyof typeof icons; size?: number; class?: string; }
 const { name, size = 20, class: className = '' } = Astro.props;
