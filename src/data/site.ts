@@ -25,7 +25,7 @@ export const offices = [
  */
 export const legal = {
   name: 'Jaime Valiente Alemán',
-  nif: 'PENDIENTE: NIF',
+  nif: '31262537V',
   address: 'Avenida de la Ilustración nº 6, 3º-1 (Edificio Astarté), 11011 Cádiz, y Calle Seguidilla nº 4, local 7 (Edificio Escontec), 11630 Arcos de la Frontera',
   bar: 'Ilustre Colegio de Abogados de Cádiz',
   barNumber: '2362',
