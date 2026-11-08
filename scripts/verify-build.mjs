@@ -10,11 +10,17 @@ async function walk(dir) { for (const item of await readdir(dir, {withFileTypes:
 await walk(root);
 for (const route of expected) assert.ok(files.includes(path.join(root,route,'index.html')),`Missing route ${route}`);
 assert.ok(files.includes(path.join(root,'404.html')),'Missing 404.html');
+const sitemap=await readFile(path.join(root,'sitemap.xml'),'utf8');
+for (const route of expected) assert.ok(sitemap.includes(`<loc>https://jaimevaliente.com/${route}</loc>`),`Sitemap lists ${route}`);
+assert.doesNotMatch(sitemap,/404/,'Sitemap excludes the 404 page');
+assert.ok((await stat(path.join(root,'og-image.png'))).size>0,'Share image present');
+assert.match(await readFile(path.join(root,'robots.txt'),'utf8'),/Sitemap: https:\/\/jaimevaliente\.com\/sitemap\.xml/,'robots.txt points to the sitemap');
 let references=0, icons=0;
 for (const file of files.filter(f=>f.endsWith('.html'))) {
  const html=await readFile(file,'utf8');
  assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`Exactly one H1 in ${file}`);
  assert.match(html,/<html[^>]+lang="es"/,`Spanish language ${file}`);
+ assert.match(html,/<meta property="og:image" content="https:\/\/jaimevaliente\.com\/og-image\.png"/,`Share image ${file}`);
  assert.doesNotMatch(html,/noindex/i,`Page must be indexable ${file}`);
  assert.doesNotMatch(html,/PENDIENTE/,`Dato legal sin completar en ${file}`);
  assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
