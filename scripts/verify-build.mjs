@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 
 const root = path.resolve('dist');
 const base = '/';
-const expected = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/'];
+const expected = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/', 'accesibilidad/'];
 const files = [];
 async function walk(dir) { for (const item of await readdir(dir, {withFileTypes:true})) { const file=path.join(dir,item.name); if(item.isDirectory()) await walk(file); else files.push(file); } }
 await walk(root);
@@ -65,6 +65,7 @@ for (const file of ['favicon.ico','favicon-32.png','apple-touch-icon.png']) asse
 const iconLicense=await readFile(path.join(root,'licenses/phosphor-icons.txt'),'utf8');
 assert.match(iconLicense,/MIT License/);
 assert.match(iconLicense,/Copyright.*Phosphor Icons/);
+for (const file of ['source-sans-3.txt','source-serif-4.txt']) assert.match(await readFile(path.join(root,'licenses',file),'utf8'),/SIL OPEN FONT LICENSE Version 1.1/,`Font license included: ${file}`);
 const motionLicense=await readFile(path.join(root,'licenses/open-props.txt'),'utf8');
 assert.match(motionLicense,/MIT License/);
 assert.match(motionLicense,/Adam Argyle/);

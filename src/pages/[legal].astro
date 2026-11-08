@@ -6,6 +6,7 @@ export function getStaticPaths() {
     {params:{legal:'aviso-legal'},props:{title:'Aviso legal',kind:'legal'}},
     {params:{legal:'privacidad'},props:{title:'Privacidad',kind:'privacy'}},
     {params:{legal:'cookies'},props:{title:'Cookies',kind:'cookies'}},
+    {params:{legal:'accesibilidad'},props:{title:'Accesibilidad',kind:'a11y'}},
   ];
 }
 const {title,kind}=Astro.props;
@@ -13,7 +14,8 @@ const lead = {
   legal: 'Datos del titular de esta web y condiciones de uso.',
   privacy: 'Cómo trata el despacho tus datos personales.',
   cookies: 'Qué tecnologías de almacenamiento usa esta web.',
-}[kind as 'legal'|'privacy'|'cookies'];
+  a11y: 'Cómo hemos cuidado que la web pueda usarla cualquier persona.',
+}[kind as 'legal'|'privacy'|'cookies'|'a11y'];
 ---
 <Layout current={`${Astro.params.legal}/`} title={`${title} | Jaime Valiente Abogado`} description={`${title} de jaimevaliente.com. ${lead}`}>
 <section class="legal-hero"><div class="shell"><div class="breadcrumb"><a href={href()}>Inicio</a><span aria-hidden="true">/</span><span>{title}</span></div><h1>{title}.</h1><p class="lead">{lead}</p></div></section><section class="legal-content"><div class="shell"><div class="prose">
@@ -38,7 +40,7 @@ const lead = {
 <p>Esta web ofrece información general sobre los servicios del despacho. Su contenido es informativo y no constituye asesoramiento jurídico ni crea una relación abogado-cliente. Esa relación se establece únicamente cuando el despacho acepta expresamente un encargo.</p>
 <p>El uso de la web atribuye la condición de usuario e implica la aceptación de estas condiciones. El usuario se compromete a usarla de forma lícita y a no dañar su funcionamiento.</p>
 <h2>Propiedad intelectual</h2>
-<p>Los textos, el diseño, los logotipos y los demás elementos de esta web son del titular o se usan con licencia. Se prohíbe su reproducción, distribución o transformación sin autorización expresa, salvo lo permitido por la ley. Los iconos proceden de Phosphor Icons (licencia MIT).</p>
+<p>Los textos, el diseño, los logotipos y los demás elementos de esta web son del titular o se usan con licencia. Se prohíbe su reproducción, distribución o transformación sin autorización expresa, salvo lo permitido por la ley. Las tipografías son Source Sans 3 y Source Serif 4, con licencia SIL Open Font License 1.1 (<a href={href('licenses/source-sans-3.txt')}>texto de la licencia de Source Sans 3</a>, <a href={href('licenses/source-serif-4.txt')}>texto de la licencia de Source Serif 4</a>). Los iconos proceden de Phosphor Icons, con licencia MIT (<a href={href('licenses/phosphor-icons.txt')}>texto de la licencia</a>). Las ilustraciones de esta web son composiciones propias del sitio.</p>
 <h2>Responsabilidad</h2>
 <p>El titular procura que la información sea exacta y esté actualizada, pero no garantiza la ausencia de errores ni responde de los daños derivados de un uso inadecuado de la web o de la información que contiene. Los enlaces a sitios de terceros no implican responsabilidad sobre sus contenidos.</p>
 <h2>Legislación y jurisdicción</h2>
@@ -75,6 +77,24 @@ const lead = {
 <p>El envío de documentos se hace en documentos.jaimevaliente.com, un servicio distinto de esta web. Puede usar tecnologías estrictamente necesarias para funcionar, como mantener la sesión de quien accede, que no requieren consentimiento. No se usan con fines publicitarios ni de seguimiento.</p>
 <h2>Cómo gestionarlas</h2>
 <p>Puedes bloquear o borrar las cookies desde la configuración de tu navegador. Si en el futuro se añadiera analítica u otra herramienta, esta página se actualizaría y se pediría el consentimiento previo.</p>
+<p class="small-note">Última actualización: {legal.updated}.</p>
+</>}
+{kind==='a11y' && <>
+<h2>Nuestro compromiso</h2>
+<p>Queremos que esta web pueda usarla cualquier persona, con independencia de sus capacidades o de los dispositivos y tecnologías de apoyo que emplee. Tomamos como referencia las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, nivel AA.</p>
+<h2>Qué hemos hecho</h2>
+<ul>
+<li>Estructura clara con un solo encabezado principal por página y navegación coherente.</li>
+<li>Enlace «Saltar al contenido» y uso completo con teclado, con foco visible.</li>
+<li>Textos alternativos o marcado decorativo en las imágenes e iconos.</li>
+<li>Contraste de color y tamaños de texto revisados, y diseño adaptable a móvil.</li>
+<li>Las animaciones respetan la preferencia del sistema de reducir el movimiento.</li>
+<li>Idioma de la página declarado como español.</li>
+</ul>
+<h2>Cómo lo comprobamos</h2>
+<p>En cada publicación se ejecutan comprobaciones automáticas de accesibilidad (axe-core y Lighthouse). Estas herramientas no detectan todos los problemas: no se ha realizado una auditoría manual completa con lectores de pantalla y otras tecnologías de apoyo.</p>
+<h2>Si encuentras un problema</h2>
+<p>Si algo de esta web no te resulta accesible, escríbenos a <a href={contact.mailto}>{contact.email}</a> o llama al <a href={contact.tel}>{contact.phone}</a> y te atenderemos por otra vía y corregiremos el fallo.</p>
 <p class="small-note">Última actualización: {legal.updated}.</p>
 </>}
 <h2>Contacto</h2><p>Para cualquier consulta, accede a <a href={href('contacto/')}>Contacto</a>. Evita compartir documentación sensible en el primer mensaje.</p></div></div></section>

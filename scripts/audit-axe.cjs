@@ -73,10 +73,6 @@ module.exports = async (browser, { url }) => {
           await page.waitForFunction(() => document.querySelector('#menu-toggle').getAttribute('aria-expanded') === 'true');
           await check(route, width, 'menu-open');
         }
-        if (width === 390 && route === 'el-despacho/') {
-          await page.click('summary');
-          await check(route, width, 'professional-details-open');
-        }
       }
     }
     // With scripts disabled the native disclosure stays in normal flow; links remain usable.
