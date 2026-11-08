@@ -1,4 +1,4 @@
-/* Botón flotante de WhatsApp: un enlace, sin JavaScript. */
+/* Botón flotante de WhatsApp: un enlace, sin JavaScript. Verde de WhatsApp oscurecido para cumplir contraste (blanco sobre #0f7a6c ≈ 5,2:1). */
 .whatsapp-float {
   position: fixed;
   right: max(16px, env(safe-area-inset-right));
@@ -6,20 +6,21 @@
   z-index: 40;
   display: inline-flex;
   align-items: center;
-  min-height: 56px;
-  min-width: 56px;
   justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 3px solid #fff;
   border-radius: 50%;
   color: #fff;
-  background: var(--green);
-  box-shadow: 0 6px 20px rgb(32 40 43 / 0.22);
+  background: #0f7a6c;
+  box-shadow: 0 8px 24px rgb(32 40 43 / 0.32);
   text-decoration: none;
   transition: background-color 160ms ease-out, transform 160ms ease-out;
 }
 .whatsapp-float:active { transform: scale(0.97); }
-.whatsapp-float:focus-visible { outline: 3px solid var(--bronze); outline-offset: 3px; }
+.whatsapp-float:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 @media (hover: hover) and (pointer: fine) {
-  .whatsapp-float:hover { background: #172d2a; }
+  .whatsapp-float:hover { background: #0b5f54; }
 }
 @media (prefers-reduced-motion: reduce) {
   .whatsapp-float { transition: none; }
