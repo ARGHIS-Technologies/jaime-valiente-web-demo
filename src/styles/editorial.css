@@ -204,3 +204,7 @@
   .cta-grid h2 { font-size: 30px; }
   .profile-visual-layout h1 { font-size: 42px; }
 }
+
+/* Contacto: qué indicar al escribir, a tamaño de lectura (no letra pequeña). */
+.contact-prep { margin: 22px 0 0; font-size: 17px; line-height: 1.55; color: var(--ink); }
+.contact-prep + .small-note { margin-top: 10px; }
