@@ -25,7 +25,7 @@ const lead = {
 <ul>
 <li><strong>Titular:</strong> {legal.name}</li>
 <li><strong>NIF:</strong> {legal.nif}</li>
-<li><strong>Domicilio:</strong> {legal.address}</li>
+<li><strong>Domicilio profesional:</strong> {legal.address}</li>
 <li><strong>Correo electrónico:</strong> <a href={contact.mailto}>{contact.email}</a></li>
 <li><strong>Teléfono:</strong> <a href={contact.tel}>{contact.phone}</a></li>
 </ul>
@@ -49,7 +49,7 @@ const lead = {
 </>}
 {kind==='privacy' && <>
 <h2>Responsable del tratamiento</h2>
-<p>{legal.name}, con NIF {legal.nif} y domicilio en {legal.address}. Contacto en materia de protección de datos: {legal.privacyEmail}.</p>
+<p>{legal.name}, con NIF {legal.nif} y domicilio profesional en {legal.address}. Contacto en materia de protección de datos: {legal.privacyEmail}.</p>
 <h2>Qué datos trata y para qué</h2>
 <p>Esta web no tiene formularios, no pide registro y no incorpora analítica, publicidad ni seguimiento de visitantes. Solo se tratan datos personales cuando el usuario contacta con el despacho por teléfono, correo o WhatsApp, o cuando un cliente envía documentación por el enlace personal que el despacho le facilita.</p>
 <ul>
