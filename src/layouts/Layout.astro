@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Reveal from '../components/Reveal.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
-import { href } from '../data/site';
+import { href, contact, offices } from '../data/site';
 import serifFont from '@fontsource/source-serif-4/files/source-serif-4-latin-400-normal.woff2?url';
 import sansFont from '@fontsource/source-sans-3/files/source-sans-3-latin-400-normal.woff2?url';
 import '../styles/global.css';
@@ -16,6 +16,18 @@ interface Props { title: string; description: string; current?: string; }
 const { title, description, current = '' } = Astro.props;
 const canonical = new URL(href(current), Astro.site);
 const page = current.replaceAll('/', '') || 'inicio';
+const ogImage = new URL(href('og-image.png'), Astro.site).href;
+const structured = (current === '' || current === 'contacto/') ? {
+  '@context': 'https://schema.org',
+  '@type': 'Attorney',
+  name: 'Jaime Valiente Alemán · Abogado',
+  url: new URL(href(), Astro.site).href,
+  image: ogImage,
+  telephone: contact.tel.replace('tel:', ''),
+  email: contact.email,
+  areaServed: offices.map(o => ({ '@type': 'City', name: o.city })),
+  address: offices.map(o => ({ '@type': 'PostalAddress', streetAddress: o.street, postalCode: o.postalCode, addressLocality: o.city, addressRegion: 'Cádiz', addressCountry: 'ES' })),
+} : null;
 ---
 <!doctype html>
-<html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="preload" href={serifFont} as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href={sansFont} as="font" type="font/woff2" crossorigin="anonymous" /><meta name="theme-color" content="#243D3A" /><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow" /><link rel="canonical" href={canonical} /><link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href={`${href('favicon.ico')}?v=2`} /><link rel="icon" type="image/png" sizes="32x32" href={`${href('favicon-32.png')}?v=2`} /><link rel="icon" type="image/svg+xml" sizes="any" href={`${href('favicon.svg')}?v=2`} /><link rel="apple-touch-icon" sizes="180x180" href={`${href('apple-touch-icon.png')}?v=2`} /><meta property="og:title" content={title} /><meta property="og:site_name" content="Jaime Valiente Alemán · Abogado" /><meta property="og:description" content={description} /><meta property="og:type" content="website" /><meta property="og:locale" content="es_ES" /><meta property="og:url" content={canonical} /></head><body class="motion-enabled" data-page={page}><a class="skip-link" href="#contenido">Saltar al contenido</a><Header current={current} /><main id="contenido" tabindex="-1"><slot /></main><Footer />{current !== 'contacto/' && <WhatsAppFloat />}<Reveal /></body></html>
+<html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="preload" href={serifFont} as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href={sansFont} as="font" type="font/woff2" crossorigin="anonymous" /><meta name="theme-color" content="#243D3A" /><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow" /><link rel="canonical" href={canonical} /><link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href={`${href('favicon.ico')}?v=2`} /><link rel="icon" type="image/png" sizes="32x32" href={`${href('favicon-32.png')}?v=2`} /><link rel="icon" type="image/svg+xml" sizes="any" href={`${href('favicon.svg')}?v=2`} /><link rel="apple-touch-icon" sizes="180x180" href={`${href('apple-touch-icon.png')}?v=2`} /><meta property="og:title" content={title} /><meta property="og:site_name" content="Jaime Valiente Alemán · Abogado" /><meta property="og:description" content={description} /><meta property="og:type" content="website" /><meta property="og:locale" content="es_ES" /><meta property="og:url" content={canonical} /><meta property="og:image" content={ogImage} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="Jaime Valiente Alemán, abogado en Cádiz y Arcos de la Frontera" /><meta name="twitter:card" content="summary_large_image" />{structured && <script type="application/ld+json" set:html={JSON.stringify(structured)} />}</head><body class="motion-enabled" data-page={page}><a class="skip-link" href="#contenido">Saltar al contenido</a><Header current={current} /><main id="contenido" tabindex="-1"><slot /></main><Footer />{current !== 'contacto/' && <WhatsAppFloat />}<Reveal /></body></html>

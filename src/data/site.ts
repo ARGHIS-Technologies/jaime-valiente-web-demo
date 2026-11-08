@@ -17,8 +17,8 @@ export const navigation = [
   { label: 'Contacto', path: 'contacto/' },
 ] as const;
 export const offices = [
-  { city: 'Cádiz', address: 'Avenida de la Ilustración nº 6, 3º-1', building: 'Edificio Astarté · 11011 Cádiz' },
-  { city: 'Arcos de la Frontera', address: 'Calle Seguidilla nº 4, local 7', building: 'Edificio Escontec · 11630 Arcos de la Frontera' },
+  { city: 'Cádiz', address: 'Avenida de la Ilustración nº 6, 3º-1', building: 'Edificio Astarté · 11011 Cádiz', postalCode: '11011', street: 'Avenida de la Ilustración nº 6, 3º-1', mapQuery: 'Avenida de la Ilustración 6, 11011 Cádiz' },
+  { city: 'Arcos de la Frontera', address: 'Calle Seguidilla nº 4, local 7', building: 'Edificio Escontec · 11630 Arcos de la Frontera', postalCode: '11630', street: 'Calle Seguidilla nº 4, local 7', mapQuery: 'Calle Seguidilla 4, 11630 Arcos de la Frontera' },
 ] as const;
 /**
  * Datos del prestador para el aviso legal y la privacidad (LSSI art. 10; RGPD art. 13).
