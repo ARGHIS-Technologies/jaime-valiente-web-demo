@@ -1,0 +1,12 @@
+---
+import Icon from './Icon.astro';
+import { contact } from '../data/site';
+// Enlace directo a WhatsApp, sin scripts ni cookies. Se abre en la app o en WhatsApp Web.
+const text = encodeURIComponent('Hola, quisiera hacer una consulta.');
+const url = `${contact.whatsapp}?text=${text}`;
+---
+<aside aria-label="Contacto rápido por WhatsApp">
+<a class="whatsapp-float" title="WhatsApp" href={url} target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp (se abre en una pestaña nueva)">
+  <Icon name="whatsapp-logo" size={30} />
+</a>
+</aside>

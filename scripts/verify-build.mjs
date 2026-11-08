@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 
 const root = path.resolve('dist');
 const base = '/';
-const expected = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/'];
+const expected = ['', 'particulares/', 'empresas/', 'reclamaciones/', 'el-despacho/', 'contacto/', 'area-clientes/', 'aviso-legal/', 'privacidad/', 'cookies/', 'accesibilidad/'];
 const files = [];
 async function walk(dir) { for (const item of await readdir(dir, {withFileTypes:true})) { const file=path.join(dir,item.name); if(item.isDirectory()) await walk(file); else files.push(file); } }
 await walk(root);
@@ -15,10 +15,11 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  const html=await readFile(file,'utf8');
  assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`Exactly one H1 in ${file}`);
  assert.match(html,/<html[^>]+lang="es"/,`Spanish language ${file}`);
- assert.match(html,/<meta name="robots" content="noindex, follow"/,`Demo noindex ${file}`);
+ assert.doesNotMatch(html,/noindex/i,`Page must be indexable ${file}`);
+ assert.doesNotMatch(html,/PENDIENTE/,`Dato legal sin completar en ${file}`);
  assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
  assert.doesNotMatch(html,/script\.google\.com|AKfycb|GTM-|G-[A-Z0-9]{7,}/,`No Apps Script or analytics ${file}`);
- assert.match(html,/Demo de diseño/,`Demo label ${file}`);
+ assert.doesNotMatch(html,/Demo de diseño|[·] Demo|esta demo/i,`Sin marcas de demo en ${file}`);
  const canonical=html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
  assert.ok(canonical,`Canonical URL in ${file}`);
  assert.equal(new URL(canonical).origin,'https://jaimevaliente.com',`Canonical uses the custom domain in ${file}`);
@@ -64,6 +65,7 @@ for (const file of ['favicon.ico','favicon-32.png','apple-touch-icon.png']) asse
 const iconLicense=await readFile(path.join(root,'licenses/phosphor-icons.txt'),'utf8');
 assert.match(iconLicense,/MIT License/);
 assert.match(iconLicense,/Copyright.*Phosphor Icons/);
+for (const file of ['source-sans-3.txt','source-serif-4.txt']) assert.match(await readFile(path.join(root,'licenses',file),'utf8'),/SIL OPEN FONT LICENSE Version 1.1/,`Font license included: ${file}`);
 const motionLicense=await readFile(path.join(root,'licenses/open-props.txt'),'utf8');
 assert.match(motionLicense,/MIT License/);
 assert.match(motionLicense,/Adam Argyle/);

@@ -1,4 +1,4 @@
-name: Validate and deploy demo to GitHub Pages
+name: Validate and deploy to GitHub Pages
 
 on:
   push:
