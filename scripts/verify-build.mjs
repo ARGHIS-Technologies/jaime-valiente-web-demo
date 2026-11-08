@@ -15,10 +15,11 @@ for (const file of files.filter(f=>f.endsWith('.html'))) {
  const html=await readFile(file,'utf8');
  assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`Exactly one H1 in ${file}`);
  assert.match(html,/<html[^>]+lang="es"/,`Spanish language ${file}`);
- assert.match(html,/<meta name="robots" content="noindex, follow"/,`Demo noindex ${file}`);
+ assert.doesNotMatch(html,/noindex/i,`Page must be indexable ${file}`);
+ assert.doesNotMatch(html,/PENDIENTE/,`Dato legal sin completar en ${file}`);
  assert.doesNotMatch(html,/<(?:form|input|textarea)(?:\s|>)/i,`No data collection ${file}`);
  assert.doesNotMatch(html,/script\.google\.com|AKfycb|GTM-|G-[A-Z0-9]{7,}/,`No Apps Script or analytics ${file}`);
- assert.match(html,/Demo de diseño/,`Demo label ${file}`);
+ assert.doesNotMatch(html,/Demo de diseño|[·] Demo|esta demo/i,`Sin marcas de demo en ${file}`);
  const canonical=html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
  assert.ok(canonical,`Canonical URL in ${file}`);
  assert.equal(new URL(canonical).origin,'https://jaimevaliente.com',`Canonical uses the custom domain in ${file}`);

@@ -1,4 +1,4 @@
-# Jaime Valiente Alemán — Demo de diseño
+# Jaime Valiente Alemán · Abogado — jaimevaliente.com
 
 **Revisión vigente:** [dirección editorial y traslado a ARGHIS](docs/direccion-editorial-arghis/INFORME.md). Cinco estudios vectoriales originales y provisionales; composición revisada de Inicio y El despacho.
 
@@ -12,13 +12,15 @@ Dirección visual: [composición editorial y presencia personal](docs/composicio
 
 Iconos: selección local de Phosphor Icons, peso regular, renderizada por Astro. [Procedencia y hashes](src/assets/icons/phosphor/provenance.json) · [Licencia MIT incluida en la publicación](public/licenses/phosphor-icons.txt).
 
-Demo navegable para revisión del despacho. No sustituye ni modifica `jaimevalienteabogado.es`.
+Web del despacho de Jaime Valiente Alemán, abogado en Cádiz y Arcos de la Frontera. Sitio estático (Astro) publicado en GitHub Pages.
 
 - Organización propietaria: **ARGHIS-Technologies**.
 - Repositorio: https://github.com/ARGHIS-Technologies/jaime-valiente-web-demo
 - URL de publicación: https://jaimevaliente.com/
 - Siete páginas: Inicio, Particulares, Empresas, Reclamaciones, El despacho, Contacto y Área de clientes.
-- Soporte: aviso legal, privacidad y cookies demostrativos, y 404 personalizada.
+- Soporte: aviso legal, privacidad y cookies, y 404 personalizada.
+- Envío de documentación: mediante Plievo en https://documentos.jaimevaliente.com (esta web no recibe documentos).
+- Datos del titular para el aviso legal: `src/data/site.ts` (objeto `legal`). La compilación falla mientras quede algún `PENDIENTE`.
 
 ## Instalar y ejecutar
 

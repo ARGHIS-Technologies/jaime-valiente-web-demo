@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { href } from '../data/site';
+import { href, contact, legal } from '../data/site';
 export function getStaticPaths() {
   return [
     {params:{legal:'aviso-legal'},props:{title:'Aviso legal',kind:'legal'}},
@@ -9,11 +9,73 @@ export function getStaticPaths() {
   ];
 }
 const {title,kind}=Astro.props;
+const lead = {
+  legal: 'Datos del titular de esta web y condiciones de uso.',
+  privacy: 'Cómo trata el despacho tus datos personales.',
+  cookies: 'Qué tecnologías de almacenamiento usa esta web.',
+}[kind as 'legal'|'privacy'|'cookies'];
 ---
-<Layout current={`${Astro.params.legal}/`} title={`${title} | Demo Jaime Valiente`} description="Información demostrativa para revisión. No constituye el documento jurídico definitivo del despacho.">
-<section class="legal-hero"><div class="shell"><div class="breadcrumb"><a href={href()}>Inicio</a><span aria-hidden="true">/</span><span>{title}</span></div><h1>{title}.</h1><p class="lead">Página de revisión. El texto jurídico definitivo está pendiente de validación.</p></div></section><section class="legal-content"><div class="shell"><div class="prose"><span class="verification-label">Demo · No es el texto legal definitivo</span>
-{kind==='legal' && <><h2>Una propuesta de diseño independiente</h2><p>Este sitio es una demostración para revisar el diseño de una posible nueva web de Jaime Valiente Abogado. No sustituye la web actual del despacho.</p><h2>Información pendiente de completar</h2><p>Antes de publicar una versión definitiva deberán validarse la identidad del prestador, identificación fiscal, domicilio, datos profesionales, colegio y número de colegiado, y las normas profesionales aplicables.</p><p>Esta página no sustituye esa información ni acredita el cumplimiento de las obligaciones legales del despacho.</p></>}
-{kind==='privacy' && <><h2>Qué hace esta demo</h2><p>Esta demo no incluye formularios, registro, autenticación ni recepción de documentos. No se ha incorporado analítica, publicidad o seguimiento de visitantes en el código de la demo.</p><p>El alojamiento en GitHub Pages puede tratar datos técnicos de las solicitudes según sus propias condiciones. Los enlaces de teléfono, correo y WhatsApp abren aplicaciones o servicios externos; al utilizarlos se aplican sus condiciones.</p><h2>Envío de documentación mediante Plievo</h2><p>Esta web no recibe documentos. Cuando el despacho te facilita un enlace, el envío se realiza en documentos.jaimevaliente.com a través de Plievo, plataforma de ARGHIS Technologies que trata los archivos por cuenta del despacho como encargada del tratamiento.</p><p>El texto definitivo (responsable, finalidades, bases jurídicas, conservación, derechos y contrato de encargo) está pendiente de revisión jurídica.</p><h2>Validación para una web definitiva</h2><p>El despacho deberá definir y aprobar responsable, finalidades, bases jurídicas, conservación, destinatarios, encargados, transferencias, derechos y medidas de seguridad. El futuro envío documental requiere una revisión específica.</p></>}
-{kind==='cookies' && <><h2>Tecnologías de esta demostración</h2><p>El código de esta demo no instala cookies, no utiliza almacenamiento local y no incorpora herramientas de analítica, publicidad ni mapas incrustados. Las tipografías se sirven como archivos locales del sitio.</p><p>Esta descripción se refiere al código de la demo. Debe revisarse el comportamiento del alojamiento y de cualquier servicio que se añada en una versión definitiva.</p><h2>Antes de una publicación definitiva</h2><p>Deberá realizarse un inventario real de cookies, almacenamiento y conexiones externas. La información y, cuando corresponda, las opciones de consentimiento deberán reflejar ese inventario aprobado.</p></>}
-<h2>Contacto</h2><p>Para consultar los canales publicados del despacho, accede a <a href={href('contacto/')}>Contacto</a>. Evita compartir documentación sensible en el primer mensaje.</p></div></div></section>
+<Layout current={`${Astro.params.legal}/`} title={`${title} | Jaime Valiente Abogado`} description={`${title} de jaimevaliente.com. ${lead}`}>
+<section class="legal-hero"><div class="shell"><div class="breadcrumb"><a href={href()}>Inicio</a><span aria-hidden="true">/</span><span>{title}</span></div><h1>{title}.</h1><p class="lead">{lead}</p></div></section><section class="legal-content"><div class="shell"><div class="prose">
+{kind==='legal' && <>
+<h2>Titular del sitio web</h2>
+<p>En cumplimiento del artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico, se informa de que este sitio web, jaimevaliente.com, pertenece a:</p>
+<ul>
+<li><strong>Titular:</strong> {legal.name}</li>
+<li><strong>NIF:</strong> {legal.nif}</li>
+<li><strong>Domicilio:</strong> {legal.address}</li>
+<li><strong>Correo electrónico:</strong> <a href={contact.mailto}>{contact.email}</a></li>
+<li><strong>Teléfono:</strong> <a href={contact.tel}>{contact.phone}</a></li>
+</ul>
+<h2>Datos profesionales</h2>
+<ul>
+<li><strong>Colegio de Abogados:</strong> {legal.bar}</li>
+<li><strong>Número de colegiado:</strong> {legal.barNumber}</li>
+<li><strong>Seguro de responsabilidad civil:</strong> {legal.insurance}</li>
+</ul>
+<p>La profesión de abogado está regulada en España. Su ejercicio se rige por el Estatuto General de la Abogacía Española, el Código Deontológico de la Abogacía Española y las demás normas aplicables, que pueden consultarse en la web del Consejo General de la Abogacía Española.</p>
+<h2>Objeto y condiciones de uso</h2>
+<p>Esta web ofrece información general sobre los servicios del despacho. Su contenido es informativo y no constituye asesoramiento jurídico ni crea una relación abogado-cliente. Esa relación se establece únicamente cuando el despacho acepta expresamente un encargo.</p>
+<p>El uso de la web atribuye la condición de usuario e implica la aceptación de estas condiciones. El usuario se compromete a usarla de forma lícita y a no dañar su funcionamiento.</p>
+<h2>Propiedad intelectual</h2>
+<p>Los textos, el diseño, los logotipos y los demás elementos de esta web son del titular o se usan con licencia. Se prohíbe su reproducción, distribución o transformación sin autorización expresa, salvo lo permitido por la ley. Los iconos proceden de Phosphor Icons (licencia MIT).</p>
+<h2>Responsabilidad</h2>
+<p>El titular procura que la información sea exacta y esté actualizada, pero no garantiza la ausencia de errores ni responde de los daños derivados de un uso inadecuado de la web o de la información que contiene. Los enlaces a sitios de terceros no implican responsabilidad sobre sus contenidos.</p>
+<h2>Legislación y jurisdicción</h2>
+<p>Estas condiciones se rigen por la ley española. Para cualquier controversia, las partes se someten a los juzgados y tribunales que correspondan conforme a la normativa aplicable.</p>
+<p class="small-note">Última actualización: {legal.updated}.</p>
+</>}
+{kind==='privacy' && <>
+<h2>Responsable del tratamiento</h2>
+<p>{legal.name}, con NIF {legal.nif} y domicilio en {legal.address}. Contacto en materia de protección de datos: {legal.privacyEmail}.</p>
+<h2>Qué datos trata y para qué</h2>
+<p>Esta web no tiene formularios, no pide registro y no incorpora analítica, publicidad ni seguimiento de visitantes. Solo se tratan datos personales cuando el usuario contacta con el despacho por teléfono, correo o WhatsApp, o cuando un cliente envía documentación por el enlace personal que el despacho le facilita.</p>
+<ul>
+<li><strong>Contacto y consultas:</strong> nombre, medio de contacto y el contenido de la consulta. Finalidad: atender la consulta y, en su caso, preparar el encargo. Base jurídica: aplicación de medidas precontractuales a petición del interesado y, si se contrata, ejecución del contrato (art. 6.1.b RGPD).</li>
+<li><strong>Envío de documentación de un asunto:</strong> los documentos que el cliente remite. Finalidad: prestar el servicio jurídico contratado. Base jurídica: ejecución del contrato (art. 6.1.b RGPD).</li>
+</ul>
+<h2>Envío de documentación mediante Plievo</h2>
+<p>El envío de documentos se realiza en documentos.jaimevaliente.com a través de Plievo, plataforma de ARGHIS Technologies. Plievo actúa como encargada del tratamiento del despacho conforme al artículo 28 del RGPD y solo trata los documentos por cuenta y según las instrucciones del despacho. El acceso es mediante un enlace personal con caducidad. Esta web no recibe ni almacena documentos.</p>
+<h2>Conservación</h2>
+<p>Los datos se conservan mientras dure la relación y, después, durante los plazos exigidos por las obligaciones legales y de responsabilidad profesional, y se suprimen cuando dejan de ser necesarios.</p>
+<h2>Destinatarios</h2>
+<p>Los datos no se ceden a terceros salvo obligación legal. Acceden a ellos los proveedores que prestan servicios al despacho como encargados del tratamiento, entre ellos Plievo para el envío de documentos.</p>
+<h2>Secreto profesional</h2>
+<p>La información que el cliente facilita al despacho está protegida por el deber de secreto profesional de la abogacía.</p>
+<h2>Derechos</h2>
+<p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a {legal.privacyEmail}. Si consideras que tus derechos no han sido atendidos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+<h2>Alojamiento de esta web</h2>
+<p>La web está alojada en GitHub Pages, que puede tratar datos técnicos de las solicitudes (como la dirección IP) según sus propias condiciones. Los enlaces de teléfono, correo y WhatsApp abren aplicaciones o servicios externos, cuyas condiciones se aplican al usarlos.</p>
+<p class="small-note">Última actualización: {legal.updated}.</p>
+</>}
+{kind==='cookies' && <>
+<h2>Qué usa esta web</h2>
+<p>Esta web no instala cookies, no utiliza almacenamiento local del navegador y no incorpora herramientas de analítica, publicidad ni mapas incrustados. Las tipografías se sirven como archivos del propio sitio. Por eso no muestra un aviso de consentimiento.</p>
+<h2>Área de envío de documentación</h2>
+<p>El envío de documentos se hace en documentos.jaimevaliente.com, un servicio distinto de esta web. Puede usar tecnologías estrictamente necesarias para funcionar, como mantener la sesión de quien accede, que no requieren consentimiento. No se usan con fines publicitarios ni de seguimiento.</p>
+<h2>Cómo gestionarlas</h2>
+<p>Puedes bloquear o borrar las cookies desde la configuración de tu navegador. Si en el futuro se añadiera analítica u otra herramienta, esta página se actualizaría y se pediría el consentimiento previo.</p>
+<p class="small-note">Última actualización: {legal.updated}.</p>
+</>}
+<h2>Contacto</h2><p>Para cualquier consulta, accede a <a href={href('contacto/')}>Contacto</a>. Evita compartir documentación sensible en el primer mensaje.</p></div></div></section>
 </Layout>

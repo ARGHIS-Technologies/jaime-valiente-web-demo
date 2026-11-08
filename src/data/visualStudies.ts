@@ -12,9 +12,9 @@ export interface VisualStudySpec {
   caption: string;
 }
 export const visualStudies = {
-  portrait: { src: signature, width: 800, height: 1000, alt: 'J de la firma en marfil sobre planos de verde petróleo y bronce', caption: 'Firma tipográfica · Retrato pendiente.' },
-  work: { src: work, width: 1200, height: 800, alt: 'Composición abstracta de hojas de papel y planos de luz en la paleta del despacho', caption: 'Papel y luz · Estudio provisional.' },
-  interior: { src: interior, width: 1200, height: 800, alt: 'Estudio vectorial de un umbral y planos de luz; no representa un espacio real', caption: 'Espacio y luz · Estudio provisional.' },
-  cadiz: { src: cadiz, width: 1200, height: 800, alt: 'Estudio abstracto de horizonte y volúmenes claros para el espacio fotográfico de Cádiz', caption: 'Estudio para Cádiz · Fotografía pendiente.' },
-  arcos: { src: arcos, width: 1200, height: 800, alt: 'Estudio abstracto de arcos en marfil y bronce para el espacio fotográfico de Arcos', caption: 'Estudio para Arcos · Fotografía pendiente.' },
+  portrait: { src: signature, width: 800, height: 1000, alt: 'J de la firma en marfil sobre planos de verde petróleo y bronce', caption: 'Firma tipográfica.' },
+  work: { src: work, width: 1200, height: 800, alt: 'Composición abstracta de hojas de papel y planos de luz en la paleta del despacho', caption: 'Papel y luz.' },
+  interior: { src: interior, width: 1200, height: 800, alt: 'Estudio vectorial de un umbral y planos de luz; no representa un espacio real', caption: 'Espacio y luz.' },
+  cadiz: { src: cadiz, width: 1200, height: 800, alt: 'Estudio abstracto de horizonte y volúmenes claros para el espacio fotográfico de Cádiz', caption: 'Cádiz.' },
+  arcos: { src: arcos, width: 1200, height: 800, alt: 'Estudio abstracto de arcos en marfil y bronce para el espacio fotográfico de Arcos', caption: 'Arcos de la Frontera.' },
 } satisfies Record<string, VisualStudySpec>;
