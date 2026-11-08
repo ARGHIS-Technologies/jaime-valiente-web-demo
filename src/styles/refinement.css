@@ -561,6 +561,16 @@ p {
 .client-panel .button:hover {
   background: #fff;
 }
+/* Acción secundaria del panel: contorno claro sobre el verde, sin competir con el acceso. */
+.client-panel .button.button-secondary {
+  background: transparent;
+  color: var(--paper);
+  border-color: #8c9b8d;
+}
+.client-panel .button.button-secondary:hover {
+  background: rgba(255, 255, 255, .06);
+  border-color: var(--paper);
+}
 .client-panel .text-link {
   color: var(--paper);
   border-bottom-color: #8c9b8d;

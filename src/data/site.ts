@@ -6,6 +6,8 @@ export const contact = {
   mailto: 'mailto:jvalientea@gmail.com',
   whatsapp: 'https://wa.me/34692203087',
 };
+/** Portal documental del despacho (servido por Plievo bajo el dominio propio). */
+export const documentsPortal = 'https://documentos.jaimevaliente.com/';
 export const navigation = [
   { label: 'Inicio', path: '' },
   { label: 'Particulares', path: 'particulares/' },
