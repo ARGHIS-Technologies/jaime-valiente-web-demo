@@ -9,7 +9,7 @@ La existencia de un servicio o dato en la web pública confirma su publicación,
 | Oferta | Vigencia y alcance de todos los servicios; quién presta cada actividad empresarial y si existe colaboración. |
 | Contactos | Vigencia de teléfono, correo y WhatsApp; responsables y condiciones de atención. |
 | Cádiz | Grafía y realidad de Avenida de la Ilustración nº 6, 3º-1, Edificio Astarté, 11011; atención al público y localización. |
-| Arcos | Grafía y realidad de Calle Seguidilla nº 4, oficina 7, Edificio Escontec, 11630; atención al público y localización. |
+| Arcos | Grafía y realidad de Calle Seguidilla nº 4, local 7, Edificio Escontec, 11630; atención al público y localización. |
 | Citas | Horarios, modalidades, disponibilidad, condiciones y honorarios si se publican. |
 | Biografía e imágenes | Biografía documentada, retrato real autorizado y derechos de uso. |
 | Envío documental futuro | Canal elegido, propietario, autenticación, permisos, formatos, límites, tratamiento, almacenamiento, recepción, conservación y ayuda. Probar solo en un trabajo expresamente autorizado. |

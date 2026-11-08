@@ -16,7 +16,7 @@ export const navigation = [
 ] as const;
 export const offices = [
   { city: 'Cádiz', address: 'Avenida de la Ilustración nº 6, 3º-1', building: 'Edificio Astarté · 11011 Cádiz' },
-  { city: 'Arcos de la Frontera', address: 'Calle Seguidilla nº 4, oficina 7', building: 'Edificio Escontec · 11630 Arcos de la Frontera' },
+  { city: 'Arcos de la Frontera', address: 'Calle Seguidilla nº 4, local 7', building: 'Edificio Escontec · 11630 Arcos de la Frontera' },
 ] as const;
 /**
  * Datos del prestador para el aviso legal y la privacidad (LSSI art. 10; RGPD art. 13).
@@ -26,7 +26,7 @@ export const offices = [
 export const legal = {
   name: 'Jaime Valiente Alemán',
   nif: 'PENDIENTE: NIF',
-  address: 'Avenida de la Ilustración nº 6, 3º-1 (Edificio Astarté), 11011 Cádiz, y Calle Seguidilla nº 4, oficina 7 (Edificio Escontec), 11630 Arcos de la Frontera',
+  address: 'Avenida de la Ilustración nº 6, 3º-1 (Edificio Astarté), 11011 Cádiz, y Calle Seguidilla nº 4, local 7 (Edificio Escontec), 11630 Arcos de la Frontera',
   bar: 'Ilustre Colegio de Abogados de Cádiz',
   barNumber: '2362',
   insurance: 'PENDIENTE: aseguradora y póliza de responsabilidad civil',
