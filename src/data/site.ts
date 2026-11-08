@@ -29,8 +29,7 @@ export const legal = {
   address: 'Avenida de la Ilustración nº 6, 3º-1 (Edificio Astarté), 11011 Cádiz, y Calle Seguidilla nº 4, local 7 (Edificio Escontec), 11630 Arcos de la Frontera',
   bar: 'Ilustre Colegio de Abogados de Cádiz',
   barNumber: '2362',
-  insurance: 'PENDIENTE: aseguradora y póliza de responsabilidad civil',
-  privacyEmail: 'PENDIENTE: correo para ejercer derechos de protección de datos',
+  privacyEmail: 'jvalientea@gmail.com',
   updated: '8 de noviembre de 2026',
 } as const;
 export function href(path = ''): string {
